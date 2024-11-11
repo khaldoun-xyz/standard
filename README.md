@@ -56,22 +56,6 @@ Being able to interact with a terminal console is necessary to not be limited by
 - `htop`: See cpu usage (similar to windows task manager, quit with "q").
 
 
-# docker (containerised applications)
-Docker removes many of the headaches around server configuration. If the docker runs on one system, it will run on another.
-
-- `docker ps`: see a list of running docker containers
-- `docker exec -it <initial_digits_of_container> sh`: enter a container & get terminal access
-
-
-# power point (concept work)
-When used properly, Power Point is a powerful tool to quickly visualise what you have in mind. This is even faster, when you use shortcuts.
-
-- `ctrl + shift + .` = increase font size
-- `ctrl + shift + ,` = decrease font size
-- `ctrl + mouse wheel = zoom` = zoom
-- `shift + arrow keys` = increase/decrease box size
-- `ctrl + mouse movement` = duplicate box
-
 # terminal setup
 Add this to your .bashrc file.
 
@@ -102,4 +86,21 @@ BLUE="%F{blue}"
 NO_COLOR="%f"
 PS1="${GREEN}%n${NO_COLOR}:${BLUE}%~${YELLOW}\$(parse_git_branch)${NO_COLOR}%# "
 ```
+
+# docker (containerised applications)
+Docker removes many of the headaches around server configuration. If the docker runs on one system, it will run on another.
+
+- `docker ps`: see a list of running docker containers
+- `docker exec -it <initial_digits_of_container> sh`: enter a container & get terminal access
+
+
+# power point (concept work)
+When used properly, Power Point is a powerful tool to quickly visualise what you have in mind. This is even faster, when you use shortcuts.
+
+- `ctrl + shift + .` = increase font size
+- `ctrl + shift + ,` = decrease font size
+- `ctrl + mouse wheel = zoom` = zoom
+- `shift + arrow keys` = increase/decrease box size
+- `ctrl + mouse movement` = duplicate box
+
 
