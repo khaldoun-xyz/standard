@@ -95,11 +95,11 @@ Docker removes many of the headaches around server configuration. If the docker 
 
 
 # power point (concept work)
-When used properly, Power Point is a powerful tool to quickly visualise what you have in mind. This is even faster, when you use shortcuts.
+When used properly, Power Point is a powerful tool to quickly visualise what you have in mind. Here are some useful shortcuts:
 
 - `ctrl + shift + .` = increase font size
 - `ctrl + shift + ,` = decrease font size
-- `ctrl + mouse wheel = zoom` = zoom
+- `ctrl + mouse wheel` = zoom
 - `shift + arrow keys` = increase/decrease box size
 - `ctrl + mouse movement` = duplicate box
 
