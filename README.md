@@ -99,6 +99,8 @@ When used properly, Power Point is a powerful tool to quickly visualise what you
 
 - `ctrl + shift + .` = increase font size
 - `ctrl + shift + ,` = decrease font size
+- `ctrl + shift + g` = group selection
+- `ctrl + backspace` = delete entire word
 - `ctrl + mouse wheel` = zoom
 - `shift + arrow keys` = increase/decrease box size
 - `ctrl + mouse movement` = duplicate box
