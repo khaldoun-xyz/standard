@@ -1,3 +1,5 @@
+# Internal memo on important skills for Khaldoun members
+
 None of the things described here are novel or surprising. This is intended. <br> 
 I expect you to deeply understand the things described here. 
 
