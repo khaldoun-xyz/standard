@@ -1,7 +1,7 @@
 # Internal memo on important skills for Khaldoun members
 
 None of the things described here are novel or surprising. This is intended. <br> 
-I expect you to deeply understand the things described here. 
+I want you to deeply understand the things described here. 
 
 # git (version control)
 
@@ -97,9 +97,21 @@ Docker removes many of the headaches around server configuration. If the docker 
 
 
 # power point (concept work)
-When used properly, Power Point is a powerful tool to quickly visualise what you have in mind. 
-Below are some useful shortcuts. 
-Also, [this Youtube video](https://www.youtube.com/watch?v=-Ab-HYN0WUo) is a good primer 
+When used properly, Power Point is a useful tool to quickly visualise what you have in mind. 
+
+## thoughts on power point presentations 
+- if the purpose of the presentation is unclear, make it clear or cancel presentation
+- before creating slides, write down the key messages of your presentation 
+  (no more than 3); if they aren't clear, make them clear or cancel the presentation
+- for each slide, write down its key messages (ideal is one key message); if the key
+  messages aren't clear, make them clear or remove the slide
+- move everything that doesn't support the key messages into the Backup, 
+  the last section of the presentation
+- whatever the time frame of your presentation, plan ~1/3 for the actual presentation
+  and 2/3 for discussion
+
+## shortcuts
+[This Youtube video](https://www.youtube.com/watch?v=-Ab-HYN0WUo) is a good primer 
 on the power of shortcuts in Power Point.
 
 - `ctrl + shift + ./,` = increase/decrease font size
@@ -112,4 +124,12 @@ on the power of shortcuts in Power Point.
 - `ctrl + shift + mouse movement` = duplicate box & move it in straight line
 - `F4` = repeat last command
 - `alt` = activate & show quick travel keys 
+
+
+# plotting
+Great graphs help understand the data. [This Youtube video](https://www.youtube.com/watch?v=hVimVzgtD6w&t=57s) is very educational thanks to graphs.
+
+## thoughts on great graphs
+- good graphs provide easy-to-understand answers to simple qs; 
+  great graphs provide easy-to-understand answers to complex qs
 
