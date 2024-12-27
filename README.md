@@ -10,9 +10,9 @@ This group had a bad understanding of how the world works and tried to regulate 
 
 The same is true today.
 Therefore, the most important thing you can do is join the first group.
-Like a surfer who hits a wave is pushed forward by the current, you will we be pushed forward by setting a higher standard.
+Like a surfer is pushed forward by the current of the wave, you will be pushed forward by setting a higher standard.
 The most effective individual or organisation does many times more with many times less than the rest.
-Khaldoun is here to help us do more with less. We want to get the basics right.
+Khaldoun is here to help you do more with less. We want to get the basics right.
 And the most basic of all basics is focus.
 
 None of the things described below are novel or surprising. This is intended.
