@@ -1,13 +1,31 @@
-# Internal memo on important skills for Khaldoun members
+# internal memo on important skills for Khaldoun members
 
-None of the things described here are novel or surprising. This is intended. <br>
+Our organisations were not built by consortia or workers' councils.
+Yesterday, small groups of individuals - outliers - created today's successes with highly leveraged concentrated activity,
+while the majority of people mended yesterday's successes.
+The first group applied non-linear leverage to produce outsized returns.
+They did so because they understood that our world is governed by power laws.
+The second group pretended the world is linear and contributed little.
+This group had a bad understanding of how the world works and tried to regulate fundamentally unstable things into stability.
+
+The same is true today.
+Therefore, the most important thing you can do is join the first group.
+Like a surfer who hits a wave is pushed forward by the current, you will we be pushed forward by setting a higher standard.
+The most effective individual or organisation does many times more with many times less than the rest.
+Khaldoun is here to help us do more with less. We want to get the basics right.
+And the most basic of all basics is focus.
+
+None of the things described below are novel or surprising. This is intended.
 I want you to deeply understand the things described here.
+Don't skip over parts of the document because you think you know all of this.
+If you think you know everything already, let me know and I'll keep a special eye on you and your brilliance.
 
 ## table of contents
 
 - [git](#git)
 - [bash](#bash)
 - [terminal](#terminal)
+- [sql](#sql)
 - [docker](#docker)
 - [power point](#power-point)
 - [plotting](#plotting)
@@ -102,6 +120,23 @@ GREEN="%F{green}"
 BLUE="%F{blue}"
 NO_COLOR="%f"
 PS1="${GREEN}%n${NO_COLOR}:${BLUE}%~${YELLOW}\$(parse_git_branch)${NO_COLOR}%# "
+```
+
+## sql
+
+Creating and accessing data is as fundamental as it gets.
+
+### thoughts on sql queries
+
+- never never never write a query like this "select * from table Where column = 'text' ORDER by id desc";
+  instead write it like this:
+
+```
+select * 
+from table 
+where column = 'text'
+order by id desc
+;
 ```
 
 ## docker
