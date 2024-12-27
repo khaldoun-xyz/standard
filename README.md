@@ -175,6 +175,7 @@ on the power of shortcuts in Power Point.
 - `shift + arrow keys` = increase/decrease box size
 - `ctrl + mouse movement` = duplicate box
 - `ctrl + shift + mouse movement` = duplicate box & move it in straight line
+- `ctrl + alt + m` = create new comment
 - `F4` = repeat last command
 - `alt` = activate & show quick travel keys
 
