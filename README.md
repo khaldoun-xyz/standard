@@ -1,24 +1,20 @@
 # internal memo on important skills for Khaldoun members
 
 Our organisations were not built by consortia or workers' councils.
-Yesterday, small groups of individuals - outliers - created today's successes with highly leveraged concentrated activity,
-while the majority of people mended yesterday's successes.
-The first group applied non-linear leverage to produce outsized returns.
-They did so because they understood that our world is governed by power laws.
-The second group pretended the world is linear and contributed little.
-This group had a bad understanding of how the world works and tried to regulate fundamentally unstable things into stability.
+Yesterday, small groups of individuals - outliers - created today's successes with highly leveraged concentrated activity.
+They applied non-linear leverage to produce outsized returns because they understood that our world is governed by power laws.
 
 The same is true today.
-Therefore, the most important thing you can do is join the first group.
-Like a surfer is pushed forward by the current of the wave, you will be pushed forward by setting a higher standard.
+Therefore, the most important thing you can do is become an outlier.
+Like a surfer is pushed forward by the current of the wave, you will be pushed forward by setting a higher standard for yourself.
 The most effective individual or organisation does many times more with many times less than the rest.
-Khaldoun is here to help you do more with less. We want to get the basics right.
+Khaldoun is here to help you do more with less. We want you to get the basics right.
 And the most basic of all basics is focus.
 
 None of the things described below are novel or surprising. This is intended.
-I want you to deeply understand the things described here.
+We want you to deeply understand the things described here.
 Don't skip over parts of the document because you think you know all of this.
-If you think you know everything already, let me know and I'll keep a special eye on you and your brilliance.
+If you think you know everything already, let us know and we'll probe your competence.
 
 ## table of contents
 
