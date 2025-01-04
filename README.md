@@ -1,22 +1,37 @@
-# internal memo on important skills for Khaldoun members
+# internal memo for new Khaldoun members
 
-Our organisations were not built by consortia or workers' councils.
-Yesterday, small groups of individuals - outliers - created today's successes with highly leveraged concentrated activity.
-They applied non-linear leverage to produce outsized returns because they understood that our world is governed by power laws.
+Today's successful organisations were built by small groups of individuals - outliers -,
+while the majority of people mended yesterday's successes.
 
-The same is true today.
-Therefore, the most important thing you can do is become an outlier.
-Like a surfer is pushed forward by the current of the wave, you will be pushed forward by setting a higher standard for yourself.
-The most effective individual or organisation does many times more with many times less than the rest.
-Khaldoun is here to help you do more with less. We want you to get the basics right.
-And the most basic of all basics is focus.
+We believe that the most effective thing you can do is become an outlier.
+Like a surfer can use a wave to move forward effortlessly, there are things you can do to make progress.
+Outliers do many times more with many times less than the rest.
 
+Khaldoun wants to be a platform to help you do more with less.
 None of the things described below are novel or surprising. This is intended.
-We want you to deeply understand the things described here.
+We want you to deeply understand the things described in this document.
 Don't skip over parts of the document because you think you know all of this.
-If you think you know everything already, let us know and we'll probe your competence.
+Overconfidence is not appreciated here.
 
-## table of contents
+## soft skills
+
+We offered you to join Khaldoun because you embody most of the things described below.
+Nonetheless, we believe that repeating important principles is a valuable investment.
+So please read the information in this section attentively.
+
+At Khaldoun, we appreciate integrity, high standards and learning from our experiences.
+When you notice that somebody does not live up to the ideals described below, tell your colleague.
+
+- Be a tank: Find a way, be resourceful, be uncomfortable, be intense
+  (<a href="https://sisu.cx/script/tank" target="_blank">The Tank</a>).
+- Think different: While others draw sheep, we draw boxes
+  (<a href="https://sisu.cx/script/box" target="_blank">The Box</a>).
+- Think long-term: Take a detour to build skills that make you go faster tomorrow
+  (<a href="https://sisu.cx/script/circles" target="_blank">Circles</a>).
+- Embrace challenge: Learn from hardship
+  (<a href="https://sisu.cx/script/hero" target="_blank">Hero Journey</a>).
+
+## hard skills
 
 - [git](#git)
 - [bash](#bash)
@@ -26,11 +41,11 @@ If you think you know everything already, let us know and we'll probe your compe
 - [power point](#power-point)
 - [plotting](#plotting)
 
-## git
+### git
 
 Version control is a very basic and very useful tool.
 
-### git good case practices
+#### git good case practices
 
 Below is a basic list of good case practices when using git.
 
@@ -51,7 +66,7 @@ Below is a basic list of good case practices when using git.
 - use at least these pre-commit hooks: end-of-file-fixer, trailing-whitespace, black, isort.
   Always make sure pre-commit hooks have run <u>before</u> asking for a review.
 
-### git commands
+#### git commands
 
 Shown below is only a subset of git commands. You'll use those a lot.
 Feel free to dive deeper into git. Just remember you're still considered a solid English speaker even if you don't know what 'transmogrify' means.
@@ -75,7 +90,7 @@ Feel free to dive deeper into git. Just remember you're still considered a solid
 - `git push origin <branch_name>`: Pushes changes to remote repository origin.
 - `git pull origin`: Fetches and merges changes from remote repository origin.
 
-## bash
+### bash
 
 Being able to interact with a terminal console is necessary to not be limited by GUI functionality.
 
@@ -84,11 +99,11 @@ Being able to interact with a terminal console is necessary to not be limited by
 - `ctrl + r (keyboard shortcut)`: Reverse i search to find historical bash commands.
 - `htop`: See cpu usage (similar to windows task manager, quit with "q").
 
-## terminal
+### terminal
 
 Add this to your .bashrc file.
 
-### On Linux
+#### On Linux
 
 ```
 # show git branch in Terminal
@@ -103,7 +118,7 @@ NO_COLOR="\[\033[00m\]"
 PS1="$GREEN\u$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 ```
 
-### On Mac
+#### On Mac
 
 ```
 # show git branch in Terminal
@@ -118,11 +133,11 @@ NO_COLOR="%f"
 PS1="${GREEN}%n${NO_COLOR}:${BLUE}%~${YELLOW}\$(parse_git_branch)${NO_COLOR}%# "
 ```
 
-## sql
+### sql
 
 Creating and accessing data is as fundamental as it gets.
 
-### thoughts on sql queries
+#### thoughts on sql queries
 
 - never never never write a query like this "select * from table Where column = 'text' ORDER by id desc";
   instead write it like this:
@@ -135,18 +150,18 @@ order by id desc
 ;
 ```
 
-## docker
+### docker
 
 Containerising applications with Docker removes many of the headaches around server configuration. If the docker runs on one system, it will run on another.
 
 - `docker ps`: see a list of running docker containers
 - `docker exec -it <initial_digits_of_container> sh`: enter a container & get terminal access
 
-## power point
+### power point
 
 When used properly, Power Point is a useful tool for concept work and to quickly visualise what you have in mind.
 
-### thoughts on power point presentations
+#### thoughts on power point presentations
 
 - if the purpose of the presentation is unclear, make it clear or cancel presentation
 - before creating slides, write down the key messages of your presentation
@@ -158,7 +173,7 @@ When used properly, Power Point is a useful tool for concept work and to quickly
 - whatever the time frame of your presentation, plan ~1/3 for the actual presentation
   and 2/3 for discussion
 
-### power point shortcuts
+#### power point shortcuts
 
 [This Youtube video](https://www.youtube.com/watch?v=-Ab-HYN0WUo) is a good primer
 on the power of shortcuts in Power Point.
@@ -175,11 +190,11 @@ on the power of shortcuts in Power Point.
 - `F4` = repeat last command
 - `alt` = activate & show quick travel keys
 
-## plotting
+### plotting
 
 Great graphs help understand the data. [This Youtube video](https://www.youtube.com/watch?v=hVimVzgtD6w&t=57s) is very educational thanks to graphs.
 
-### thoughts on great graphs
+#### thoughts on great graphs
 
 - good graphs provide easy-to-understand answers to simple qs;
   great graphs provide easy-to-understand answers to complex qs
