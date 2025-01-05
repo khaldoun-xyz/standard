@@ -1,10 +1,12 @@
 # internal memo for new Khaldoun members
 
-Today's successful organisations were built by small groups of individuals - outliers -,
+Today's successful organisations were built by
+small groups of individuals - outliers -,
 while the majority of people mended yesterday's successes.
 
 We believe that the most effective thing you can do is become an outlier.
-Like a surfer can use a wave to move forward effortlessly, there are things you can do to make progress.
+Like a surfer can use a wave to move forward effortlessly,
+there are things you can do to make progress.
 Outliers do many times more with many times less than the rest.
 
 Khaldoun wants to be a platform to help you do more with less.
@@ -17,9 +19,12 @@ Overconfidence is not appreciated here.
 
 Khaldoun's core purpose is to create fulfilling jobs.
 
-Please read our multi-stage plan carefully and let us know right away if you think we lose sight of it:
+To that end, we're working through a multi-stage plan.
+Currently, we're in stage 1 and
+focused on making Tunis more attractive for data science talent.
+Please read our plan carefully
+and let us know when you think we lose sight of it:
 <a href="https://github.com/khaldoun-xyz/plan/blob/master/README.md" target="_blank">Our plan with Khaldoun</a>.
-
 
 ## soft skills
 
@@ -28,7 +33,8 @@ Nonetheless, we believe that repeating important principles is a valuable invest
 So please read the information in this section attentively.
 
 At Khaldoun, we appreciate integrity, high standards and learning from our experiences.
-When you notice that somebody does not live up to the ideals described below, tell your colleague.
+When you notice that a colleague does not live up to the ideals described below,
+tell him or her.
 
 - Be a tank: Find a way, be resourceful, be uncomfortable, be intense
   (<a href="https://sisu.cx/script/tank" target="_blank">The Tank</a>).
@@ -70,24 +76,30 @@ Below is a basic list of good case practices when using git.
 - Once you dealt with a PR comment,
   click on "Resolve conversation" to indicate that you consider it resolved.
   Either resolve all comments or provide responses.
-- Close open issues with a reference to the PRs in which they are resolved after you've resolved them.
-- use at least these pre-commit hooks: end-of-file-fixer, trailing-whitespace, black, isort.
+- Close open issues with a reference to the PRs
+  in which they are resolved after you've resolved them.
+- use at least these pre-commit hooks: end-of-file-fixer,
+  trailing-whitespace, black, isort.
   Always make sure pre-commit hooks have run <u>before</u> asking for a review.
 
 #### git commands
 
 Shown below is only a subset of git commands. You'll use those a lot.
-Feel free to dive deeper into git. Just remember you're still considered a solid English speaker even if you don't know what 'transmogrify' means.
+Feel free to dive deeper into git.
+Just remember you're still considered a solid English speaker
+even if you don't know what 'transmogrify' means.
 
 - `git init`: Initializes a new Git repository in the current directory.
   (To set up an existing repo locally, use `git clone <git_url>`.)
-- `git remote add origin <git_url>`: Adds a remote repository called "origin" to the local repository.
+- `git remote add origin <git_url>`: Adds a remote repository
+  called "origin" to the local repository.
 - `git status`: Displays the status of the repository, including any changes or conflicts.
 - `git log`: Displays a log of all commits made in the repository.
 - `git branch`: Show all existing branches.
 - `git checkout -b <branch_name>`: Create a new branch and switch to it.
 - `git checkout <branch_name>`: Switches to a different branch.
-  (If switching to another branch is impossible due to irrelevant changes, type in `git stash` first.)
+  (If switching to another branch is impossible due to
+  irrelevant changes, type in `git stash` first.)
 - `git add <file>`: Mark a file as "part of the next commit".
   (`git add .` marks all files in the current directory & subdirectories)
 - `git commit -m "<message>"`: Commits changes with a meaningful commit message.
