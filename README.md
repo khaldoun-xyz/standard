@@ -3,7 +3,6 @@
 Today's successful organisations were built by
 small groups of individuals - outliers -,
 while the majority of people mended yesterday's successes.
-
 We believe that the most effective thing you can do is become an outlier.
 Like a surfer can use a wave to move forward effortlessly,
 there are things you can do to make progress.
