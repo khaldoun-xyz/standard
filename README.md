@@ -13,6 +13,14 @@ We want you to deeply understand the things described in this document.
 Don't skip over parts of the document because you think you know all of this.
 Overconfidence is not appreciated here.
 
+## our plan with Khaldoun
+
+Khaldoun's core purpose is to create fulfilling jobs.
+
+Please read our multi-stage plan carefully and let us know right away if you think we lose sight of it:
+<a href="https://github.com/khaldoun-xyz/plan/blob/master/README.md" target="_blank">Our plan with Khaldoun</a>.
+
+
 ## soft skills
 
 We offered you to join Khaldoun because you embody most of the things described below.
