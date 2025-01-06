@@ -101,6 +101,8 @@ even if you don't know what 'transmogrify' means.
   irrelevant changes, type in `git stash` first.)
 - `git add <file>`: Mark a file as "part of the next commit".
   (`git add .` marks all files in the current directory & subdirectories)
+- `git stash`: Save uncommitted stages into temporary storage & remove them locally.
+  (Use `git stash pop` to load the stages from temporary storage.)
 - `git commit -m "<message>"`: Commits changes with a meaningful commit message.
   (For longer commit messages just write `git commit`.)
 - `git rebase master`: Load the most recent changes from master into your branch.
@@ -108,6 +110,8 @@ even if you don't know what 'transmogrify' means.
   Use this to squash minor/irrelevant commits by marking to-be-squashed commits with "s".
 - `git push origin <branch_name>`: Pushes changes to remote repository origin.
 - `git pull origin`: Fetches and merges changes from remote repository origin.
+- `git reset --soft HEAD^`: revert the last commit and keep the changes in uncommited stage.
+  (Use `git reset --hard HEAD^` to revert the last commit and delete all changes.)
 
 ### bash
 
@@ -169,12 +173,27 @@ order by id desc
 ;
 ```
 
+### python
+
+#### thoughts on python
+
+- use intention-revealing names:
+  in most cases `df` or `data` are terrible names for dataframes;
+  be precise and specific in your naming (also for variables, function names, etc.)
+
 ### docker
 
-Containerising applications with Docker removes many of the headaches around server configuration. If the docker runs on one system, it will run on another.
+Containerising applications with Docker removes
+many of the headaches around server configuration.
+If the docker runs on one system, it will run on another.
 
+- `docker build -t <name> .`:
+  build a container & give it the name <name>
+- `docker run <name>`: run the <name> container
+  (not additional parameters like `-p`, `-d`, `--env-file`, etc.)
 - `docker ps`: see a list of running docker containers
-- `docker exec -it <initial_digits_of_container> sh`: enter a container & get terminal access
+- `docker exec -it <initial_digits_of_container> sh`:
+  jump inside a container & get terminal access
 
 ### power point
 
