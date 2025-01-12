@@ -31,7 +31,7 @@ orchestration layer, a process library and a recertification process.
   - teach skills
 - [product maintenance](#product-maintenance)
   - [monitor product uptime](#monitor-product-uptime)
-  - [send lugha summary statistics](#send-lugha-summary-statistics)
+  - [send product summary statistics](#send-product-summary-statistics)
 - product development
   - generate & explore ideas
   - align & execute
@@ -103,18 +103,25 @@ flowchart LR
   G --> H[end]
 ~~~
 
-#### send lugha summary statistics
+#### send product summary statistics
 
 owner: s0288
 
-- The process is registered in the orchestration layer.
+- Each process is registered in the orchestration layer.
 
 ~~~mermaid
 ---
 title: send lugha summary statistics
 ---
 flowchart LR
-  A[weekly trigger] --> B[collect summary statistics] 
-  B --> C[send Telegram message to admins]
-  C --> D[end]
+  A[weekly trigger with kpis] --> B[send Telegram message to admins]
+  B --> C[end]
 ~~~
+
+~~~mermaid
+---
+title: send sisu summary statistics
+---
+flowchart LR
+  A[weekly trigger with kpis] --> B[send Telegram message to admins]
+  B --> C[end]
