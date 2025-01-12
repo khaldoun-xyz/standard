@@ -18,10 +18,10 @@ orchestration layer, a process library and a recertification process.
 
 ## Process library
 
-- company orchestration
+- [company orchestration](#company-orchestration)
   - process library (this section)
-  - [register tasks in the orchestration layer](#register-tasks-in-the-orchestration-layer)
   - [recertify processes and tasks](#recertify-processes-and-tasks)
+  - [register tasks in the orchestration layer](#register-tasks-in-the-orchestration-layer)
 - recruiting
   - publish job description & receive applications
   - evaluate candidates
@@ -29,18 +29,23 @@ orchestration layer, a process library and a recertification process.
   - evaluate language competence
   - teach mindset
   - teach skills
-- product maintenance
-  - monitor production systems
-    - [monitor lugha](#monitor-lugha)
+- [product maintenance](#product-maintenance)
+  - [monitor lugha uptime](#monitor-lugha-uptime)
+  - [send lugha summary statistics](#send-lugha-summary-statistics)
 - product development
   - generate & explore ideas
   - align & execute
 
-### recertify processes and tasks
+### company orchestration
+
+#### recertify processes and tasks
 
 owner: s0288
 
-#### flowchart
+- The process is registered in the orchestration layer.
+- The process recertification tool lists all processes.
+  - Each process has a name, an owner, a status, a certification date,
+    a trigger period (e.g. annual) and a history of edits to these data fields.
 
 ~~~mermaid
 ---
@@ -57,18 +62,9 @@ flowchart LR
   G --> H
 ~~~
 
-#### description
-
-- The process is registered in the orchestration layer.
-- The process recertification tool lists all processes.
-  - Each process has a name, an owner, a status, a certification date,
-    a trigger period (e.g. annual) and a history of edits to these data fields.
-
-### register tasks in the orchestration layer
+#### register tasks in the orchestration layer
 
 owner: s0288
-
-#### description
 
 The orchestration layer is the central hub
 where automation tasks are registered.
@@ -79,20 +75,21 @@ One candidate for this orchestration layer is automatisch.io:
 
 - Screenshot of a flow:
 <img src="./imgs/screenshot-automatisch-flow.png">
+
 - Screenshot of the folder structure:
 <img src="./imgs/screenshot-automatisch-folder.png">
 
 ### Product maintenance
 
-#### monitor lugha
+#### monitor lugha uptime
 
 owner: s0288
 
-##### flowchart
+- The process is registered in the orchestration layer.
 
 ~~~mermaid
 ---
-title: monitor lugha update 
+title: monitor lugha uptime 
 ---
 flowchart LR
   A[15 minute trigger] --> B[test if https://lugha.xyz is available]
@@ -103,6 +100,12 @@ flowchart LR
   F --> G[end]
 ~~~
 
+#### send lugha summary statistics
+
+owner: s0288
+
+- The process is registered in the orchestration layer.
+
 ~~~mermaid
 ---
 title: send lugha summary statistics
@@ -112,7 +115,3 @@ flowchart LR
   B --> C[send Telegram message to admins]
   C --> D[end]
 ~~~
-
-##### description
-
-- The process is registered in the orchestration layer.
