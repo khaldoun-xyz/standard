@@ -92,7 +92,7 @@ owner: s0288
 title: monitor lugha uptime 
 ---
 flowchart LR
-  A[15 minute trigger] --> B[test if https://lugha.xyz is available]
+  A[15 minute trigger] --> B[test if lugha.xyz is available]
   B --> |no| C[send Telegram message to admins]
   B --> |yes| D[end]
   C --> D[end]
