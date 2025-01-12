@@ -30,7 +30,7 @@ orchestration layer, a process library and a recertification process.
   - teach mindset
   - teach skills
 - [product maintenance](#product-maintenance)
-  - [monitor lugha uptime](#monitor-lugha-uptime)
+  - [monitor product uptime](#monitor-product-uptime)
   - [send lugha summary statistics](#send-lugha-summary-statistics)
 - product development
   - generate & explore ideas
@@ -81,7 +81,7 @@ One candidate for this orchestration layer is automatisch.io:
 
 ### Product maintenance
 
-#### monitor lugha uptime
+#### monitor product uptime
 
 owner: s0288
 
@@ -89,15 +89,18 @@ owner: s0288
 
 ~~~mermaid
 ---
-title: monitor lugha uptime 
+title: monitor product uptime 
 ---
 flowchart LR
-  A[15 minute trigger] --> B[test if lugha.xyz is available]
-  B --> |no| C[send Telegram message to admins]
-  B --> |yes| D[end]
+  A[15 minute trigger] --> |lugha| B1[test if url is available]
+  A --> |...| B2[test if url is available]
+  B1 --> |no| C[send Telegram message to admins]
+  B1 --> |yes| D[end]
   C --> D[end]
-  E[weekly trigger] --> F[send message that probe is alive]
-  F --> G[end]
+  E[weekly trigger] --> F[test same urls as 15 min trigger]
+  F --> |all alive| G[send uptime info as Telegram message to admins]
+  F --> |at least one service offline| G
+  G --> H[end]
 ~~~
 
 #### send lugha summary statistics
