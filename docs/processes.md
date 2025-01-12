@@ -93,7 +93,7 @@ title: monitor product uptime
 ---
 flowchart LR
   A[15 minute trigger] --> |lugha| B1[test if url is available]
-  A --> |...| B2[test if url is available]
+  A --> |sisu| B2[test if url is available]
   B1 --> |no| C[send Telegram message to admins]
   B1 --> |yes| D[end]
   C --> D[end]
