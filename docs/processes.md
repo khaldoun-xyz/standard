@@ -31,6 +31,7 @@ orchestration layer, a process library and a recertification process.
   - teach skills
 - product maintenance
   - monitor production systems
+    - [monitor lugha](#monitor-lugha)
 - product development
   - generate & explore ideas
   - align & execute
@@ -46,13 +47,13 @@ owner: s0288
 title: recertify processes & tasks
 ---
 flowchart LR
-  A[annual \n trigger] --> B[log status \n & reset]
-  B --> C[notify all \n process owners]
-  C -->|#1| D(do you need to \n update your \n process description?)
-  C -->|#2| E[...]
-  C -->|#3| F[...]
-  D -->|yes| G(update the process \n in the library)
-  D -->|no| H[end]
+  A[annual trigger] --> B[log status & reset]
+  B --> C[notify all process owners]
+  C --> |#1| D(do you need to update your process description?)
+  C --> |#2| E[...]
+  C --> |#3| F[...]
+  D --> |yes| G(update the process in the library)
+  D --> |no| H[end]
   G --> H
 ~~~
 
@@ -75,5 +76,43 @@ We develop independent modules
 that are connected by the orchestration layer.
 
 One candidate for this orchestration layer is automatisch.io:
+
+- Screenshot of a flow:
 <img src="./imgs/screenshot-automatisch-flow.png">
+- Screenshot of the folder structure:
 <img src="./imgs/screenshot-automatisch-folder.png">
+
+### Product maintenance
+
+#### monitor lugha
+
+owner: s0288
+
+##### flowchart
+
+~~~mermaid
+---
+title: monitor lugha update 
+---
+flowchart LR
+  A[15 minute trigger] --> B[test if https://lugha.xyz is available]
+  B --> |no| C[send Telegram message to admins]
+  B --> |yes| D[end]
+  C --> D[end]
+  E[weekly trigger] --> F[send message that probe is alive]
+  F --> G[end]
+~~~
+
+~~~mermaid
+---
+title: send lugha summary statistics
+---
+flowchart LR
+  A[weekly trigger] --> B[collect summary statistics] 
+  B --> C[send Telegram message to admins]
+  C --> D[end]
+~~~
+
+##### description
+
+- The process is registered in the orchestration layer.
