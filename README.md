@@ -23,7 +23,7 @@ Currently, we're in stage 1 and
 focused on making Tunis more attractive for data science talent.
 Please read our plan carefully
 and let us know when you think we lose sight of it:
-<a href="https://github.com/khaldoun-xyz/plan/blob/master/README.md" target="_blank">Our plan with Khaldoun</a>.
+<a href="./docs/plan.md" target="_blank">Our plan with Khaldoun</a>.
 
 ## soft skills
 
