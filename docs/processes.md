@@ -13,14 +13,13 @@ orchestration layer, a process library and a recertification process.
 - The process library is a central repository that contains all
   critical org processes.
 - The recertification process is a recurring task that asks
-  process owners to certify that the processes are up to date
-  and as simple as possible.
+  process owners to certify the correctness of processes.
 
 ## Process library
 
 - [company orchestration](#company-orchestration)
   - process library (this section)
-  - [recertify processes and tasks](#recertify-processes-and-tasks)
+  - [certify processes](#certify-processes)
   - [register tasks in the orchestration layer](#register-tasks-in-the-orchestration-layer)
 - recruiting
   - publish job description & receive applications
@@ -30,36 +29,39 @@ orchestration layer, a process library and a recertification process.
   - teach mindset
   - teach skills
 - [product maintenance](#product-maintenance)
-  - [monitor product uptime](#monitor-product-uptime)
-  - [send product summary statistics](#send-product-summary-statistics)
+  - [deploy product releases](#deploy-product-releases)
+  - [monitor product uptime and send kpis](#monitor-product-uptime-and-send-kpis)
+  - [track product errors](#track-product-errors)
 - product development
   - generate & explore ideas
   - align & execute
 
 ### company orchestration
 
-#### recertify processes and tasks
+#### certify processes
 
 owner: s0288
 
-- The process is registered in the orchestration layer.
+- The process is registered in recert.
 - The process recertification tool lists all processes.
   - Each process has a name, an owner, a status, a certification date,
-    a trigger period (e.g. annual) and a history of edits to these data fields.
+    a trigger period (e.g. annual) and an url to the record in the process library.
+    Also, a history of edits to these data fields is available.
 
 ~~~mermaid
 ---
-title: recertify processes & tasks
+title: certify processes
 ---
 flowchart LR
   A[annual trigger] --> B[log status & reset]
-  B --> C[notify all process owners]
-  C --> |#1| D(do you need to update your process description?)
+  B --> C[send Telegram message to all process owners]
+  C --> |#1| D('Review your process description. Do you need to update it?')
   C --> |#2| E[...]
   C --> |#3| F[...]
-  D --> |yes| G(update the process in the library)
-  D --> |no| H[end]
-  G --> H
+  D --> |yes| G(update the record in the process library)
+  D --> |no| H(confirm the record in the process library)
+  G --> I[end]
+  H --> I
 ~~~
 
 #### register tasks in the orchestration layer
@@ -81,47 +83,48 @@ One candidate for this orchestration layer is automatisch.io:
 
 ### Product maintenance
 
-#### monitor product uptime
+#### deploy product releases
 
 owner: s0288
 
-- The process is registered in the orchestration layer.
+- Each product's process is registered in recert.
 
 ~~~mermaid
 ---
-title: monitor product uptime 
+title: deploy product releases
 ---
 flowchart LR
-  A[15 minute trigger] --> |lugha| B1[test if url is available]
-  A --> |sisu| B2[test if url is available]
-  B1 --> |no| C[send Telegram message to admins]
-  B1 --> |yes| D[end]
+  A[merge in product's master branch] --> B[trigger Github Action]
+  B --> C[deploy to Digital Ocean droplet]
   C --> D[end]
-  E[weekly trigger] --> F[test same urls as 15 min trigger]
-  F --> |all alive| G[send uptime info as Telegram message to admins]
-  F --> |at least one service offline| G
-  G --> H[end]
 ~~~
 
-#### send product summary statistics
+#### monitor product uptime and send kpis
 
 owner: s0288
 
-- Each process is registered in the orchestration layer.
+- Each product's process is registered in recert.
 
 ~~~mermaid
 ---
-title: send lugha summary statistics
+title: monitor product uptime and send kpis
 ---
 flowchart LR
-  A[weekly trigger with kpis] --> B[send Telegram message to admins]
+  A[weekly product webhook with kpis] --> B[send Telegram message to admins]
   B --> C[end]
 ~~~
 
+#### track product errors
+
+owner: s0288
+
+- Each product's process is registered in recert.
+
 ~~~mermaid
 ---
-title: send sisu summary statistics
+title: track product errors
 ---
 flowchart LR
-  A[weekly trigger with kpis] --> B[send Telegram message to admins]
+  A[sentry error webhook] --> B[send Telegram message to admins]
   B --> C[end]
+~~~
