@@ -124,9 +124,10 @@ flowchart LR
 owner: s0288
 
 - Each product's process is registered in recert.
-- Set up [Sentry webhook as internal integration](https://docs.sentry.io/organization/integrations/integration-platform/webhooks/issue-alerts/).
-  - Connect automatisch.io webhook, [connect Telegram bot](https://automatisch.io/docs/apps/telegram-bot/connection) and send message via Telegram. If you don't know your Telegram user id, send /start to the @userinfobot on Telegram.
-  - Set up Issue and Uptime Monitor alerts.
+- For initial installation:
+  - Set up [Sentry webhook as internal integration](https://docs.sentry.io/organization/integrations/integration-platform/webhooks/issue-alerts/).
+    - Connect automatisch.io webhook, [connect Telegram bot](https://automatisch.io/docs/apps/telegram-bot/connection) and send message via Telegram. If you don't know your Telegram user id, send /start to the @userinfobot on Telegram.
+    - Set up Issue and Uptime Monitor alerts.
 
 ~~~mermaid
 ---
