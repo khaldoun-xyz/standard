@@ -88,18 +88,31 @@ One candidate for this orchestration layer is automatisch.io:
 owner: s0288
 
 - Each product's process is registered in recert.
+- Set up Github Actions in your repo by following [this guide](https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2).
+  - Use [this Github Actions deploy.yml](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
+    as a template.
 
 ~~~mermaid
 ---
-title: deploy product releases
+title: set up initially in Digital Ocean droplet
 ---
 flowchart LR
-  A[merge in product's master branch] --> B[trigger Github Action]
+  A(manually git clone repo) --> B(set up .env file)
+  B --> C(manually deploy)
+  C --> D(copy .env file into /root)
+~~~
+
+~~~mermaid
+---
+title: continuously deploy after master/main merge
+---
+flowchart LR
+  A[merge in product's master/main branch] --> B[trigger Github Action]
   B --> C[deploy to Digital Ocean droplet]
   C --> D[end]
 ~~~
 
-#### monitor product uptime and send kpis
+#### continuously monitor product uptime and send kpis
 
 owner: s0288
 
