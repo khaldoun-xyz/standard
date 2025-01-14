@@ -53,9 +53,16 @@ significantly increase automation.
 Wherever possible, we will open-source our technologies
 to increase speed.
 
-While we don't know the exact shape yet, it is clear that there are certain building blocks that other organisations benefit from - and not all require sophisticated machine learning techniques. Two critical building blocks will be setting up 1) a critical process library and 2) an orchestration layer that executes most of the automation tasks. 
+While we don't know the exact shape yet,
+it is clear that there are certain building blocks
+that other organisations benefit from - and not all
+require sophisticated machine learning techniques.
+Two critical building blocks will be setting up 1) a
+critical process library and 2) an orchestration
+layer that executes most of the automation tasks.
 
-German organisations need a push for efficiency because they have delayed digitisation and
+German organisations need a push for efficiency because
+they have delayed digitisation and
 their population is aging. Healthcare institutions in
 particular are in need of jump-starting automation initiatives.
 
@@ -66,8 +73,11 @@ Khaldoun members at German organisations.
 
 Once we have gained sufficient experience
 building highly automated organisations,
-we're ready to set up our own fully autonomous organisations. Naturally, we'll use the tools & systems that we have developed with our clients.
-One potential starting point might be building a strong brand in the German long-term care industry.
+we're ready to set up our own fully autonomous organisations.
+Naturally, we'll use the tools & systems
+that we have developed with our clients.
+One potential starting point might be building
+a strong brand in the German long-term care industry.
 
 At this stage, we will start supporting
 Khaldoun members in setting up their own companies.
