@@ -30,8 +30,8 @@ orchestration layer, a process library and a recertification process.
   - teach skills
 - [product maintenance](#product-maintenance)
   - [deploy product releases](#deploy-product-releases)
-  - [monitor product uptime and send kpis](#monitor-product-uptime-and-send-kpis)
-  - [track product errors](#track-product-errors)
+  - [continuously send kpis](#continuously-send-kpis)
+  - [continuously track product uptime and errors](#continuously-track-product-uptime-and-errors)
 - product development
   - generate & explore ideas
   - align & execute
@@ -112,7 +112,7 @@ flowchart LR
   C --> D[end]
 ~~~
 
-#### continuously monitor product uptime and send kpis
+#### continuously send kpis
 
 owner: s0288
 
@@ -120,22 +120,25 @@ owner: s0288
 
 ~~~mermaid
 ---
-title: monitor product uptime and send kpis
+title: continuously send kpis
 ---
 flowchart LR
   A[weekly product webhook with kpis] --> B[send Telegram message to admins]
   B --> C[end]
 ~~~
 
-#### track product errors
+#### continuously track product uptime and errors
 
 owner: s0288
 
 - Each product's process is registered in recert.
+- Set up [Sentry webhook as internal integration](https://docs.sentry.io/organization/integrations/integration-platform/webhooks/issue-alerts/).
+  - Connect automatisch.io webhook, [connect Telegram bot](https://automatisch.io/docs/apps/telegram-bot/connection) and send message via Telegram. If you don't know your Telegram user id, send /start to the @userinfobot on Telegram.
+  - Set up Issue and Uptime Monitor alerts.
 
 ~~~mermaid
 ---
-title: track product errors
+title: continuously track product uptime and errors
 ---
 flowchart LR
   A[sentry error webhook] --> B[send Telegram message to admins]
