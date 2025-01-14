@@ -88,10 +88,11 @@ One candidate for this orchestration layer is automatisch.io:
 owner: s0288
 
 - Each product's process is registered in recert.
-- In your repo, set up Github Actions by following [this guide](https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2).
-  - Use [this Github Actions deploy.yml](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
-    as a template.
-- In your Digital Ocean droplet `/root`, run `git clone <repo_url>`, create the `.env` file both in `/root/<repo_dir>` as well as in `/root` (`.env` in `/root` is necessary for Github Action) and manually deploy. 
+- For initial installation:
+  - In your repo, set up Github Actions by following [this guide](https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2).
+    - Use [this Github Actions deploy.yml](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
+      as a template.
+  - In your Digital Ocean droplet `/root`, run `git clone <repo_url>`, create the `.env` file both in `/root/<repo_dir>` as well as in `/root` (`.env` in `/root` is necessary for Github Action) and manually deploy. 
 
 ~~~mermaid
 ---
