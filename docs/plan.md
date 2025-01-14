@@ -22,12 +22,12 @@ as we continue to grow. These stages are important as we
 need to develop a number of fundamental building blocks
 for Khaldoun to succeed.
 
-### Stage 1: Strengthen Tunis as a data hub
+### Stage 1: Strengthen Tunis as a talent hub
 
 Tunis has the potential to be a hub
 for training highly talented data specialists
 (data scientists, data engineers, AI specialists,
-product managers, ...).
+product managers, devops engineers, ...).
 
 We want to strengthen the belief that talented individuals
 can come to Tunis to build great data & AI companies.
@@ -53,9 +53,11 @@ significantly increase automation.
 Wherever possible, we will open-source our technologies
 to increase speed.
 
-German organisations have delayed digitisation and
-the population is aging. Healthcare institutions in
-particular are in need of jump-starting a drive for efficiency.
+While we don't know the exact shape yet, it is clear that there are certain building blocks that other organisations benefit from - and not all require sophisticated machine learning techniques. Two critical building blocks will be setting up 1) a critical process library and 2) an orchestration layer that executes most of the automation tasks. 
+
+German organisations need a push for efficiency because they have delayed digitisation and
+their population is aging. Healthcare institutions in
+particular are in need of jump-starting automation initiatives.
 
 It is at this stage that Khaldoun will start placing
 Khaldoun members at German organisations.
@@ -64,9 +66,8 @@ Khaldoun members at German organisations.
 
 Once we have gained sufficient experience
 building highly automated organisations,
-we're ready to set up our own fully autonomous organisations.
-One potential starting point will be
-the German long-term care industry.
+we're ready to set up our own fully autonomous organisations. Naturally, we'll use the tools & systems that we have developed with our clients.
+One potential starting point might be building a strong brand in the German long-term care industry.
 
 At this stage, we will start supporting
 Khaldoun members in setting up their own companies.
