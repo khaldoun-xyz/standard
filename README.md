@@ -107,18 +107,22 @@ even if you don't know what 'transmogrify' means.
   (For longer commit messages just write `git commit`.)
 - `git rebase master`: Load the most recent changes from master into your branch.
 - `git rebase -i HEAD~<number_of_commits>`: interact with historical commits.
-  Use this to squash minor/irrelevant commits by marking to-be-squashed commits with "s".
+  Use this to squash minor/irrelevant commits by marking
+  to-be-squashed commits with "s".
 - `git push origin <branch_name>`: Pushes changes to remote repository origin.
 - `git pull origin`: Fetches and merges changes from remote repository origin.
-- `git reset --soft HEAD^`: revert the last commit and keep the changes in uncommited stage.
+- `git reset --soft HEAD^`: revert the last commit
+  and keep the changes in uncommited stage.
   (Use `git reset --hard HEAD^` to revert the last commit and delete all changes.)
 
 ### bash
 
-Being able to interact with a terminal console is necessary to not be limited by GUI functionality.
+Being able to interact with a terminal console is necessary
+to not be limited by GUI functionality.
 
 - `cd ~/<path_to_folder>`: Jump into a directory.
-- `ls -a`: Show all (also hidden) files in directory. (Use `ls -a -ll` for a more structured/detailed list.)
+- `ls -a`: Show all (also hidden) files in directory.
+  (Use `ls -a -ll` for a more structured/detailed list.)
 - `ctrl + r (keyboard shortcut)`: Reverse i search to find historical bash commands.
 - `htop`: See cpu usage (similar to windows task manager, quit with "q").
 
@@ -162,7 +166,8 @@ Creating and accessing data is as fundamental as it gets.
 
 #### thoughts on sql queries
 
-- never never never write a query like this "select * from table Where column = 'text' ORDER by id desc";
+- never never never write a query like this
+  `select * from table Where column = 'text' ORDER by id desc`;
   instead write it like this:
 
 ```
@@ -197,15 +202,16 @@ If the docker runs on one system, it will run on another.
 
 ### power point
 
-When used properly, Power Point is a useful tool for concept work and to quickly visualise what you have in mind.
+When used properly, Power Point is a useful tool for concept work
+and to quickly visualise what you have in mind.
 
 #### thoughts on power point presentations
 
 - if the purpose of the presentation is unclear, make it clear or cancel presentation
 - before creating slides, write down the key messages of your presentation
   (no more than 3); if they aren't clear, make them clear or cancel the presentation
-- for each slide, write down its key messages (ideal is one key message); if the key
-  messages aren't clear, make them clear or remove the slide
+- for each slide, write down its key messages (ideal is one key message);
+  if the key messages aren't clear, make them clear or remove the slide
 - move everything that doesn't support the key messages into the Backup,
   the last section of the presentation
 - whatever the time frame of your presentation, plan ~1/3 for the actual presentation
@@ -230,7 +236,8 @@ on the power of shortcuts in Power Point.
 
 ### plotting
 
-Great graphs help understand the data. [This Youtube video](https://www.youtube.com/watch?v=hVimVzgtD6w&t=57s) is very educational thanks to graphs.
+Great graphs help understand the data. [This Youtube video](https://www.youtube.com/watch?v=hVimVzgtD6w&t=57s)
+is very educational thanks to graphs.
 
 #### thoughts on great graphs
 
