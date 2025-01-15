@@ -89,7 +89,7 @@ owner: s0288
 
 - Each product's process is registered in recert.
 - For initial installation:
- - In your Digital Ocean droplet `/root`, run `git clone <repo_url>`, create the `.env` file both in `/root/<repo_dir>` as well as in `/root` (`.env` in `/root` is necessary for Github Action) and manually deploy. 
+  - In your Digital Ocean droplet `/root`, run `git clone <repo_url>`, create the `.env` file both in `/root/<repo_dir>` as well as in `/root` (`.env` in `/root` is necessary for Github Action) and manually deploy. 
   - In your repo, set up Github Actions by following [this guide](https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2).
     - Use [this Github Actions deploy.yml](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
       as a template.
@@ -126,7 +126,7 @@ owner: s0288
 - Each product's process is registered in recert.
 - For initial installation:
   - Set up [Sentry webhook as internal integration](https://docs.sentry.io/organization/integrations/integration-platform/webhooks/issue-alerts/).
-    - Connect automatisch.io webhook, [connect Telegram bot](https://automatisch.io/docs/apps/telegram-bot/connection) and send message via Telegram. If you don't know your Telegram user id, send /start to the @userinfobot on Telegram.
+  - Connect automatisch.io webhook, [connect Telegram bot](https://automatisch.io/docs/apps/telegram-bot/connection) and send message via Telegram. If you don't know your Telegram user id, send /start to the @userinfobot on Telegram.
     - Set up Issue and Uptime Monitor alerts.
 
 ~~~mermaid
