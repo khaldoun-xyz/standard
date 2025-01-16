@@ -5,12 +5,12 @@ small groups of individuals - outliers -,
 while the majority of people mended yesterday's successes.
 We believe that the most effective thing you can do is become an outlier.
 Like a surfer can use a wave to move forward effortlessly,
-there are things you can do to make progress.
-Outliers do many times more with many times less than the rest.
+you can use systems to stack your progress.
+Outliers do many times more with many times less than the rest. 
 
 Khaldoun wants to be a platform to help you do more with less.
-None of the things described below are novel or surprising. This is intended.
-We want you to deeply understand the things described in this document.
+To do so, we will ask you to adopt certain systems and learn specific skills because we're convinced they are useful. 
+As a start, we want you to deeply understand the things described in this document.
 Don't skip over parts of the document because you think you know all of this.
 Overconfidence is not appreciated here.
 
@@ -25,7 +25,7 @@ Please read our plan carefully
 and let us know when you think we lose sight of it:
 <a href="./docs/plan.md" target="_blank">Our plan with Khaldoun</a>.
 
-## soft skills
+## mindset
 
 We offered you to join Khaldoun because you embody most of the things described below.
 Nonetheless, we believe that repeating important principles is a valuable investment.
@@ -43,6 +43,10 @@ tell him or her.
   (<a href="https://sisu.cx/script/circles" target="_blank">Circles</a>).
 - Embrace challenge: Learn from hardship
   (<a href="https://sisu.cx/script/hero" target="_blank">Hero Journey</a>).
+
+## systems
+
+weekly check-ins, quarterly plans, extended documentation. 
 
 ## hard skills
 
