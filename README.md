@@ -16,7 +16,7 @@ Overconfidence is not appreciated here.
 
 ## our plan with Khaldoun
 
-Khaldoun's core purpose is to create fulfilling jobs.
+Khaldoun's core purpose is to inspire ourselves and others to do more with less.
 
 To that end, we're working through a multi-stage plan.
 Currently, we're in stage 1 and
