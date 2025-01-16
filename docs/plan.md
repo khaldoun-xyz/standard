@@ -1,15 +1,14 @@
 # Our plan with Khaldoun
 
-Khaldoun's purpose is to create fulfilling jobs.
+Khaldoun's purpose is to inspire ourselves and others to do more with less.
 
-Earning an income is a critical step in living a great life.
+Learning to do more with less is a critical step in living a great life.
 It provides a feeling of certainty & significance
 and grants opportunities for growth & contribution.
-Also, today's jobs contain the seeds of tomorrow.
 Our communities will thrive,
-if we help its members earn a fulfilling income.
+if we help its members do more with less.
 
-Over time, Khaldoun will be our vehicle to build highly automated organisations.
+Over time, Khaldoun will be our vehicle to build fully automated organisations - the clearest embodiment of doing more with less.
 We call them 'autonomous organisations'. In an autonomous organisation,
 menial and administrative work does not require manual intervention.
 This is not achievable by tweaking existing legacy systems. Instead,
@@ -40,11 +39,10 @@ Our first open-source product is
 <a href="https://lugha.xyz" target="_blank">Lugha</a>.
 Members of Khaldoun are expected to work in international work contexts,
 which typically require speaking foreign languages.
-Lugha helps us evaluate the language competences of our members.
+Lugha allows us to evaluate the language competencies of our members in a highly automated fashion.
 
 ### Stage 2: Help German organisations automate
 
-We're striving to eventually build autonomous organisations.
 Autonomous organisations have successfully
 automated any administrative or tedious task.
 Our consulting work is a stepping stone on a way to this goal.
@@ -56,10 +54,10 @@ to increase speed.
 While we don't know the exact shape yet,
 it is clear that there are certain building blocks
 that other organisations benefit from - and not all
-require sophisticated machine learning techniques.
-Two critical building blocks will be setting up 1) a
-critical process library and 2) an orchestration
-layer that executes most of the automation tasks.
+require sophisticated AI techniques.
+Three critical building blocks will be setting up 1) a
+critical process library, 2) a central orchestration
+layer that executes most of the automation tasks and 3) a light-weight process recertification process.
 
 German organisations need a push for efficiency because
 they have delayed digitisation and
