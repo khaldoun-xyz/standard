@@ -46,7 +46,7 @@ tell him or her.
 
 ## systems
 
-weekly check-ins, quarterly plans, extended documentation. 
+weekly check-ins, quarterly plans, extended documentation, wip minimisation. 
 
 ## hard skills
 
