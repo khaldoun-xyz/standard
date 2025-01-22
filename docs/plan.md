@@ -1,14 +1,11 @@
 # Our plan with Khaldoun
 
 Khaldoun's purpose is to inspire ourselves and others to do more with less.
+Doing more with less is a simple definition of increasing productivity,
+which seems like a useful stepping stone to live a full life, doesn't it?
 
-Learning to do more with less is a critical step in living a great life.
-It provides a feeling of certainty & significance
-and grants opportunities for growth & contribution.
-Our communities will thrive,
-if we help its members do more with less.
-
-Over time, Khaldoun will be our vehicle to build fully automated organisations - the clearest embodiment of doing more with less.
+Over time, Khaldoun will be a vehicle
+to build fully automated organisations - doing more with less par excellence.
 We call them 'autonomous organisations'. In an autonomous organisation,
 menial and administrative work does not require manual intervention.
 This is not achievable by tweaking existing legacy systems. Instead,
@@ -23,17 +20,24 @@ for Khaldoun to succeed.
 
 ### Stage 1: Strengthen Tunis as a talent hub
 
-Tunis has the potential to be a hub
-for training highly talented data specialists
-(data scientists, data engineers, AI specialists,
-product managers, devops engineers, ...).
+At its core, Khaldoun is a technology company
+that needs to maintain growth for decades.
+Sustaining this core requires access
+to a supply of highly-educated technologists.
+To that end, we will train ourselves and others
+to be top technologists.
+And we will do it in Tunis.
 
-We want to strengthen the belief that talented individuals
-can come to Tunis to build great data & AI companies.
-This requires setting up a training platform for talented
-data specialists. To that end, Khaldoun will develop
+Tunis has the potential to be a hub
+for training highly talented technologists
+(e.g. data scientists, data engineers, AI specialists,
+product managers, devops engineers, ...).
+To tap into this potential, we will set up
+a training platform for talented
+technologists. Khaldoun will develop
 open-source products, offer educational material and
-organise ways to interact with people further along.
+provide learning opportunities - all with
+the goal to strengthen skills of potential Khaldoun members.
 
 Our first open-source product is
 <a href="https://lugha.xyz" target="_blank">Lugha</a>.
@@ -45,27 +49,27 @@ Lugha allows us to evaluate the language competencies of our members in a highly
 
 Autonomous organisations have successfully
 automated any administrative or tedious task.
-Our consulting work is a stepping stone on a way to this goal.
-Tools and systems we develop will help organisations
-significantly increase automation.
-Wherever possible, we will open-source our technologies
-to increase speed.
+We will offer consulting services to help German
+companies increase their automation rate.
 
-While we don't know the exact shape yet,
-it is clear that there are certain building blocks
-that other organisations benefit from - and not all
-require sophisticated AI techniques.
-Three critical building blocks will be setting up 1) a
-critical process library, 2) a central orchestration
-layer that executes most of the automation tasks and 3) a light-weight process recertification process.
+While the exact shape is not obvious yet,
+the general direction is clear.
+We will initially offer our services to smaller
+long-term care institutions that are in need of automation.
+Our strategy is to a) develop open-source tooling for automation
+and to b) integrate this tooling with the
+existing infrastructure at these organisations.
 
-German organisations need a push for efficiency because
-they have delayed digitisation and
-their population is aging. Healthcare institutions in
-particular are in need of jump-starting automation initiatives.
+Likely starting places for automation gains will be in
+i) document management, ii) robotics process automation
+and iii) process organisation.
 
-It is at this stage that Khaldoun will start placing
-Khaldoun members at German organisations.
+In the course of these transformation activities,
+it will become increasingly clear to our clients
+that they benefit from technology talent
+within their companies.
+We will offer this talent, which makes it possible
+for Khaldoun members to move to Germany, if interested.
 
 ### Stage 3: Set up autonomous organisations
 
