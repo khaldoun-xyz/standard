@@ -1,11 +1,11 @@
 # Our plan with Khaldoun
 
 Khaldoun's purpose is to inspire ourselves and others to do more with less.
-Doing more with less is a simple definition of increasing productivity,
-which seems like a useful stepping stone to live a full life, doesn't it?
+<br>
+Doing more with less is a simple definition of increasing productivity.
 
 Over time, Khaldoun will be a vehicle
-to build fully automated organisations - doing more with less par excellence.
+to build fully automated organisations - a clear example of doing more with less.
 We call them 'autonomous organisations'. In an autonomous organisation,
 menial and administrative work does not require manual intervention.
 This is not achievable by tweaking existing legacy systems. Instead,
@@ -21,7 +21,7 @@ for Khaldoun to succeed.
 ### Stage 1: Strengthen Tunis as a talent hub
 
 At its core, Khaldoun is a technology company
-that needs to maintain growth for decades.
+that will need to maintain growth for a long time.
 Sustaining this core requires access
 to a supply of highly-educated technologists.
 To that end, we will train ourselves and others
@@ -47,8 +47,6 @@ Lugha allows us to evaluate the language competencies of our members in a highly
 
 ### Stage 2: Help German organisations automate
 
-Autonomous organisations have successfully
-automated any administrative or tedious task.
 We will offer consulting services to help German
 companies increase their automation rate.
 
@@ -59,7 +57,6 @@ long-term care institutions that are in need of automation.
 Our strategy is to a) develop open-source tooling for automation
 and to b) integrate this tooling with the
 existing infrastructure at these organisations.
-
 Likely starting places for automation gains will be in
 i) document management, ii) robotics process automation
 and iii) process organisation.
