@@ -1,71 +1,152 @@
-# internal memo for new Khaldoun members
+# Internal memo for new Khaldoun members
 
-Today's successful organisations were built by
-small groups of individuals - outliers -,
-while the majority of people mended yesterday's successes.
-We believe that the most effective thing you can do is become an outlier.
+Khaldoun wants to help you do more with less.
 Like a surfer can use a wave to move forward effortlessly,
-you can use systems to stack your progress.
-Outliers do many times more with many times less than the rest.
+you can integrate tools & systems to stack your progress.
 
-Khaldoun wants to be a platform to help you do more with less.
-To do so, we will ask you to adopt certain systems and learn specific skills because we're convinced they are useful.
-As a start, we want you to deeply understand the things described in this document.
-Don't skip over parts of the document because you think you know all of this.
-Overconfidence is not appreciated here.
+Please read this document carefully & don't skip parts
+because you think you know all of this.
 
-## our plan with Khaldoun
+## Our plan with Khaldoun
 
 Khaldoun's core purpose is to build tools & systems to do more with less.
 
 To that end, we're working through a multi-stage plan.
 Currently, we're in stage 1 and
-focused on making Tunis more attractive for data science talent.
-Please read our plan carefully
+focused on making Tunis more attractive for technologists.
+Please read our plan carefully, make comments
 and let us know when you think we lose sight of it:
 <a href="./docs/plan.md" target="_blank">Our plan with Khaldoun</a>.
 
-## mindset
+## Systems
 
-We offered you to join Khaldoun because you embody most of the things described below.
-Nonetheless, we believe that repeating important principles is a valuable investment.
-So please read the information in this section attentively.
+The way we work works for us.
+We would like to ask you to adapt to our way.
+Feel free to propose changes that help us do more with less.
 
-At Khaldoun, we appreciate integrity, high standards and learning from our experiences.
-When you notice that a colleague does not live up to the ideals described below,
-tell him or her.
+First off, we like to be *cheap, impatient and long-term focused*.
+So please, don't waste money, push us to get things done fast and
+make sure we have a plan.
 
-- Be a tank: Find a way, be resourceful, be uncomfortable, be intense
-  (<a href="https://sisu.cx/script/tank" target="_blank">The Tank</a>).
-- Think different: While others draw sheep, we draw boxes
-  (<a href="https://sisu.cx/script/box" target="_blank">The Box</a>).
-- Think long-term: Take a detour to build skills that make you go faster tomorrow
-  (<a href="https://sisu.cx/script/circles" target="_blank">Circles</a>).
-- Embrace challenge: Learn from hardship
-  (<a href="https://sisu.cx/script/hero" target="_blank">Hero Journey</a>).
+- [extensive documentation](#extensive-documentation)
+- [weekly check-ins](#weekly-check-ins)
+- [quarterly planning](#quarterly-planning)
 
-## systems
+### Extensive documentation
 
-weekly check-ins, quarterly plans, extended documentation, wip minimisation.
+We like to make things explicit & easy to understand.
+We write a lot. We deal with many things asynchronously.
+You might not be used to this yet. Still, we would like
+to ask you to write your thoughts down. We're always happy to have
+a discussion - after we had a look at something.
 
-## hard skills
+### Weekly check-ins
 
-- [git](#git)
-- [bash](#bash)
-- [terminal](#terminal)
-- [vim motions](#vim-motions)
-- [sql](#sql)
-- [docker](#docker)
-- [power point](#power-point)
-- [plotting](#plotting)
+Very often, meetings are a waste of time. Still, we want to stay
+in touch with each other and understand the general direction we're taking.
+Therefore, on Mondays we write up and share our plan for the week.
+You're invited to comment on anyone's plans.
 
-### git
+### Quarterly planning
+
+As we grow, the need for alignment increases. To make sure we're on the
+same page and generally understand our overall direction, we set quarterly
+Objectives and Key Results (OKRs). Please influence our OKRs.
+
+## Technology skills
+
+Below you can see a list of technologies that we apply on a daily basis.
+While you won't use all of these tools right away, it is generally useful if you
+familiarise yourself with our tech stack.
+
+- [Terminal](#terminal)
+- [Bash](#bash)
+- [Pre-commit hooks](#pre-commit-hooks)
+- [Vim motions](#vim-motions)
+- [Git](#git)
+- [Sql](#sql)
+- [Docker](#docker)
+- [Github Actions](#github-actions)
+- [Power Point](#power-point)
+- [Plotting](#plotting)
+
+### Terminal
+
+If you want to have helpful env/git information in your terminal,
+add the following to your .bashrc file.
+
+#### On Linux
+
+``` bash
+# show git branch in Terminal
+function parse_git_branch () {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+RED="\[\033[01;31m\]"
+YELLOW="\[\033[01;33m\]"
+GREEN="\[\033[01;32m\]"
+BLUE="\[\033[01;34m\]"
+NO_COLOR="\[\033[00m\]"
+PS1="$GREEN\u$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
+```
+
+#### On Mac
+
+``` bash
+# show git branch in Terminal
+function parse_git_branch () {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+RED="%F{red}"
+YELLOW="%F{yellow}"
+GREEN="%F{green}"
+BLUE="%F{blue}"
+NO_COLOR="%f"
+PS1="${GREEN}%n${NO_COLOR}:${BLUE}%~${YELLOW}\$(parse_git_branch)${NO_COLOR}%# "
+```
+
+#### On Windows
+
+Use [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+and follow the steps in the Linux section.
+
+### Bash
+
+Being able to interact with a terminal console is helpful
+to not be limited by GUI functionality.
+
+- `cd ~/<path_to_folder>`: Jump into a directory.
+- `ls -a`: Show all (also hidden) files in directory.
+  (Use `ls -a -ll` for a more structured/detailed list.)
+- `ctrl + r (keyboard shortcut)`: Reverse i search to find historical bash commands.
+- `htop`: See cpu usage (similar to windows task manager, quit with "q").
+
+### Pre-commit hooks
+
+We use [pre-commit hooks](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
+to make sure our PRs fulfill minimum requirements
+before other people have a look at them.
+To install pre-commit hooks in your local repo,
+simply run `pre-commit install`.
+As one example, have a look at [Lugha's pre-commit hooks](https://github.com/khaldoun-xyz/lugha/blob/main/.pre-commit-config.yaml).
+
+### Vim motions
+
+Vim motions allow you to quickly work with your code.
+
+- [This video series](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
+  gives a good basic overview.
+- [This cheatsheet](https://vim.rtorr.com/) contains many useful commands.
+
+### Git
 
 Version control is a very basic and very useful tool.
 
-#### git good case practices
+#### Git good case practices
 
 Below is a basic list of good case practices when using git.
+Please refer to this list when you're unsure
+how to ask your colleagues for a PR review.
 
 - When pushing a PR, rebase to the master branch with `git rebase master`
   (make sure you have the most recent master locally!)
@@ -75,7 +156,7 @@ Below is a basic list of good case practices when using git.
 - Squash minor git commits into fewer more relevant commits.
   Set "Squash and merge" as default merge option of branches
   (this collapses a branch with many commits into one feature commit in master).
-- Where helpful, use gitmojis in your commit messages (e.g. for :bug:): <https://gitmoji.dev/>.
+- Where helpful, use gitmojis in your commit messages (e.g. :bug:): <https://gitmoji.dev/>.
 - Don't open PRs without descriptions.
 - Once you dealt with a PR comment,
   click on "Resolve conversation" to indicate that you consider it resolved.
@@ -86,7 +167,7 @@ Below is a basic list of good case practices when using git.
   trailing-whitespace, black, isort.
   Always make sure pre-commit hooks have run <u>before</u> asking for a review.
 
-#### git commands
+#### Git commands
 
 Shown below is only a subset of git commands. You'll use those a lot.
 Feel free to dive deeper into git.
@@ -120,67 +201,17 @@ even if you don't know what 'transmogrify' means.
   and keep the changes in uncommited stage.
   (Use `git reset --hard HEAD^` to revert the last commit and delete all changes.)
 
-### bash
-
-Being able to interact with a terminal console is necessary
-to not be limited by GUI functionality.
-
-- `cd ~/<path_to_folder>`: Jump into a directory.
-- `ls -a`: Show all (also hidden) files in directory.
-  (Use `ls -a -ll` for a more structured/detailed list.)
-- `ctrl + r (keyboard shortcut)`: Reverse i search to find historical bash commands.
-- `htop`: See cpu usage (similar to windows task manager, quit with "q").
-
-### terminal
-
-Add this to your .bashrc file.
-
-#### On Linux
-
-```
-# show git branch in Terminal
-function parse_git_branch () {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-RED="\[\033[01;31m\]"
-YELLOW="\[\033[01;33m\]"
-GREEN="\[\033[01;32m\]"
-BLUE="\[\033[01;34m\]"
-NO_COLOR="\[\033[00m\]"
-PS1="$GREEN\u$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
-```
-
-#### On Mac
-
-```
-# show git branch in Terminal
-function parse_git_branch () {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-RED="%F{red}"
-YELLOW="%F{yellow}"
-GREEN="%F{green}"
-BLUE="%F{blue}"
-NO_COLOR="%f"
-PS1="${GREEN}%n${NO_COLOR}:${BLUE}%~${YELLOW}\$(parse_git_branch)${NO_COLOR}%# "
-```
-
-### vim motions
-
-Vim motions allow you to quickly work with your code.
-[This cheatsheet](https://vim.rtorr.com/) contains many useful commands.
-
-### sql
+### Sql
 
 Creating and accessing data is as fundamental as it gets.
 
-#### thoughts on sql queries
+#### Thoughts on sql
 
 - never never never write a query like this
   `select * from table Where column = 'text' ORDER by id desc`;
   instead write it like this:
 
-```
+``` sql
 select * 
 from table 
 where column = 'text'
@@ -188,15 +219,15 @@ order by id desc
 ;
 ```
 
-### python
+### Python
 
-#### thoughts on python
+#### Thoughts on python
 
 - use intention-revealing names:
   in most cases `df` or `data` are terrible names for dataframes;
   be precise and specific in your naming (also for variables, function names, etc.)
 
-### docker
+### Docker
 
 Containerising applications with Docker removes
 many of the headaches around server configuration.
@@ -210,24 +241,31 @@ If the docker runs on one system, it will run on another.
 - `docker exec -it <initial_digits_of_container> sh`:
   jump inside a container & get terminal access
 
-### power point
+### Github Actions
 
-When used properly, Power Point is a useful tool for concept work
+For Continuous Delivery, we rely on Github Actions.
+As one example, check [Lugha's deploy script](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml).
+Whenever we merge anything into our `main` branch, the `main` branch
+is automatically deployed on our Digital Ocean droplet.
+
+### Power Point
+
+When used properly, Microsoft Power Point is a useful tool for concept work
 and to quickly visualise what you have in mind.
 
-#### thoughts on power point presentations
+#### Thoughts on Power Point presentations
 
-- if the purpose of the presentation is unclear, make it clear or cancel presentation
+- if the purpose of the presentation is unclear, make it clear or cancel the presentation
 - before creating slides, write down the key messages of your presentation
   (no more than 3); if they aren't clear, make them clear or cancel the presentation
 - for each slide, write down its key messages (ideal is one key message);
   if the key messages aren't clear, make them clear or remove the slide
-- move everything that doesn't support the key messages into the Backup,
+- move everything that doesn't support the key messages into the backup,
   the last section of the presentation
 - whatever the time frame of your presentation, plan ~1/3 for the actual presentation
   and 2/3 for discussion
 
-#### power point shortcuts
+#### Power Point shortcuts
 
 [This Youtube video](https://www.youtube.com/watch?v=-Ab-HYN0WUo) is a good primer
 on the power of shortcuts in Power Point.
@@ -244,12 +282,12 @@ on the power of shortcuts in Power Point.
 - `F4` = repeat last command
 - `alt` = activate & show quick travel keys
 
-### plotting
+### Plotting
 
 Great graphs help understand the data. [This Youtube video](https://www.youtube.com/watch?v=hVimVzgtD6w&t=57s)
 is very educational thanks to graphs.
 
-#### thoughts on great graphs
+#### Thoughts on great graphs
 
 - good graphs provide easy-to-understand answers to simple qs;
   great graphs provide easy-to-understand answers to complex qs
