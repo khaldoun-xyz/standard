@@ -6,10 +6,10 @@ while the majority of people mended yesterday's successes.
 We believe that the most effective thing you can do is become an outlier.
 Like a surfer can use a wave to move forward effortlessly,
 you can use systems to stack your progress.
-Outliers do many times more with many times less than the rest. 
+Outliers do many times more with many times less than the rest.
 
 Khaldoun wants to be a platform to help you do more with less.
-To do so, we will ask you to adopt certain systems and learn specific skills because we're convinced they are useful. 
+To do so, we will ask you to adopt certain systems and learn specific skills because we're convinced they are useful.
 As a start, we want you to deeply understand the things described in this document.
 Don't skip over parts of the document because you think you know all of this.
 Overconfidence is not appreciated here.
@@ -46,13 +46,14 @@ tell him or her.
 
 ## systems
 
-weekly check-ins, quarterly plans, extended documentation, wip minimisation. 
+weekly check-ins, quarterly plans, extended documentation, wip minimisation.
 
 ## hard skills
 
 - [git](#git)
 - [bash](#bash)
 - [terminal](#terminal)
+- [vim motions](#vim-motions)
 - [sql](#sql)
 - [docker](#docker)
 - [power point](#power-point)
@@ -163,6 +164,11 @@ BLUE="%F{blue}"
 NO_COLOR="%f"
 PS1="${GREEN}%n${NO_COLOR}:${BLUE}%~${YELLOW}\$(parse_git_branch)${NO_COLOR}%# "
 ```
+
+### vim motions
+
+Vim motions allow you to quickly work with your code.
+[This cheatsheet](https://vim.rtorr.com/) contains many useful commands.
 
 ### sql
 
