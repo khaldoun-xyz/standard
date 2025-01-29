@@ -3,7 +3,7 @@
 Khaldoun as an organisation relies on a series of building blocks in order to scale.
 
 - A deployment environment (Digital Ocean droplets configured via Terraform),
-  and standardised IT components (Gtihub Actions, Sentry).
+  and standardised IT components (webhooks, Github Actions, Sentry).
 - A [process library](/docs/processes.md) and a
   [process recertification process](/docs/processes.md#certify-processes).
 - An event listener that receives webhooks. We do not have a strong solution yet.
