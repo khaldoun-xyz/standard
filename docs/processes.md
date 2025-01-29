@@ -34,7 +34,7 @@ orchestration layer, a process library and a recertification process.
   - [continuously track product uptime and errors](#continuously-track-product-uptime-and-errors)
 - product development
   - generate & explore ideas
-  - align & execute
+  - [align and execute](#align-and-execute)
 
 ### company orchestration
 
@@ -89,7 +89,7 @@ owner: s0288
 
 - Each product's process is registered in recert.
 - For initial installation:
-  - In your Digital Ocean droplet `/root`, run `git clone <repo_url>`, create the `.env` file both in `/root/<repo_dir>` as well as in `/root` (`.env` in `/root` is necessary for Github Action) and manually deploy. 
+  - In your Digital Ocean droplet `/root`, run `git clone <repo_url>`, create the `.env` file both in `/root/<repo_dir>` as well as in `/root` (`.env` in `/root` is necessary for Github Action) and manually deploy.
   - In your repo, set up Github Actions by following [this guide](https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2).
     - Use [this Github Actions deploy.yml](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
       as a template.
@@ -136,4 +136,36 @@ title: continuously track product uptime and errors
 flowchart LR
   A[sentry error webhook] --> B[send Telegram message to admins]
   B --> C[end]
+~~~
+
+### Product development
+
+#### Align and execute
+
+We do [weekly check-ins](/README.md#weekly-check-ins)
+and set [quarterly objectives & key results](/README.md#quarterly-planning).
+
+~~~mermaid
+---
+title: Weekly check-ins
+---
+flowchart LR
+  A[start of week Basecamp notification] --> B[member publishes plan]
+  B --> C[others may comment]
+  C --> D[end]
+  E[end of week Basecamp notification] --> F[member reflects on progress]
+  F --> G[others may comment]
+  G --> H[end]
+~~~
+
+~~~mermaid
+---
+title: Quarterly planning
+---
+flowchart LR
+  A[quarterly Basecamp notification] --> B[member suggests OKRs]
+  B --> C[others may comment]
+  C --> B
+  C --> D[end]
+  E[monthly meeting to discuss progress] --> F[end]
 ~~~
