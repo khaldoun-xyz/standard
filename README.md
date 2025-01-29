@@ -63,6 +63,7 @@ familiarise yourself with our tech stack.
 - [Bash](#bash)
 - [Pre-commit hooks](#pre-commit-hooks)
 - [Vim motions](#vim-motions)
+- [LazyVim](#lazyvim)
 - [Git](#git)
 - [Sql](#sql)
 - [Docker](#docker)
@@ -135,12 +136,23 @@ As one example, have a look at [Lugha's pre-commit hooks](https://github.com/kha
 Vim motions allow you to quickly work with your code.
 
 - [This video series](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
-  gives a good basic overview.
+  gives you a good basic overview.
 - [This cheatsheet](https://vim.rtorr.com/) contains many useful commands.
+
+### LazyVim
+
+- If you want to use LazyVim as your IDE,
+you can follow this [installation video](https://manual.omakub.org/1/read/13/neovim).
+And [here](https://manual.omakub.org/1/read/13/neovim)
+is a list of useful LazyVim commands.
+- If you want to use LazyGit, watch [this video](https://www.youtube.com/watch?v=CPLdltN7wgE).
 
 ### Git
 
 Version control is a very basic and very useful tool.
+
+- [This video series](https://www.youtube.com/watch?v=rH3zE7VlIMs)
+  gives you a good basic overview.
 
 #### Git good case practices
 
