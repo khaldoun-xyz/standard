@@ -139,6 +139,8 @@ Vim motions allow you to quickly work with your code.
   gives you a good basic overview.
 - [This cheatsheet](https://vim.rtorr.com/) contains many useful commands.
 
+We don't mind if you don't want use Vim or Vim motions.
+
 ### LazyVim
 
 - If you want to use LazyVim as your IDE,
