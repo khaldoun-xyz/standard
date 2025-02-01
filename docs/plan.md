@@ -1,14 +1,13 @@
 # Our plan with Khaldoun
 
-Khaldoun's purpose is to build tools & systems to do more with less,
-i.e. to increase productivity.
+Khaldoun is a technology company that **helps people do more with less**.
+To do so, we develop and maintain open-source tools & systems.
 
-Over time, Khaldoun will be a vehicle
-to build fully automated - 'autonomous' - organisations.
-In an autonomous organisation, humans are still actively involved, but
-menial and administrative work does not require manual intervention anymore.
-We will not achieve this level of automation by tweaking existing legacy systems.
-Instead, *we'll specifically design an organisation* to unlock scalable automation.
+Over time, Khaldoun will become a vehicle
+to build **unbureaucratic bureaucracies** - organisations that purposefully
+**reduce process complexity** & deeply **integrate technology for automation**.
+This is not possible by tweaking existing legacy systems.
+Instead, **we'll specifically design organisations**.
 
 ## Developmental stages
 
@@ -17,7 +16,7 @@ as we continue to grow. These stages are important as we
 need to develop a number of fundamental building blocks
 for Khaldoun to succeed.
 
-### Stage 1: Build talent hub
+### Stage 1: Build a talent hub
 
 At its core, Khaldoun is a technology company
 that will need to maintain growth for a long time.
@@ -35,16 +34,15 @@ the goal to strengthen skills of potential Khaldoun members.
 - Our first open-source product is
   <a href="https://lugha.xyz" target="_blank">Lugha</a>.
   Members of Khaldoun are expected to work in international work contexts,
-  which typically require speaking foreign languages.
+  which typically requires speaking foreign languages.
   Lugha allows us to evaluate the language competences
   of our members in a highly automated fashion.
 
 ### Stage 2: Help others automate
 
 To develop the necessary skills & tools
-to set up an autonomous organisation
-we will offer consulting services to help
-European companies automate work.
+to do more with less we will offer consulting services to help
+European companies automate their work.
 
 Our strategy is to a) develop open-source tooling for automation
 and to b) integrate this tooling with the
@@ -77,6 +75,5 @@ that provides healthcare services.
 Naturally, we'll use the tools & systems
 that we have developed with our consulting clients.
 
-While Khaldoun will continue to grow as a company that
-helps others autome, Renard will be an independent organisation with
-its own multi-step development.
+Khaldoun will continue to grow as a technology company,
+while Renard will start its own multi-step development.
