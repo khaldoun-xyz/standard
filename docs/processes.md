@@ -25,7 +25,7 @@ orchestration layer, a process library and a recertification process.
   - publish job description & receive applications
   - evaluate candidates
 - training
-  - evaluate language competence
+  - [evaluate language competence](#evaluate-language-competence)
   - teach mindset
   - teach skills
 - [product maintenance](#product-maintenance)
@@ -80,6 +80,34 @@ One candidate for this orchestration layer is automatisch.io:
 
 - Screenshot of the folder structure:
 <img src="./imgs/screenshot-automatisch-folder.png">
+
+### Training
+
+#### evaluate language competence
+
+When he or she joins, a Khaldoun member is expected
+to start learning a language that he or she isn't fluent in yet.
+We suggest this language to be German
+but don't mind if another language is chosen.
+
+Each member is expected to regularly talk to [Lugha](https://lugha.xyz/)
+to track his or her progress.
+In regular intervals, Lugha sends the scores to the member's coach
+who keeps the member accountable.
+At the end of the first six months with Khaldoun,
+members are expected to have an overall competence score
+of at least 50 out of 100.
+
+~~~mermaid
+---
+title: evaluate language competence
+---
+flowchart LR
+  A[member talks to Lugha] --> B[Lugha logs competence score]
+  B --> C[end]
+  D[Lugha sends monthly avg. score to coach] --> E[if need be, coach discusses progress with member]
+  E --> F[end]
+~~~
 
 ### Product maintenance
 
