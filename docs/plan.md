@@ -5,7 +5,7 @@ To do so, we develop and maintain open-source tools & systems.
 
 Over time, Khaldoun will become a vehicle
 to build **unbureaucratic bureaucracies** - organisations that purposefully
-**reduce process complexity** & deeply **integrate technology for automation**.
+reduce complexity & deeply integrate technology for automation.
 This is not possible by tweaking existing legacy systems.
 Instead, **we'll specifically design organisations**.
 
