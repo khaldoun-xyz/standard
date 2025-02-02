@@ -61,8 +61,7 @@ familiarise yourself with our tech stack.
 - [Terminal](#terminal)
 - [Bash](#bash)
 - [Pre-commit hooks](#pre-commit-hooks)
-- [Vim motions](#vim-motions)
-- [LazyVim](#lazyvim)
+- [Vim](#vim)
 - [Git](#git)
 - [Sql](#sql)
 - [Docker](#docker)
@@ -130,7 +129,11 @@ To install pre-commit hooks in your local repo,
 simply run `pre-commit install`.
 As one example, have a look at [Lugha's pre-commit hooks](https://github.com/khaldoun-xyz/lugha/blob/main/.pre-commit-config.yaml).
 
-### Vim motions
+### Vim
+
+We don't mind if you don't want use Vim or Vim motions. Still, you might enjoy the benefits of using Vim. 
+
+#### Vim motions
 
 Vim motions allow you to quickly work with your code.
 
@@ -138,12 +141,10 @@ Vim motions allow you to quickly work with your code.
   gives you a good basic overview.
 - [This cheatsheet](https://vim.rtorr.com/) contains many useful commands.
 
-We don't mind if you don't want use Vim or Vim motions.
+#### LazyVim
 
-### LazyVim
-
-- If you want to use LazyVim as your IDE,
-you can follow this [installation video](https://manual.omakub.org/1/read/13/neovim).
+- If you want to use NeoVim as your IDE,
+you can follow this [LazyVim installation video](https://manual.omakub.org/1/read/13/neovim).
 And [here](https://manual.omakub.org/1/read/13/neovim)
 is a list of useful LazyVim commands.
 - If you want to use LazyGit, watch [this video](https://www.youtube.com/watch?v=CPLdltN7wgE).
