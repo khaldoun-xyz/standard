@@ -24,9 +24,8 @@ The way we work works for us.
 We would like to ask you to adapt to our way.
 Feel free to propose changes that help us do more with less.
 
-First off, we like to be *cheap, impatient and long-term focused*.
-So please, don't waste money, push us to get things done fast and
-make sure we have a plan.
+First off, we like to be *cheap*, *impatient* and *long-term focused*.
+So please, make sure we have a plan, push us to get things done fast and don't waste money.
 
 - [extensive documentation](#extensive-documentation)
 - [weekly check-ins](#weekly-check-ins)
