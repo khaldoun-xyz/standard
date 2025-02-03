@@ -59,22 +59,36 @@ While you won't use all of these tools right away, it is generally useful if you
 familiarise yourself with our tech stack.
 
 - [Terminal](#terminal)
-- [Bash](#bash)
-- [Pre-commit hooks](#pre-commit-hooks)
-- [Vim](#vim)
 - [Git](#git)
 - [Sql](#sql)
 - [Docker](#docker)
 - [Github Actions](#github-actions)
 - [Power Point](#power-point)
 - [Plotting](#plotting)
+- [Vim](#vim)
 
 ### Terminal
+
+#### Psql
+
+Psql is a terminal-based frontend to a Postgresql database.
+To install psql on Linux, simply run
+`sudo apt install postgresql -y`.
+You'll figure it out for Mac or Windows.
+
+The easiest way to set up a database connection
+for psql is to open your .bashrc and add a
+line like this:
+`alias psql_NAME='psql CONNECTION_STRING_TO_POSTGRES_DATABASE'`.
+Save and close your .bashrc, restart your terminal
+and type in `psql_NAME`. Et voilà.
+
+#### Highlighting
 
 If you want to have helpful env/git information in your terminal,
 add the following to your .bashrc file.
 
-#### On Linux
+##### On Linux
 
 ``` bash
 # show git branch in Terminal
@@ -89,7 +103,7 @@ NO_COLOR="\[\033[00m\]"
 PS1="$GREEN\u$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 ```
 
-#### On Mac
+##### On Mac
 
 ``` bash
 # show git branch in Terminal
@@ -104,12 +118,12 @@ NO_COLOR="%f"
 PS1="${GREEN}%n${NO_COLOR}:${BLUE}%~${YELLOW}\$(parse_git_branch)${NO_COLOR}%# "
 ```
 
-#### On Windows
+##### On Windows
 
 Use [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 and follow the steps in the Linux section.
 
-### Bash
+#### Bash
 
 Being able to interact with a terminal console is helpful
 to not be limited by GUI functionality.
@@ -120,35 +134,6 @@ to not be limited by GUI functionality.
 - `ctrl + r (keyboard shortcut)`: Reverse i search to find historical bash commands.
 - `htop`: See cpu usage (similar to windows task manager, quit with "q").
 
-### Pre-commit hooks
-
-We use [pre-commit hooks](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
-to make sure our PRs fulfill minimum requirements
-before other people have a look at them.
-To install pre-commit hooks in your local repo,
-simply run `pre-commit install`.
-As one example, have a look at [Lugha's pre-commit hooks](https://github.com/khaldoun-xyz/lugha/blob/main/.pre-commit-config.yaml).
-
-### Vim
-
-We don't mind if you don't want use Vim or Vim motions. Still, you might enjoy the benefits of using Vim. 
-
-#### Vim motions
-
-Vim motions allow you to quickly work with your code.
-
-- [This video series](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
-  gives you a good basic overview.
-- [This cheatsheet](https://vim.rtorr.com/) contains many useful commands.
-
-#### LazyVim
-
-- If you want to use NeoVim as your IDE,
-you can follow this [LazyVim installation video](https://manual.omakub.org/1/read/13/neovim).
-And [here](https://manual.omakub.org/1/read/13/neovim)
-is a list of useful LazyVim commands.
-- If you want to use LazyGit, watch [this video](https://www.youtube.com/watch?v=CPLdltN7wgE).
-
 ### Git
 
 Version control is a very basic and very useful tool.
@@ -156,30 +141,14 @@ Version control is a very basic and very useful tool.
 - [This video series](https://www.youtube.com/watch?v=rH3zE7VlIMs)
   gives you a good basic overview.
 
-#### Git good case practices
+#### Pre-commit hooks
 
-Below is a basic list of good case practices when using git.
-Please refer to this list when you're unsure
-how to ask your colleagues for a PR review.
-
-- When pushing a PR, rebase to the master branch with `git rebase master`
-  (make sure you have the most recent master locally!)
-  and resolve any merge conflict <u>before</u> asking for review.
-- When your PR isn't ready for review yet (work in progress)
-  but you still want to share it with others, open the PR as `draft`.
-- Squash minor git commits into fewer more relevant commits.
-  Set "Squash and merge" as default merge option of branches
-  (this collapses a branch with many commits into one feature commit in master).
-- Where helpful, use gitmojis in your commit messages (e.g. :bug:): <https://gitmoji.dev/>.
-- Don't open PRs without descriptions.
-- Once you dealt with a PR comment,
-  click on "Resolve conversation" to indicate that you consider it resolved.
-  Either resolve all comments or provide responses.
-- Close open issues with a reference to the PRs
-  in which they are resolved after you've resolved them.
-- use at least these pre-commit hooks: end-of-file-fixer,
-  trailing-whitespace, black, isort.
-  Always make sure pre-commit hooks have run <u>before</u> asking for a review.
+We use [pre-commit hooks](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
+to make sure our PRs fulfill minimum requirements
+before other people have a look at them.
+To install pre-commit hooks in your local repo,
+simply go to the root of the repo and run `pre-commit install`.
+As one example, have a look at [Lugha's pre-commit hooks](https://github.com/khaldoun-xyz/lugha/blob/main/.pre-commit-config.yaml).
 
 #### Git commands
 
@@ -215,6 +184,31 @@ even if you don't know what 'transmogrify' means.
   and keep the changes in uncommited stage.
   (Use `git reset --hard HEAD^` to revert the last commit and delete all changes.)
 
+#### Git good case practices
+
+Below is a basic list of good case practices when using git.
+Please refer to this list when you're unsure
+how to ask your colleagues for a PR review.
+
+- When pushing a PR, rebase to the master branch with `git rebase master`
+  (make sure you have the most recent master locally!)
+  and resolve any merge conflict <u>before</u> asking for review.
+- When your PR isn't ready for review yet (work in progress)
+  but you still want to share it with others, open the PR as `draft`.
+- Squash minor git commits into fewer more relevant commits.
+  Set "Squash and merge" as default merge option of branches
+  (this collapses a branch with many commits into one feature commit in master).
+- Where helpful, use gitmojis in your commit messages (e.g. :bug:): <https://gitmoji.dev/>.
+- Don't open PRs without descriptions.
+- Once you dealt with a PR comment,
+  click on "Resolve conversation" to indicate that you consider it resolved.
+  Either resolve all comments or provide responses.
+- Close open issues with a reference to the PRs
+  in which they are resolved after you've resolved them.
+- use at least these pre-commit hooks: end-of-file-fixer,
+  trailing-whitespace, black, isort.
+  Always make sure pre-commit hooks have run <u>before</u> asking for a review.
+
 ### Sql
 
 Creating and accessing data is as fundamental as it gets.
@@ -247,12 +241,12 @@ Containerising applications with Docker removes
 many of the headaches around server configuration.
 If the docker runs on one system, it will run on another.
 
-- `docker build -t <name> .`:
-  build a container & give it the name <name>
-- `docker run <name>`: run the <name> container
+- `docker build -t NAME .`:
+  build a container & give it the name NAME
+- `docker run NAME`: run the NAME container
   (not additional parameters like `-p`, `-d`, `--env-file`, etc.)
 - `docker ps`: see a list of running docker containers
-- `docker exec -it <initial_digits_of_container> sh`:
+- `docker exec -it INITIAL_DIGITS_OF_CONTAINER sh`:
   jump inside a container & get terminal access
 
 ### Github Actions
@@ -298,10 +292,31 @@ on the power of shortcuts in Power Point.
 
 ### Plotting
 
-Great graphs help understand the data. [This Youtube video](https://www.youtube.com/watch?v=hVimVzgtD6w&t=57s)
+Great graphs help understand the underlying data. [This Youtube video](https://www.youtube.com/watch?v=hVimVzgtD6w&t=57s)
 is very educational thanks to graphs.
 
 #### Thoughts on great graphs
 
 - good graphs provide easy-to-understand answers to simple qs;
   great graphs provide easy-to-understand answers to complex qs
+
+### Vim
+
+We don't mind if you don't want use Vim or Vim motions.
+Still, you might enjoy the benefits of using it.
+
+#### Vim motions
+
+Vim motions allow you to quickly work with your code.
+
+- [This video series](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
+  gives you a good basic overview.
+- [This cheatsheet](https://vim.rtorr.com/) contains many useful commands.
+
+#### LazyVim
+
+- If you want to use NeoVim as your IDE,
+you can follow this [LazyVim installation video](https://manual.omakub.org/1/read/13/neovim).
+And [here](https://manual.omakub.org/1/read/13/neovim)
+is a list of useful LazyVim commands.
+- If you want to use LazyGit, watch [this video](https://www.youtube.com/watch?v=CPLdltN7wgE).
