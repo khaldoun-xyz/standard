@@ -1,10 +1,13 @@
 # Internal memo for new Khaldoun members
 
-Khaldoun wants to help you do more with less.
+Welcome to the team!
+
+Khaldoun wants to help people do more with less.
+And we hope you'll help make that a reality.
+Therefore, *at first we want to help you do more with less*.
 Like a surfer can use a wave to move forward effortlessly,
 you can integrate tools & systems to stack your progress.
-
-Please read this document carefully & don't skip parts
+Please read this document carefully. Don't skip parts
 because you think you know all of this.
 
 ## Our plan with Khaldoun
@@ -140,6 +143,8 @@ Version control is a very basic and very useful tool.
 
 - [This video series](https://www.youtube.com/watch?v=rH3zE7VlIMs)
   gives you a good basic overview.
+- To test your git knowledge, [clone this repo](https://github.com/juanfresia/git-challenge)
+  and complete the challenges.
 
 #### Pre-commit hooks
 
