@@ -30,6 +30,7 @@ orchestration layer, a process library and a recertification process.
   - teach skills
 - [product maintenance](#product-maintenance)
   - [deploy product releases](#deploy-product-releases)
+  - [(re-)certify ssl](#re-certify-ssl)
   - [continuously send kpis](#continuously-send-kpis)
   - [continuously track product uptime and errors](#continuously-track-product-uptime-and-errors)
 - product development
@@ -131,6 +132,52 @@ flowchart LR
   B --> C[deploy to Digital Ocean droplet]
   C --> D[end]
 ~~~
+
+#### (re-)certify ssl
+
+- To Do: Automate recertification step.
+
+owner: s0288
+
+~~~mermaid
+---
+title: set up ssl
+---
+flowchart LR
+  A[set up project's docker-compose with gunicorn & nginx service]
+  A --> B[in nginx.conf, comment out ssl mentions]
+  B --> C[deploy project in droplet]
+  C --> D[in droplet's project root, run ssl cert command]
+  D --> E[in nginx.conf, activate ssl mentions & redeploy]
+  E --> F[end]
+~~~
+
+~~~mermaid
+--- 
+title: recertify ssl
+---
+flowchart LR
+  A[in droplet's project root run ssl cert command]
+  A --> B[end]
+~~~
+
+- Examples
+  - [Lugha's docker-compose.yml](https://github.com/khaldoun-xyz/lugha/blob/main/docker-compose.yml)
+  - [Lugha's nginx.conf](https://github.com/khaldoun-xyz/lugha/blob/main/nginx.conf)
+  - ssl recert command: ```docker run -it --rm -v $(pwd)/html:/var/www/html
+    -v /etc/letsencrypt:/etc/letsencrypt
+    certbot/certbot certonly --webroot -w /var/www/html -d lugha.xyz```
+
+- Troubleshooting
+  - at initial run
+    - `sudo mkdir -p /var/www/html`
+    - `sudo chown -R www-data:www-data /var/www/html`
+  - firewall problems
+    - `sudo ufw allow 80`
+    - `sudo ufw allow 443`
+    - `sudo ufw allow https`
+    - `chmod -R 755 /etc/letsencrypt`
+    - `chmod 644 /etc/letsencrypt/live/PROJECT_FOLDER/*.pem`
 
 #### continuously send kpis
 
