@@ -36,7 +36,7 @@ alias n='~/programming/nvim-linux-x86_64.appimage'
 ## LazyVim Extras
 - In LazyVim, type `:LazyExtras` to open the plugin manager. 
 - Navigate to these plugins and press x at each one to select it for installation:
-  - `lang.markdown`, `lang.yaml`, `lang.docker`, `lang.terraform` 
+  - `lang.markdown` 
 - Close and re-open LazyVim.
 
 ## Troubleshooting
