@@ -33,6 +33,12 @@ alias khaldoun='cd ~/programming/khaldoun && . ~/virtualenvs/khaldoun/bin/activa
 alias n='~/programming/nvim-linux-x86_64.appimage'
 ```
 
+## LazyVim Extras
+- In LazyVim, type `:LazyExtras` to open the plugin manager. 
+- Navigate to these plugins and press x at each one to select it for installation:
+  - `lang.markdown`, `lang.yaml`, `lang.docker`, `lang.terraform` 
+- Close and re-open LazyVim.
+
 ## Troubleshooting
 - if your wifi is not available, follow these steps: 
   https://askubuntu.com/questions/55868/installing-broadcom-wireless-drivers

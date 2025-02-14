@@ -89,25 +89,17 @@ and type in `psql_NAME`. Et voilà.
 
 #### Highlighting
 
-If you want to have helpful env/git information in your terminal,
-add the following to your .bashrc file.
+If you're on Linux and want to have helpful env/git information in your terminal,
+add [this](https://github.com/khaldoun-xyz/core_skills/blob/main/setup/README.md#bashrc) 
+to your .bashrc file. 
 
-##### On Linux
-
-``` bash
-# show git branch in Terminal
-function parse_git_branch () {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-RED="\[\033[01;31m\]"
-YELLOW="\[\033[01;33m\]"
-GREEN="\[\033[01;32m\]"
-BLUE="\[\033[01;34m\]"
-NO_COLOR="\[\033[00m\]"
-PS1="$GREEN\u$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
-```
+If you're on Windows, install 
+[WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+to use a Linux environment on Windows.
 
 ##### On Mac
+
+If you're on Mac, use this for the git branch section instead:
 
 ``` bash
 # show git branch in Terminal
@@ -121,11 +113,6 @@ BLUE="%F{blue}"
 NO_COLOR="%f"
 PS1="${GREEN}%n${NO_COLOR}:${BLUE}%~${YELLOW}\$(parse_git_branch)${NO_COLOR}%# "
 ```
-
-##### On Windows
-
-Use [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-and follow the steps in the Linux section.
 
 #### Bash
 

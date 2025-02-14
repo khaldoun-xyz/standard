@@ -16,8 +16,8 @@ sudo apt-get install gnome-screenshot -y
 sudo apt-get install gthumb -y
 sudo apt install htop -y
 sudo apt-get install cheese -y
-sudo pip3 install virtualenv
-sudo apt reinstall --purge bluez gnome-bluetooth # to preempt headphone issues
+sudo pip3 install virtualenv -y
+sudo apt reinstall --purge bluez gnome-bluetooth -y # to preempt headphone issues
 
 mkdir ~/virtualenvs
 mkdir ~/programming/
@@ -89,6 +89,9 @@ font:
 env:
   LANG: en_US.UTF-8
 EOF
+# for LazyVim plugins
+sudo apt install npm -y                     # to install markdownlint-cli2
+sudo npm install markdownlint-cli2 --global # for lazyvim markdownlinting
 
 # install brave
 sudo apt install apt-transport-https curl
