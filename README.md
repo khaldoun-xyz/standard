@@ -64,6 +64,7 @@ familiarise yourself with our tech stack.
 - [Terminal](#terminal)
 - [Git](#git)
 - [Sql](#sql)
+- [Python](#python)
 - [Docker](#docker)
 - [Github Actions](#github-actions)
 - [Power Point](#power-point)
@@ -239,6 +240,8 @@ order by id desc
 - use intention-revealing names:
   in most cases `df` or `data` are terrible names for dataframes;
   be precise and specific in your naming (also for variables, function names, etc.)
+- when you want to use global variable names, 
+  define them in all caps after your import statements: `GLOBAL_VAR = 42`
 
 ### Docker
 
