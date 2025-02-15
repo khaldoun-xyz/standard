@@ -17,6 +17,7 @@ sudo apt-get install gthumb -y
 sudo apt install htop -y
 sudo apt-get install cheese -y
 sudo pip3 install virtualenv -y
+sudo apt install pre-commit -y
 sudo apt reinstall --purge bluez gnome-bluetooth -y # to preempt headphone issues
 
 mkdir ~/virtualenvs
