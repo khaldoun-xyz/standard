@@ -91,9 +91,11 @@ env:
   LANG: en_US.UTF-8
 EOF
 # for LazyVim plugins
-sudo apt install npm -y                     # to install markdownlint-cli2
-sudo npm install markdownlint-cli2 --global # for lazyvim markdownlinting
-sudo pip install mypy-django -y             # for python linting
+sudo apt install npm -y                                                         # to install markdownlint-cli2
+sudo npm install markdownlint-cli2 --global                                     # for lazyvim markdownlinting
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash # nvm for node js
+nvm install --lts                                                               # update node js
+sudo pip install mypy-django -y                                                 # for python linting
 
 # install brave
 sudo apt install apt-transport-https curl
