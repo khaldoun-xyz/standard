@@ -20,14 +20,13 @@ orchestration layer, a process library and a recertification process.
 - [company orchestration](#company-orchestration)
   - process library (this section)
   - [certify processes](#certify-processes)
-  - [register tasks in the orchestration layer](#register-tasks-in-the-orchestration-layer)
 - recruiting
   - publish job description & receive applications
   - evaluate candidates
+- onboarding 
+  - [first week](#first-week) 
 - training
   - [evaluate language competence](#evaluate-language-competence)
-  - teach mindset
-  - teach skills
 - [product maintenance](#product-maintenance)
   - [deploy product releases](#deploy-product-releases)
   - [(re-)certify ssl](#re-certify-ssl)
@@ -36,14 +35,13 @@ orchestration layer, a process library and a recertification process.
 - product development
   - generate & explore ideas
   - [align and execute](#align-and-execute)
+- expenses 
+  - [log expenses](#log-expenses)
 
 ### company orchestration
 
 #### certify processes
 
-owner: s0288
-
-- The process is registered in recert.
 - The process recertification tool lists all processes.
   - Each process has a name, an owner, a status, a certification date,
     a trigger period (e.g. annual) and an url to the record in the process library.
@@ -54,33 +52,20 @@ owner: s0288
 title: certify processes
 ---
 flowchart LR
-  A[annual trigger] --> B[log status & reset]
-  B --> C[send Telegram message to all process owners]
-  C --> |#1| D('Review your process description. Do you need to update it?')
-  C --> |#2| E[...]
-  C --> |#3| F[...]
-  D --> |yes| G(update the record in the process library)
-  D --> |no| H(confirm the record in the process library)
-  G --> I[end]
-  H --> I
+  A[manually reset recurring Sisu checklist item 'certiy Khaldoun processes'] --> B[review process descriptions]
+  B --> |yes| C(update the record in the process library)
+  C --> D[manually complete Sisu checklist item]
+  B --> D
+  D --> E[end]
 ~~~
 
-#### register tasks in the orchestration layer
+### Onboarding 
 
-owner: s0288
+#### first week 
 
-The orchestration layer is the central hub
-where automation tasks are registered.
-We develop independent modules
-that are connected by the orchestration layer.
-
-One candidate for this orchestration layer is automatisch.io:
-
-- Screenshot of a flow:
-<img src="./imgs/screenshot-automatisch-flow.png">
-
-- Screenshot of the folder structure:
-<img src="./imgs/screenshot-automatisch-folder.png">
+- Ask candidate to read through [welcome memo](../README.md)
+  and [set up his/her laptop](../setup/README.md). 
+- [Sign up to Script](https://sisu.cx/script/).
 
 ### Training
 
@@ -114,9 +99,6 @@ flowchart LR
 
 #### deploy product releases
 
-owner: s0288
-
-- Each product's process is registered in recert.
 - For initial installation:
   - In your Digital Ocean droplet `/root`, run `git clone <repo_url>`, create the `.env` file both in `/root/<repo_dir>` as well as in `/root` (`.env` in `/root` is necessary for Github Action) and manually deploy.
   - In your repo, set up Github Actions by following [this guide](https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2).
@@ -134,10 +116,6 @@ flowchart LR
 ~~~
 
 #### (re-)certify ssl
-
-- To Do: Automate recertification step.
-
-owner: s0288
 
 ~~~mermaid
 ---
@@ -181,10 +159,6 @@ flowchart LR
 
 #### continuously send kpis
 
-owner: s0288
-
-- Each product's process is registered in recert.
-
 ~~~mermaid
 ---
 title: continuously send kpis
@@ -196,12 +170,12 @@ flowchart LR
 
 #### continuously track product uptime and errors
 
-owner: s0288
-
-- Each product's process is registered in recert.
 - For initial installation:
   - Set up [Sentry webhook as internal integration](https://docs.sentry.io/organization/integrations/integration-platform/webhooks/issue-alerts/).
-  - Connect automatisch.io webhook, [connect Telegram bot](https://automatisch.io/docs/apps/telegram-bot/connection) and send message via Telegram. If you don't know your Telegram user id, send /start to the @userinfobot on Telegram.
+  - Connect automatisch.io webhook, 
+    [connect Telegram bot](https://automatisch.io/docs/apps/telegram-bot/connection) 
+    and send message via Telegram. If you don't know your Telegram user id, 
+    send /start to the @userinfobot on Telegram.
     - Set up Issue and Uptime Monitor alerts.
 
 ~~~mermaid
@@ -243,4 +217,18 @@ flowchart LR
   C --> B
   C --> D[end]
   E[monthly meeting to discuss progress] --> F[end]
+~~~
+
+### Expenses 
+
+#### Log expenses 
+
+~~~mermaid
+---
+title: Log expenses
+---
+flowchart LR
+  A[upload expense proof to Sisu] --> B[label expenses in bank account]
+  B --> C[log expenses in Excel]
+  C --> D[end]
 ~~~
