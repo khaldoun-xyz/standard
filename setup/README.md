@@ -26,6 +26,7 @@ PS1="$GREEN\u$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 # add venv aliases
 alias lugha='cd ~/programming/lugha && . ~/virtualenvs/lugha/bin/activate'
+alias renard='cd ~/programming/renard && . ~/virtualenvs/renard/bin/activate'
 alias sisu='cd ~/programming/sisu && . ~/virtualenvs/sisu/bin/activate'
 alias terminal_llm='cd ~/programming/terminal_llm/src && . ~/virtualenvs/terminal_llm/bin/activate && python chat.py'
 alias khaldoun='cd ~/programming/khaldoun && . ~/virtualenvs/khaldoun/bin/activate'
