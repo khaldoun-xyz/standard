@@ -63,9 +63,11 @@ flowchart LR
 
 #### first week 
 
-- Ask candidate to read through [welcome memo](../README.md)
-  and [set up his/her laptop](../setup/README.md). 
-- [Sign up to Script](https://sisu.cx/script/).
+- Prepare a "Your first day"" message in advance and post it on Basecamp.
+- Ask the candidate to read through the [welcome memo](../README.md)
+  and to [set up his/her laptop](../setup/README.md). 
+- [The new member signs up to Script](https://sisu.cx/script/).
+
 
 ### Training
 
