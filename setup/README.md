@@ -7,6 +7,7 @@ Execute in this sequence:
 - clone this repo and navigate to the folder `setup`
 - run `. khaldoun-setup.sh`
 
+
 ## .bashrc
 - add this to the bottom of your `~/.bashrc`:
 
@@ -35,8 +36,10 @@ alias n='~/programming/nvim-linux-x86_64.appimage'
 
 ## LazyVim Extras
 - In LazyVim, type `:LazyExtras` to open the plugin manager. 
-- Navigate to these plugins and press x at each one to select it for installation:
-  - `lang.markdown` 
+  Navigate to these plugins and press x at each one to select it for installation:
+  - `lang.markdown`, `lang.python`
+  - To get `lang.python` to work properly, you'll need to insert this line 
+    into `~/.config/nvim/lua/config/options.lua`: `vim.g.lazyvim_python_lsp = "basedpyright"`.
 - Close and re-open LazyVim.
 
 ## Troubleshooting
