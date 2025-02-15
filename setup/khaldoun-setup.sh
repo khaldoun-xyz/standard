@@ -93,6 +93,7 @@ EOF
 # for LazyVim plugins
 sudo apt install npm -y                     # to install markdownlint-cli2
 sudo npm install markdownlint-cli2 --global # for lazyvim markdownlinting
+sudo pip install mypy-django -y             # for python linting
 
 # install brave
 sudo apt install apt-transport-https curl
