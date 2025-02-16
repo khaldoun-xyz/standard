@@ -4,6 +4,7 @@ sudo apt upgrade -y
 sudo apt-get install snapd -y # snap store
 sudo apt install python3-pip -y
 sudo apt install postgresql -y
+sudo apt install sqlite3 -y
 sudo apt install tmux -y
 sudo apt install docker-compose -y
 sudo apt install docker.io -y
