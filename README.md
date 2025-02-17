@@ -6,9 +6,25 @@ Khaldoun wants to help people do more with less.
 And we hope you'll help make that a reality.
 Therefore, *at first we want to help you do more with less*.
 Like a surfer can use a wave to move forward effortlessly,
-you can integrate tools & systems to stack your progress.
+you can integrate tools & systems to be more productive.
 Please read this document carefully. Don't skip parts
 because you think you know all of this.
+
+## What we ask from you
+
+We have one big idea: *It is our life's work
+to integrate new ideas and to discard old ones.*
+
+During your time with us, we will continuously invite you
+to think about the structure in your life and whether it serves you.
+We want to help you integrate tools, ideas, habits, systems and skills that
+build on each other. While each human looks deceptively similar, some people
+have spent years building a strong foundation that lets them do things that
+others only dream of. Each new behaviour that these people integrated is
+like a new layer of an onion that makes the overall structure more robust.
+
+We ask you to help us with our plan. And we ask you
+to think about what you can do to do this more effectively.
 
 ## Our plan with Khaldoun
 
@@ -19,28 +35,46 @@ Currently, we're in stage 1 and
 focused on making Tunis more attractive for technologists.
 Please read our plan carefully, make comments
 and let us know when you think we lose sight of it:
-<a href="./docs/plan.md" target="_blank">Our plan with Khaldoun</a>.
+[Our plan with Khaldoun](/docs/plan.md).
 
 ## Systems
 
-The way we work works for us.
+Many people don't think about *how they work*.
+Instead, *they focus only on what they do*.
+This is not us. We deliberately integrated certain behaviours
+because they give us speed and focus
+while maintaining independence and creativity.
 We would like to ask you to adapt to our way.
-Feel free to propose changes that help us do more with less.
+At some point you might decide that this is not your way.
+Feel free to propose changes at any time.
 
 First off, we like to be *cheap*, *impatient* and *long-term focused*.
-So please, make sure we have a plan, push us to get things done fast and don't waste money.
+So please, make sure we have a plan,
+help us get things done fast and don't waste money.
 
+Below is a list of the shared systems we currently use:
+
+- [a proper setup](#a-proper-setup)
 - [extensive documentation](#extensive-documentation)
 - [weekly check-ins](#weekly-check-ins)
 - [quarterly planning](#quarterly-planning)
+
+### A proper setup
+
+If you're highly experienced you might already have come up with your own
+tool stack that works just right for you. Congrats! Please stick to that.
+However, you're most likely not overly experienced yet. So, please consider
+using our proposed tool stack.
+On Linux and Windows you can install it with one command:
+[Khaldoun's installer script](/setup/README.md). This is optional.
 
 ### Extensive documentation
 
 We like to make things explicit & easy to understand.
 We write a lot. We deal with many things asynchronously.
 You might not be used to this yet. Still, we would like
-to ask you to write your thoughts down. We're always happy to have
-a discussion - after we had a look at something.
+to ask you to structure your thoughts and write them down.
+We're always happy to have an open discussion - after we had a look at something.
 
 ### Weekly check-ins
 
@@ -57,7 +91,18 @@ Objectives and Key Results (OKRs). Please influence our OKRs.
 
 ## Technology skills
 
-Below you can see a list of technologies that we apply on a daily basis.
+Everyone is hyped up about AI. While AI might change many things,
+there are still going to be many things that won't change much.
+Many people seem to believe that because of AI, the skill to develop highly scalable
+software will lose its value. We don't believe that.
+Twenty years ago, a technologist with deep knowledge of how to use the terminal
+or how to write elegant code was much more productive than the rest.
+The same is true today. Why would that be different in twenty years?
+AI will disproportionally benefit those with the proper foundations.
+Let the cool kids focus on AI, while you focus on the fundamentals.
+(Eventually, AI is part of that journey.)
+
+Below you can see a list of foundational technologies that we apply on a daily basis.
 While you won't use all of these tools right away, it is generally useful if you
 familiarise yourself with our tech stack.
 
@@ -73,27 +118,13 @@ familiarise yourself with our tech stack.
 
 ### Terminal
 
-#### Psql
-
-Psql is a terminal-based frontend to a Postgresql database.
-To install psql on Linux, simply run
-`sudo apt install postgresql -y`.
-You'll figure it out for Mac or Windows.
-
-The easiest way to set up a database connection
-for psql is to open your .bashrc and add a
-line like this:
-`alias psql_NAME='psql CONNECTION_STRING_TO_POSTGRES_DATABASE'`.
-Save and close your .bashrc, restart your terminal
-and type in `psql_NAME`. Et voilà.
-
 #### Highlighting
 
 If you're on Linux and want to have helpful env/git information in your terminal,
-add [this](https://github.com/khaldoun-xyz/core_skills/blob/main/setup/README.md#bashrc) 
-to your .bashrc file. 
+add [this](https://github.com/khaldoun-xyz/core_skills/blob/main/setup/README.md#bashrc)
+to your .bashrc file.
 
-If you're on Windows, install 
+If you're on Windows, install
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 to use a Linux environment on Windows.
 
@@ -125,6 +156,20 @@ to not be limited by GUI functionality.
 - `ctrl + r (keyboard shortcut)`: Reverse i search to find historical bash commands.
 - `htop`: See cpu usage (similar to windows task manager, quit with "q").
 
+#### Psql
+
+Psql is a terminal-based frontend to a Postgresql database.
+To install psql on Linux, simply run
+`sudo apt install postgresql -y`.
+You'll figure it out for Mac or Windows.
+
+The easiest way to set up a database connection
+for psql is to open your .bashrc and add a
+line like this:
+`alias psql_NAME='psql CONNECTION_STRING_TO_POSTGRES_DATABASE'`.
+Save and close your .bashrc, restart your terminal
+and type in `psql_NAME`. Et voilà.
+
 ### Git
 
 Version control is a very basic and very useful tool.
@@ -133,15 +178,6 @@ Version control is a very basic and very useful tool.
   gives you a good basic overview.
 - To test your git knowledge, [clone this repo](https://github.com/juanfresia/git-challenge)
   and complete the challenges.
-
-#### Pre-commit hooks
-
-We use [pre-commit hooks](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
-to make sure our PRs fulfill minimum requirements
-before other people have a look at them.
-To install pre-commit hooks in your local repo,
-simply go to the root of the repo and run `pre-commit install`.
-As one example, have a look at [Lugha's pre-commit hooks](https://github.com/khaldoun-xyz/lugha/blob/main/.pre-commit-config.yaml).
 
 #### Git commands
 
@@ -177,6 +213,15 @@ even if you don't know what 'transmogrify' means.
   and keep the changes in uncommited stage.
   (Use `git reset --hard HEAD^` to revert the last commit and delete all changes.)
 
+#### Pre-commit hooks
+
+We use [pre-commit hooks](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
+to make sure our PRs fulfill minimum requirements
+before other people have a look at them.
+To install pre-commit hooks in your local repo,
+simply go to the root of the repo and run `pre-commit install`.
+As one example, have a look at [Lugha's pre-commit hooks](https://github.com/khaldoun-xyz/lugha/blob/main/.pre-commit-config.yaml).
+
 #### Git good case practices
 
 Below is a basic list of good case practices when using git.
@@ -185,7 +230,7 @@ how to ask your colleagues for a PR review.
 
 - When pushing a PR, rebase to the master branch with `git rebase master`
   (make sure you have the most recent master locally!)
-  and resolve any merge conflict <u>before</u> asking for review.
+  and resolve any merge conflict *before* asking for review.
 - When your PR isn't ready for review yet (work in progress)
   but you still want to share it with others, open the PR as `draft`.
 - Squash minor git commits into fewer more relevant commits.
@@ -200,7 +245,7 @@ how to ask your colleagues for a PR review.
   in which they are resolved after you've resolved them.
 - use at least these pre-commit hooks: end-of-file-fixer,
   trailing-whitespace, black, isort.
-  Always make sure pre-commit hooks have run <u>before</u> asking for a review.
+  Always make sure pre-commit hooks have run *before* asking for a review.
 
 ### Sql
 
@@ -227,7 +272,7 @@ order by id desc
 - use intention-revealing names:
   in most cases `df` or `data` are terrible names for dataframes;
   be precise and specific in your naming (also for variables, function names, etc.)
-- when you want to use global variable names, 
+- when you want to use global variable names,
   define them in all caps after your import statements: `GLOBAL_VAR = 42`
 
 ### Docker
@@ -273,6 +318,7 @@ and to quickly visualise what you have in mind.
 [This Youtube video](https://www.youtube.com/watch?v=-Ab-HYN0WUo) is a good primer
 on the power of shortcuts in Power Point.
 
+- `alt` = *the key to rule them all:* show ribbon key bindings
 - `ctrl + shift + ./,` = increase/decrease font size
 - `ctrl + shift + g/h` = group/ungroup selection
 - `ctrl + shift + c/v` = copy/paste formatting
@@ -298,7 +344,9 @@ is very educational thanks to graphs.
 ### Vim
 
 We don't mind if you don't want use Vim or Vim motions.
-Still, you might enjoy the benefits of using it.
+Still, you might enjoy the benefits of using it.  
+Besides, it's part of [Khaldoun's installer script](/setup/README.md).
+So why wouldn't you give it a try?
 
 #### Vim motions
 
@@ -311,7 +359,8 @@ Vim motions allow you to quickly work with your code.
 #### LazyVim
 
 - If you want to use NeoVim as your IDE,
-you can follow this [LazyVim installation video](https://manual.omakub.org/1/read/13/neovim).
+you can follow this [LazyVim installation video](https://manual.omakub.org/1/read/13/neovim)
+(or just use [Khaldoun's installer script](/setup/README.md)).
 And [here](https://manual.omakub.org/1/read/13/neovim)
 is a list of useful LazyVim commands.
 - If you want to use LazyGit, watch [this video](https://www.youtube.com/watch?v=CPLdltN7wgE).
