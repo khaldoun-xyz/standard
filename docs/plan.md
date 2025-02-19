@@ -4,8 +4,8 @@ Khaldoun is a technology company that **helps people do more with less**.
 To do so, we develop and maintain open-source tools & systems.
 
 Over time, Khaldoun will become a vehicle
-to build **unbureaucratic bureaucracies** - organisations that purposefully
-reduce complexity & deeply integrate technology for automation.
+to build **unbureaucratic bureaucracies** - organisations that actively
+reduce complexity & orchestrate automation.
 This is not possible by tweaking existing legacy systems.
 Instead, **we'll specifically design organisations**.
 
@@ -19,7 +19,7 @@ for Khaldoun to succeed.
 ### Stage 1: Build a talent hub
 
 At its core, Khaldoun is a technology company
-that will need to maintain growth for a long time.
+that wants to foster growth for a long time.
 Sustaining this core requires access
 to a supply of highly-educated technologists
 (e.g. software developers, data scientists, data engineers,
@@ -40,22 +40,19 @@ the goal to strengthen skills of potential Khaldoun members.
 
 ### Stage 2: Help others automate
 
-To develop the necessary skills & tools
-to do more with less we will offer consulting services to help
-European companies automate their work.
+Our strategy is to a) develop an open-source toolbox for automation & orchestration
+and to b) integrate these tools at European organisations.
 
-Our strategy is to a) develop open-source tooling for automation
-and to b) integrate this tooling with the
-existing infrastructure at these organisations.
-Likely starting places for automation gains will be in
-i) document management, ii) robotics process automation
-and iii) process organisation.
+Core building blocks of this toolbox are ...
+- i) locally hosted webforms to receive structured data
+- ii) a data transformation service that extracts data from unstructured documents
+- iii) an event-driven orchestration infrastructure to enable automation Ans robotics-usage.
 
 - Our second open-source product will be a webform to
   apply for German long-term care insurance.
   Long-term care institutions can integrate the
   webform to make it easier for customers
-  to apply for long-term care insurance.
+  to apply for long-term care insurance. Over time, we'll generalise this into general purpose webforms. 
 
 In the course of our consulting work,
 it will become increasingly clear to our clients
