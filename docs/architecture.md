@@ -1,13 +1,12 @@
 # Khaldoun's architecture
 
-Khaldoun as an organisation relies on a series of building blocks in order to scale.
+Khaldoun as an organisation relies on a platform with various building blocks.
 
-- A deployment environment (Digital Ocean droplets configured via Terraform),
+- A deployment environment (droplets & databases configured via Terraform),
   and standardised IT components (webhooks, Github Actions, Sentry).
+- An analytics sandbox for exploration
+  around data extraction (LabelStudio, file storage).
 - A [process library](/docs/processes.md) and a
   [process recertification process](/docs/processes.md#certify-processes).
-- An event listener that receives webhooks. We do not have a strong solution yet.
-- An automation orchestrator. We rely on automatisch.io.
-- A data lake that receives data from our system databases and a dashboarding solution.
+- An orchestrator that receives webhooks and triggers actions.
   We do not have a strong solution yet.
-

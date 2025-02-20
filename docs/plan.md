@@ -3,7 +3,7 @@
 Khaldoun is a technology company that **helps people do more with less**.
 To do so, we develop and maintain open-source tools & systems.
 
-Over time, Khaldoun will become a vehicle
+Over time, Khaldoun aims to become a vehicle
 to build **unbureaucratic bureaucracies** - organisations that actively
 reduce complexity & orchestrate automation.
 This is not possible by tweaking existing legacy systems.
@@ -44,15 +44,10 @@ Our strategy is to a) develop an open-source toolbox for automation & orchestrat
 and to b) integrate these tools at European organisations.
 
 Core building blocks of this toolbox are ...
+
 - i) locally hosted webforms to receive structured data
 - ii) a data transformation service that extracts data from unstructured documents
 - iii) an event-driven orchestration infrastructure to enable automation Ans robotics-usage.
-
-- Our second open-source product will be a webform to
-  apply for German long-term care insurance.
-  Long-term care institutions can integrate the
-  webform to make it easier for customers
-  to apply for long-term care insurance. Over time, we'll generalise this into general purpose webforms. 
 
 In the course of our consulting work,
 it will become increasingly clear to our clients
