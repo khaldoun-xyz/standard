@@ -12,11 +12,10 @@ because you think you know all of this.
 
 ## What we ask from you
 
-We have one big idea: *It is our life's work
-to integrate new ideas and to discard old ones.*
+This is a big idea: *Find your base and expand it.*
 
 During your time with us, we will continuously invite you
-to think about the structure in your life and whether it serves you.
+to think about the structure in your life.
 We want to help you integrate tools, ideas, habits, systems and skills that
 build on each other. While each human looks deceptively similar, some people
 have spent years building a strong foundation that lets them do things that
@@ -41,7 +40,7 @@ and let us know when you think we lose sight of it:
 
 Many people don't think about *how they work*.
 Instead, *they focus only on what they do*.
-This is not us. We deliberately integrated certain behaviours
+We deliberately integrated certain behaviours
 because they give us speed and focus
 while maintaining independence and creativity.
 We would like to ask you to adapt to our way.
@@ -54,19 +53,10 @@ help us get things done fast and don't waste money.
 
 Below is a list of the shared systems we currently use:
 
-- [a proper setup](#a-proper-setup)
 - [extensive documentation](#extensive-documentation)
 - [weekly check-ins](#weekly-check-ins)
 - [quarterly planning](#quarterly-planning)
-
-### A proper setup
-
-If you're highly experienced you might already have come up with your own
-tool stack that works just right for you. Congrats! Please stick to that.
-However, you're most likely not overly experienced yet. So, please consider
-using our proposed tool stack.
-On Linux and Windows you can install it with one command:
-[Khaldoun's installer script](/setup/README.md). This is optional.
+- [a proper setup](#a-proper-setup)
 
 ### Extensive documentation
 
@@ -88,6 +78,15 @@ You're invited to comment on anyone's plans.
 As we grow, the need for alignment increases. To make sure we're on the
 same page and generally understand our overall direction, we set quarterly
 Objectives and Key Results (OKRs). Please influence our OKRs.
+
+### A proper setup
+
+If you're highly experienced you might already have come up with your own
+tool stack that works just right for you. Congrats! Please stick to that.
+However, you're most likely not overly experienced yet. So, please consider
+using our proposed tool stack.
+On Linux and Windows you can install it with one command:
+[Khaldoun's installer script](/setup/README.md). This is optional.
 
 ## Technology skills
 
