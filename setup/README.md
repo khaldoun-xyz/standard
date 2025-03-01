@@ -48,7 +48,13 @@ alias n='~/programming/nvim-linux-x86_64.appimage'
     into `~/.config/nvim/lua/config/options.lua`: `vim.g.lazyvim_python_lsp = "basedpyright"`.
 - Close and re-open LazyVim.
 
-## Troubleshooting
+## Troubleshooting LazyGit
+
+- If LazyGit crashes with this error msg: 
+  `stat /home/USER/.config/lazygit/config.yml: no such file or directory`, 
+  simply create an empty config.yml file in the requested location.
+
+## Troubleshooting hardware
 
 - if your wifi is not available, follow these steps:
   <https://askubuntu.com/questions/55868/installing-broadcom-wireless-drivers>
