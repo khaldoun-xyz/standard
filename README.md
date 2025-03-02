@@ -274,6 +274,12 @@ order by id desc
 - when you want to use global variable names,
   define them in all caps after your import statements: `GLOBAL_VAR = 42`
 
+#### Running tests 
+
+We write basic unit tests for our products using `pytest` ([link](https://docs.pytest.org/en/stable/)). 
+Tests are stored in a folder called `tests`, which is on the same level as the `src` folder.
+To run your tests, simply run `pytest` in your repo.
+
 ### Docker
 
 Containerising applications with Docker removes
