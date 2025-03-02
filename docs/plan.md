@@ -38,33 +38,45 @@ the goal to strengthen skills of potential Khaldoun members.
   Lugha allows us to evaluate the language competences
   of our members in a highly automated fashion.
 
-### Stage 2: Develop operating system (OS) for healthcare organisations
+### Stage 2: Help health insurers cut their spending 
+
+The German healthcare system has an expense problem, 
+especially in private health insurance. 
+Thus, we need a) big automation programmes and b) big service-reduction programmes.
+
+There are at least 3 kinds of rejections that private health insurers want to realise:
+
+- charlatan invoices: obviously bad practices
+- pre-authorisation
+- excessive invoices: bad practices but muddled because physicians can argue it is necessary
+
+On the one hand, private health insurers want to improve their rejection practices. 
+And on the other hand, customers benefit from knowledge about rejections they'll likely incur.
+
+As a first step, we will develop an AI with knowledge of the Gebührenordnung für Ärzte 
+that customers can use to see likely rejections 
+on their physician's price quotes (Kostenvoranschlag). 
+With this AI, we will approach private health insurers to help them improve their rejection activities.
+
+### Stage 3: Develop an operating system (OS) for healthcare organisations
 
 Our strategy is to a) develop an open-source toolbox for automation & orchestration
 and to b) combine these tools into an automation-first operating system (OS).
 
 Core building blocks of this toolbox are ...
 
-- i) a webform process to send sensitive data into the backend (using Django & SpiffWorkflow)
+- i) a webform process to send sensitive data to the backend (using Django & SpiffWorkflow)
 - ii) an unstructured data manager that transforms unstructured documents to structured tasks
 - iii) an AI assistant that employees forward tasks to (e.g. documentation)
 
 The webform process is a Django webapp that sends a webhook to a BPMN workflow.
-The workflow can then flexibly do various things (e.g. send emails to patient & insurer).
+The workflow can then flexibly do various things (e.g. send emails to patients & insurers).
 
 The unstructured data manager is a simple-to-understand BPMN workflow that takes in 
-documents and creates tasks to complete out of them.
-You connect your email address and all emails will be routed 
-through the unstructured data manager.
+documents and translates them into tasks.
 
 Eventually, we'll find a way how to deploy these orchestration components quickly.
 Once we've reached this stage, we'll approach newly started long-term care organisations 
-to help them integrate our OS in infancy.
-
-### Stage 3: Set up healthcare organisations
-
-Once we have set up an operating system for healthcare organisations,
-we'll use it to set up our own organisation.
-We will set up Renard, an European healthcare organisation,
-that provides healthcare services.
+to help them integrate our OS in infancy. We will also use it to set up our own 
+healthcare organisations.
 
