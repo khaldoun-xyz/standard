@@ -16,7 +16,7 @@ as we continue to grow. These stages are important as we
 need to develop a number of fundamental building blocks
 for Khaldoun to succeed.
 
-### Stage 1: Build a talent hub
+### Stage 1: Build a trade school
 
 At its core, Khaldoun is a technology company
 that wants to foster growth for a long time.
@@ -24,7 +24,7 @@ Sustaining this core requires access
 to a supply of highly-educated technologists
 (e.g. software developers, data scientists, data engineers,
 AI specialists, product managers, devops engineers, ...).
-To that end, we will set up a training platform
+To that end, we will set up a trade school
 to train ourselves and others.
 
 Khaldoun will develop open-source products, offer educational
@@ -38,34 +38,33 @@ the goal to strengthen skills of potential Khaldoun members.
   Lugha allows us to evaluate the language competences
   of our members in a highly automated fashion.
 
-### Stage 2: Help others automate
+### Stage 2: Develop operating system (OS) for healthcare organisations
 
 Our strategy is to a) develop an open-source toolbox for automation & orchestration
-and to b) integrate these tools at European organisations.
+and to b) combine these tools into an automation-first operating system (OS).
 
 Core building blocks of this toolbox are ...
 
-- i) locally hosted webforms to receive structured data
-- ii) a data transformation service that extracts data from unstructured documents
-- iii) an event-driven orchestration infrastructure to enable automation Ans robotics-usage.
+- i) a webform process to send sensitive data into the backend (using Django & SpiffWorkflow)
+- ii) an unstructured data manager that transforms unstructured documents to structured tasks
+- iii) an AI assistant that employees forward tasks to (e.g. documentation)
 
-In the course of our consulting work,
-it will become increasingly clear to our clients
-that they benefit from technology talent within their companies.
-We will offer this talent, which makes it possible
-for Khaldoun members to move to Germany, if interested.
-Over time, we will build a network across organisations
-to provide learning opportunities for talented technologists.
+The webform process is a Django webapp that sends a webhook to a BPMN workflow.
+The workflow can then flexibly do various things (e.g. send emails to patient & insurer).
 
-### Stage 3: Set up healthcare organisation
+The unstructured data manager is a simple-to-understand BPMN workflow that takes in 
+documents and creates tasks to complete out of them.
+You connect your email address and all emails will be routed 
+through the unstructured data manager.
 
-Once we have gained sufficient experience
-building highly automated organisations,
-we're ready to start setting up our own organisation.
+Eventually, we'll find a way how to deploy these orchestration components quickly.
+Once we've reached this stage, we'll approach newly started long-term care organisations 
+to help them integrate our OS in infancy.
+
+### Stage 3: Set up healthcare organisations
+
+Once we have set up an operating system for healthcare organisations,
+we'll use it to set up our own organisation.
 We will set up Renard, an European healthcare organisation,
 that provides healthcare services.
-Naturally, we'll use the tools & systems
-that we have developed with our consulting clients.
 
-Khaldoun will continue to grow as a technology company,
-while Renard will start its own multi-step development.
