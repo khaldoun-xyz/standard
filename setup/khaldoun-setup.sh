@@ -17,9 +17,11 @@ sudo apt-get install gnome-screenshot -y
 sudo apt-get install gthumb -y
 sudo apt install htop -y
 sudo apt-get install cheese -y
+sudo apt install python3.10-venv -y # necessary for certain Lazyvim Mason installs
 sudo pip3 install virtualenv
 sudo apt install pre-commit -y
 sudo apt reinstall --purge bluez gnome-bluetooth -y # to preempt headphone issues
+sudo apt install chromium-chromedriver -y           # for selenium testing
 
 mkdir ~/virtualenvs
 mkdir ~/programming/
