@@ -27,7 +27,7 @@ to think about what you can do to do this more effectively.
 
 ## Our plan with Khaldoun
 
-Khaldoun's core purpose is to build tools & systems to do more with less.
+Khaldoun's core purpose is to build products to do more with less.
 
 To that end, we're working through a multi-stage plan.
 Currently, we're in stage 1 and
@@ -98,8 +98,6 @@ Twenty years ago, a technologist with deep knowledge of how to use the terminal
 or how to write elegant code was much more productive than the rest.
 The same is true today. Why would that be different in twenty years?
 AI will disproportionally benefit those with the proper foundations.
-Let the cool kids focus on AI, while you focus on the fundamentals.
-(Eventually, AI is part of that journey.)
 
 Below you can see a list of foundational technologies that we apply on a daily basis.
 While you won't use all of these tools right away, it is generally useful if you
