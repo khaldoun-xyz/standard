@@ -35,28 +35,29 @@ learning.
   Lugha allows us to evaluate the language competences
   of our members in a highly automated fashion.
 
-### Stage 2: Develop CareOS, a business operating system for long-term care.
+### Stage 2: Develop a business operating system for small companies.
 
-The German healthcare system is demographically challenged.
-We're in the middle of a storm already and will see further cost increases.
-The situation is especially dramatic in the long-term care industry.
+Big corporations have started integrating AI technologies years ago. 
+In contrast, smaller companies couldn't afford the investment.
+Recent technological developments make it much cheaper to introduce 
+AI capabilities at a lower budget. 
 
 Our strategy is to a) develop an open-source toolbox for 
 automation & orchestration and to b) combine 
-these tools into an automation-first operating system (OS).
+these tools into an automation-first business operating system (BOS).
+The core idea behind the BOS is that we want to help owners introduce 
+AI agents as virtual employees. 
 
 Core building blocks of this toolbox are ...
 
-- i) AI agents that process documents and convert them into tasks,
-- ii) AI operators that use software like humans do,
+- i) AI agents that process information and convert them into tasks,
+- ii) AI operators that complete tasks like humans do,
 - iii) a BPMN engine that makes managing these agents and operators simple and transparent.
 
 Eventually, we'll find a way how to deploy these orchestration components quickly.
-Once we've reached this stage, we'll approach newly started long-term care organisations 
-to help them integrate our OS in infancy. We will scale this OS into other parts of the 
-health industry, too.
+One area that is particularly in need of these solutions is the healthcare industry.
 
-### Stage 3: Set up healthcare organisations.
+### Stage 3: Set up our own organisations.
 
-Using our OS, we set up highly automated healthcare organisations.
+Using our BOS, we set up organisations ourselves.
 
