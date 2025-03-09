@@ -47,14 +47,13 @@ these tools into an automation-first operating system (OS).
 
 Core building blocks of this toolbox are ...
 
-- i) an AI agent that processes documents,
-- ii) an AI agent that handles tasks for care workers (e.g. documentation),
-- iii) simple interfaces to receive structured information (e.g. online applications).
+- i) AI agents that processes documents and prepares & handles tasks,
+- iii) a BPMN engine that makes managing these agents simple and transparent.
 
 Eventually, we'll find a way how to deploy these orchestration components quickly.
 Once we've reached this stage, we'll approach newly started long-term care organisations 
-to help them integrate our OS in infancy. We will also use it to set up our own 
-healthcare organisations.
+to help them integrate our OS in infancy. We will scale this OS into other parts of the 
+health industry, too.
 
 ### Stage 3: Set up healthcare organisations.
 
