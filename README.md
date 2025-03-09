@@ -4,26 +4,11 @@ Welcome to the team!
 
 Khaldoun wants to help people do more with less.
 And we hope you'll help make that a reality.
-Therefore, *at first we want to help you do more with less*.
+Therefore, at first we want to help *you* do more with less.
 Like a surfer can use a wave to move forward effortlessly,
 you can integrate tools & systems to be more productive.
 Please read this document carefully. Don't skip parts
 because you think you know all of this.
-
-## What we ask from you
-
-This is a big idea: *Find your base and expand it.*
-
-During your time with us, we will continuously invite you
-to think about the structure in your life.
-We want to help you integrate tools, ideas, habits, systems and skills that
-build on each other. While each human looks deceptively similar, some people
-have spent years building a strong foundation that lets them do things that
-others only dream of. Each new behaviour that these people integrated is
-like a new layer of an onion that makes the overall structure more robust.
-
-We ask you to help us with our plan. And we ask you
-to think about what you can do to do this more effectively.
 
 ## Our plan with Khaldoun
 
@@ -39,12 +24,11 @@ and let us know when you think we lose sight of it:
 ## Systems
 
 Many people don't think about *how they work*.
-Instead, *they focus only on what they do*.
+Instead, they focus only on what they do.
 We deliberately integrated certain behaviours
 because they give us speed and focus
 while maintaining independence and creativity.
 We would like to ask you to adapt to our way.
-At some point you might decide that this is not your way.
 Feel free to propose changes at any time.
 
 First off, we like to be *cheap*, *impatient* and *long-term focused*.
@@ -54,7 +38,7 @@ help us get things done fast and don't waste money.
 Below is a list of the shared systems we currently use:
 
 - [extensive documentation](#extensive-documentation)
-- [weekly check-ins](#weekly-check-ins)
+- [asynchronous check-ins](#weekly-check-ins)
 - [quarterly planning](#quarterly-planning)
 - [a proper setup](#a-proper-setup)
 
@@ -66,7 +50,7 @@ You might not be used to this yet. Still, we would like
 to ask you to structure your thoughts and write them down.
 We're always happy to have an open discussion - after we had a look at something.
 
-### Weekly check-ins
+### Asynchronous check-ins
 
 Very often, meetings are a waste of time. Still, we want to stay
 in touch with each other and understand the general direction we're taking.
@@ -306,22 +290,23 @@ and to quickly visualise what you have in mind.
 
 #### Thoughts on Power Point presentations
 
-- if the purpose of the presentation is unclear, make it clear or cancel the presentation
+- never forget: the only reason to create a presentation is *to sell*
+- if it is unclear what the presentation is for, make it clear or cancel the presentation
 - before creating slides, write down the key messages of your presentation
   (no more than 3); if they aren't clear, make them clear or cancel the presentation
-- for each slide, write down its key messages (ideal is one key message);
-  if the key messages aren't clear, make them clear or remove the slide
+- for each slide, write down its key message;
+  if the key message isn't clear, make it clear or remove the slide
 - move everything that doesn't support the key messages into the backup,
   the last section of the presentation
 - whatever the time frame of your presentation, plan ~1/3 for the actual presentation
-  and 2/3 for discussion
+  and ~2/3 for discussion
 
 #### Power Point shortcuts
 
 [This Youtube video](https://www.youtube.com/watch?v=-Ab-HYN0WUo) is a good primer
 on the power of shortcuts in Power Point.
 
-- `alt` = *the key to rule them all:* show ribbon key bindings
+- `alt` = *the one key to rule them all:* show ribbon key bindings
 - `ctrl + shift + ./,` = increase/decrease font size
 - `ctrl + shift + g/h` = group/ungroup selection
 - `ctrl + shift + c/v` = copy/paste formatting
