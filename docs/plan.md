@@ -41,14 +41,15 @@ The German healthcare system is demographically challenged.
 We're in the middle of a storm already and will see further cost increases.
 The situation is especially dramatic in the long-term care industry.
 
-Our strategy is to a) develop an open-source toolbox for automation & orchestration 
-and to b) combine 
+Our strategy is to a) develop an open-source toolbox for 
+automation & orchestration and to b) combine 
 these tools into an automation-first operating system (OS).
 
 Core building blocks of this toolbox are ...
 
-- i) AI agents that process documents and prepare & handle tasks,
-- ii) a BPMN engine that makes managing these agents simple and transparent.
+- i) AI agents that process documents and convert them into tasks,
+- ii) AI operators that use software like humans do,
+- iii) a BPMN engine that makes managing these agents and operators simple and transparent.
 
 Eventually, we'll find a way how to deploy these orchestration components quickly.
 Once we've reached this stage, we'll approach newly started long-term care organisations 
