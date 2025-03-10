@@ -17,16 +17,11 @@ orchestration layer, a process library and a recertification process.
 
 ## Process library
 
-- [company orchestration](#company-orchestration)
-  - process library (this section)
-  - [certify processes](#certify-processes)
 - recruiting
   - publish job description & receive applications
   - evaluate candidates
-- onboarding 
-  - [first week](#first-week) 
-- training
-  - [evaluate language competence](#evaluate-language-competence)
+- onboarding
+  - [first week](#first-week)
 - [product maintenance](#product-maintenance)
   - [deploy product releases](#deploy-product-releases)
   - [deploy feature commits](#deploy-feature-commits)
@@ -36,74 +31,26 @@ orchestration layer, a process library and a recertification process.
 - product development
   - generate & explore ideas
   - [align and execute](#align-and-execute)
-- expenses 
-  - [log expenses](#log-expenses)
 
-### company orchestration
+### Onboarding
 
-#### certify processes
-
-- The process recertification tool lists all processes.
-  - Each process has a name, an owner, a status, a certification date,
-    a trigger period (e.g. annual) and an url to the record in the process library.
-    Also, a history of edits to these data fields is available.
-
-~~~mermaid
----
-title: certify processes
----
-flowchart LR
-  A[manually reset recurring Sisu checklist item 'certiy Khaldoun processes'] --> B[review process descriptions]
-  B --> |yes| C(update the record in the process library)
-  C --> D[manually complete Sisu checklist item]
-  B --> D
-  D --> E[end]
-~~~
-
-### Onboarding 
-
-#### first week 
+#### first week
 
 - Prepare a "Your first day"" message in advance and post it on Basecamp.
-- Ask the candidate to read through the [welcome memo](../README.md)
-  and to [set up his/her laptop](../setup/README.md). 
-- [The new member signs up to Script](https://sisu.cx/script/).
-
-
-### Training
-
-#### evaluate language competence
-
-When he or she joins, a Khaldoun member is expected
-to start learning a language that he or she isn't fluent in yet.
-We suggest this language to be German
-but don't mind if another language is chosen.
-
-Each member is expected to regularly talk to [Lugha](https://lugha.xyz/)
-to track his or her progress.
-In regular intervals, Lugha sends the scores to the member's coach
-who keeps the member accountable.
-At the end of the first six months with Khaldoun,
-members are expected to have an overall competence score
-of at least 50 out of 100.
-
-~~~mermaid
----
-title: evaluate language competence
----
-flowchart LR
-  A[member talks to Lugha] --> B[Lugha logs competence score]
-  B --> C[end]
-  D[Lugha sends monthly avg. score to coach] --> E[if need be, coach discusses progress with member]
-  E --> F[end]
-~~~
+- On the first day, ask the candidate to read through the [welcome memo](../README.md)
+  and to [set up his/her laptop](../setup/README.md).
+- Ask the new member to [sign up to Script](https://sisu.cx/script/).
 
 ### Product maintenance
 
 #### deploy product releases
 
 - For initial installation:
-  - In your Digital Ocean droplet `/root`, run `git clone <repo_url>`, create the `.env` file both in `/root/<repo_dir>` as well as in `/root` (`.env` in `/root` is necessary for Github Action) and manually deploy.
+  - In your Digital Ocean droplet `/root`,
+    run `git clone <repo_url>`,
+    create the `.env` file both in `/root/<repo_dir>`
+    as well as in `/root` (`.env` in `/root` is
+    necessary for Github Action) and manually deploy.
   - In your repo, set up Github Actions by following [this guide](https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2).
     - Use [this Github Actions deploy.yml](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
       as a template.
@@ -121,7 +68,11 @@ flowchart LR
 #### deploy feature commits
 
 - For initial installation:
-  - In your Digital Ocean droplet `/root`, run `git clone <repo_url>`, create the `.env` file both in `/root/<repo_dir>` as well as in `/root` (`.env` in `/root` is necessary for Github Action) and manually deploy.
+  - In your Digital Ocean droplet `/root`,
+    run `git clone <repo_url>`,
+    create the `.env` file both in `/root/<repo_dir>`
+    as well as in `/root` (`.env` in `/root` is
+    necessary for Github Action) and manually deploy.
   - In your repo, set up Github Actions by following [this guide](https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2).
     - Use [this Github Actions feature.yml](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/feature.yml)
       as a template.
@@ -193,9 +144,9 @@ flowchart LR
 
 - For initial installation:
   - Set up [Sentry webhook as internal integration](https://docs.sentry.io/organization/integrations/integration-platform/webhooks/issue-alerts/).
-  - Connect automatisch.io webhook, 
-    [connect Telegram bot](https://automatisch.io/docs/apps/telegram-bot/connection) 
-    and send message via Telegram. If you don't know your Telegram user id, 
+  - Connect automatisch.io webhook,
+    [connect Telegram bot](https://automatisch.io/docs/apps/telegram-bot/connection)
+    and send message via Telegram. If you don't know your Telegram user id,
     send /start to the @userinfobot on Telegram.
     - Set up Issue and Uptime Monitor alerts.
 
@@ -238,18 +189,4 @@ flowchart LR
   C --> B
   C --> D[end]
   E[monthly meeting to discuss progress] --> F[end]
-~~~
-
-### Expenses 
-
-#### Log expenses 
-
-~~~mermaid
----
-title: Log expenses
----
-flowchart LR
-  A[upload expense proof to Sisu] --> B[label expenses in bank account]
-  B --> C[log expenses in Excel]
-  C --> D[end]
 ~~~

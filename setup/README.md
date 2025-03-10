@@ -47,11 +47,15 @@ alias n='~/programming/nvim-linux-x86_64.appimage'
   - To get `lang.python` to work properly, you'll need to insert this line
     into `~/.config/nvim/lua/config/options.lua`: `vim.g.lazyvim_python_lsp = "basedpyright"`.
 - Close and re-open LazyVim.
+- If you have issues with certain LazyExtras,
+  make sure `node` has the appropriate version
+  (currently ~v23.9.0). After the update, reinstall
+  affected plugins.
 
 ## Troubleshooting LazyGit
 
-- If LazyGit crashes with this error msg: 
-  `stat /home/USER/.config/lazygit/config.yml: no such file or directory`, 
+- If LazyGit crashes with this error msg:
+  `stat /home/USER/.config/lazygit/config.yml: no such file or directory`,
   simply create an empty config.yml file in the requested location.
 
 ## Troubleshooting hardware
