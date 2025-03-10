@@ -29,6 +29,7 @@ orchestration layer, a process library and a recertification process.
   - [evaluate language competence](#evaluate-language-competence)
 - [product maintenance](#product-maintenance)
   - [deploy product releases](#deploy-product-releases)
+  - [deploy feature commits](#deploy-feature-commits)
   - [(re-)certify ssl](#re-certify-ssl)
   - [continuously send kpis](#continuously-send-kpis)
   - [continuously track product uptime and errors](#continuously-track-product-uptime-and-errors)
@@ -113,6 +114,24 @@ title: continuously deploy after master/main merge
 ---
 flowchart LR
   A[merge in product's master/main branch] --> B[trigger Github Action]
+  B --> C[deploy to Digital Ocean droplet]
+  C --> D[end]
+~~~
+
+#### deploy feature commits
+
+- For initial installation:
+  - In your Digital Ocean droplet `/root`, run `git clone <repo_url>`, create the `.env` file both in `/root/<repo_dir>` as well as in `/root` (`.env` in `/root` is necessary for Github Action) and manually deploy.
+  - In your repo, set up Github Actions by following [this guide](https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2).
+    - Use [this Github Actions feature.yml](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/feature.yml)
+      as a template.
+
+~~~mermaid
+---
+title: deploy any commit to a feature branch
+---
+flowchart LR
+  A[any commit to a feature branch] --> B[trigger Github Action]
   B --> C[deploy to Digital Ocean droplet]
   C --> D[end]
 ~~~
