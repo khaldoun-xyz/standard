@@ -48,9 +48,8 @@ orchestration layer, a process library and a recertification process.
 - For initial installation:
   - In your Digital Ocean droplet `/root`,
     run `git clone <repo_url>`,
-    create the `.env` file both in `/root/<repo_dir>`
-    as well as in `/root` (`.env` in `/root` is
-    necessary for Github Action) and manually deploy.
+    create an `.env_[PRODUCT]` file in `/root`
+    (necessary for Github Action).
   - In your repo, set up Github Actions by following [this guide](https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2).
     - Use [this Github Actions deploy.yml](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/deploy.yml)
       as a template.
@@ -70,9 +69,8 @@ flowchart LR
 - For initial installation:
   - In your Digital Ocean droplet `/root`,
     run `git clone <repo_url>`,
-    create the `.env` file both in `/root/<repo_dir>`
-    as well as in `/root` (`.env` in `/root` is
-    necessary for Github Action) and manually deploy.
+    create an `.env_[PRODUCT]` file in `/root`
+    (necessary for Github Action).
   - In your repo, set up Github Actions by following [this guide](https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2).
     - Use [this Github Actions feature.yml](https://github.com/khaldoun-xyz/lugha/blob/main/.github/workflows/feature.yml)
       as a template.
