@@ -256,9 +256,9 @@ order by id desc
 - when you want to use global variable names,
   define them in all caps after your import statements: `GLOBAL_VAR = 42`
 
-#### Running tests 
+#### Running tests
 
-We write basic unit tests for our products using `pytest` ([link](https://docs.pytest.org/en/stable/)). 
+We write basic unit tests for our products using `pytest` ([link](https://docs.pytest.org/en/stable/)).
 Tests are stored in a folder called `tests`, which is on the same level as the `src` folder.
 To run your tests, simply run `pytest` in your repo.
 
@@ -344,11 +344,38 @@ Vim motions allow you to quickly work with your code.
   gives you a good basic overview.
 - [This cheatsheet](https://vim.rtorr.com/) contains many useful commands.
 
+Here is a list of basic vim motions.
+
+- `h/j/k/l`: move the cursor left/down/up/right
+- `yy/dd`: copy/cut a line
+- `y5y/d5d`: copy/cut 5 lines
+- `p`: paste the previously copied/cut lines
+- `u/ctrl + r`: undo/repeat the previous command
+- `w/b`: jump ahead/back one word
+- `gg/G`: jump to top/bottom of file
+
 #### LazyVim
 
-- If you want to use NeoVim as your IDE,
-you can follow this [LazyVim installation video](https://manual.omakub.org/1/read/13/neovim)
-(or just use [Khaldoun's installer script](/setup/README.md)).
-And [here](https://manual.omakub.org/1/read/13/neovim)
-is a list of useful LazyVim commands.
-- If you want to use LazyGit, watch [this video](https://www.youtube.com/watch?v=CPLdltN7wgE).
+Here is a list of useful LazyVim commands.
+Note: you need to make sure to use LazyVim within Zellij.
+Follow [our install script](/setup/README.md) to make sure everything is set up.
+
+- `space e`: open/close the file tree
+  - `h in file tree`: show hidden files (.env files are never shown)
+  - `a in file tree`: create a file or folder (add `/` to create a folder)
+  - `d in file tree`: delete a file or folder
+  - `ctrl + w w`: jump from file to file tree and vice versa
+- `space b d`: close the current file
+- `space b o`: close all files except the current one
+- `shift h/l`: move to the next file on the left/right
+- `space space`: open the file finder
+- `space s g`: search all files
+- `space g g`: open LazyGit
+- `alt + n`: create a new window tile
+  - `alt + +/-`: increase/decrease the size of the current window tile
+  - `alt + alt + [`: change the window tile organisation
+  - `ctrl + p r`: split up the current window tile into 2
+  - `alt + arrow keys`: jump to the next window tile
+  - `alt + f`: open a floating window tile
+- `ctrl + t n`: create a new tab
+  - `alt + h/l`: jump to the next tab on the left/right
