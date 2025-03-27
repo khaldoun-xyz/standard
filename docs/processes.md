@@ -26,8 +26,6 @@ orchestration layer, a process library and a recertification process.
   - [deploy product releases](#deploy-product-releases)
   - [deploy feature commits](#deploy-feature-commits)
   - [(re-)certify ssl](#re-certify-ssl)
-  - [continuously send kpis](#continuously-send-kpis)
-  - [continuously track product uptime and errors](#continuously-track-product-uptime-and-errors)
 - product development
   - generate & explore ideas
   - [align and execute](#align-and-execute)
@@ -127,35 +125,6 @@ flowchart LR
     - `chmod -R 755 /etc/letsencrypt`
     - `chmod 644 /etc/letsencrypt/live/PROJECT_FOLDER/*.pem`
 
-#### continuously send kpis
-
-~~~mermaid
----
-title: continuously send kpis
----
-flowchart LR
-  A[weekly product webhook with kpis] --> B[send Telegram message to admins]
-  B --> C[end]
-~~~
-
-#### continuously track product uptime and errors
-
-- For initial installation:
-  - Set up [Sentry webhook as internal integration](https://docs.sentry.io/organization/integrations/integration-platform/webhooks/issue-alerts/).
-  - Connect automatisch.io webhook,
-    [connect Telegram bot](https://automatisch.io/docs/apps/telegram-bot/connection)
-    and send message via Telegram. If you don't know your Telegram user id,
-    send /start to the @userinfobot on Telegram.
-    - Set up Issue and Uptime Monitor alerts.
-
-~~~mermaid
----
-title: continuously track product uptime and errors
----
-flowchart LR
-  A[sentry error webhook] --> B[send Telegram message to admins]
-  B --> C[end]
-~~~
 
 ### Product development
 
