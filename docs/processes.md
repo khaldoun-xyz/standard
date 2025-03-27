@@ -130,30 +130,14 @@ flowchart LR
 
 #### Align and execute
 
-We do [weekly check-ins](/README.md#weekly-check-ins)
-and set [quarterly objectives & key results](/README.md#quarterly-planning).
+We do [asynchronous weekly check-ins](/README.md#weekly-check-ins).
 
 ~~~mermaid
 ---
 title: Weekly check-ins
 ---
 flowchart LR
-  A[start of week Basecamp notification] --> B[member publishes plan]
+  A[start of week Basecamp notification] --> B[member reflects on last week & sets new plan]
   B --> C[others may comment]
   C --> D[end]
-  E[end of week Basecamp notification] --> F[member reflects on progress]
-  F --> G[others may comment]
-  G --> H[end]
-~~~
-
-~~~mermaid
----
-title: Quarterly planning
----
-flowchart LR
-  A[quarterly Basecamp notification] --> B[member suggests OKRs]
-  B --> C[others may comment]
-  C --> B
-  C --> D[end]
-  E[monthly meeting to discuss progress] --> F[end]
 ~~~
