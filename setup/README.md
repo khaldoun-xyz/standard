@@ -64,3 +64,7 @@ alias n='~/programming/nvim-linux-x86_64.appimage'
   <https://askubuntu.com/questions/55868/installing-broadcom-wireless-drivers>
 - if your webcam is not available, follow the Debian steps:
   <https://github.com/patjak/facetimehd/wiki/Installation#get-started-on-debian>
+
+## Setting up Flameshot screenshots
+
+- follow this guide: <https://www.youtube.com/watch?v=xAvlBxf6bNM>

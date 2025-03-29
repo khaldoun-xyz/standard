@@ -12,11 +12,10 @@ sudo usermod -aG docker $USER # run this to not require sudo for docker commands
 # newgrp docker
 sudo apt install alacritty -y
 sudo snap install zellij --classic
-sudo apt install ripgrep -y # for finding files based on words
-sudo apt-get install gnome-screenshot -y
-sudo apt-get install gthumb -y
+sudo apt install ripgrep -y    # for finding files based on words
+sudo apt install flameshot -y  # screenshots
+sudo apt-get install gthumb -y # easy image editing
 sudo apt install htop -y
-sudo apt-get install cheese -y
 sudo apt install python3.10-venv -y # necessary for certain Lazyvim Mason installs
 sudo pip3 install virtualenv
 sudo apt install pre-commit -y
