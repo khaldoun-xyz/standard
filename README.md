@@ -28,7 +28,7 @@ while maintaining independence and creativity.
 We would like to ask you to adapt to our way.
 Feel free to propose changes at any time.
 
-First off, we like to be *cheap*, *patient* and **im*patient*.
+First off, we like to be *cheap*, *patient* and im*patient*.
 So please, help us get things done fast, make sure we have a plan and don't waste our money.
 
 Below is a list of the shared systems we currently use:
