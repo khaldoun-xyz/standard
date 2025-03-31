@@ -12,16 +12,13 @@ because you think you know all of this.
 
 ## Our plan with Khaldoun
 
-Khaldoun's core purpose is to build products to do more with less.
+Khaldoun is a German-Tunisian trade school for AI technologists.
 
-To that end, we're working through a multi-stage plan.
-Currently, we're in stage 1 and
-focused on making Tunis more attractive for technologists.
-Please read our plan carefully, make comments
-and let us know when you think we lose sight of it:
-[Our plan with Khaldoun](/docs/plan.md).
+Our plan is constantly in flux and might look very different in a few weeks. Still,
+[our plan](/docs/plan.md) 
+is still a good guide to better understand our thinking.
 
-## Systems
+## Systems that help us
 
 Many people don't think about *how they work*.
 Instead, they focus only on what they do.
@@ -31,9 +28,8 @@ while maintaining independence and creativity.
 We would like to ask you to adapt to our way.
 Feel free to propose changes at any time.
 
-First off, we like to be *cheap*, *impatient* and *long-term focused*.
-So please, make sure we have a plan,
-help us get things done fast and don't waste money.
+First off, we like to be *cheap*, *patient* and **im*patient*.
+So please, help us get things done fast, make sure we have a plan and don't waste our money.
 
 Below is a list of the shared systems we currently use:
 
