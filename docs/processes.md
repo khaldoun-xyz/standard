@@ -1,33 +1,12 @@
 # Khaldoun's process library
 
-Our eventual goal is the creation of autonomous
-(i.e. highly automated) organisations.
-To this end, we treat Khaldoun as our first test case.
-We aim to design this company in a way to enable scalable automation.
-
-Three critical elements for such a design are a company
-orchestration layer, a process library and a recertification process.
-
-- The orchestration layer is a light-weight, easy-to-switch hub
-  where all automation tasks are registered.
-- The process library is a central repository that contains all
-  critical org processes.
-- The recertification process is a recurring task that asks
-  process owners to certify the correctness of processes.
-
-## Process library
-
-- recruiting
-  - publish job description & receive applications
-  - evaluate candidates
 - onboarding
   - [first week](#first-week)
 - [product maintenance](#product-maintenance)
-  - [deploy product releases](#deploy-product-releases)
-  - [deploy feature commits](#deploy-feature-commits)
+  - [autodeploy product releases](#autodeploy-product-releases)
+  - [autodeploy feature commits](#autodeploy-feature-commits)
   - [(re-)certify ssl](#re-certify-ssl)
 - product development
-  - generate & explore ideas
   - [align and execute](#align-and-execute)
 
 ### Onboarding
@@ -41,7 +20,7 @@ orchestration layer, a process library and a recertification process.
 
 ### Product maintenance
 
-#### deploy product releases
+#### autodeploy product releases
 
 - For initial installation:
   - In your Digital Ocean droplet `/root`,
@@ -62,7 +41,7 @@ flowchart LR
   C --> D[end]
 ~~~
 
-#### deploy feature commits
+#### autodeploy feature commits
 
 - For initial installation:
   - In your Digital Ocean droplet `/root`,
