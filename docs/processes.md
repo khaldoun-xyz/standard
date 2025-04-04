@@ -9,18 +9,20 @@
 - product development
   - [align and execute](#align-and-execute)
 
-### Onboarding
+## Onboarding
 
-#### first week
+### first week
 
 - Prepare a "Your first day"" message in advance and post it on Basecamp.
 - On the first day, ask the candidate to read through the [welcome memo](../README.md)
   and to [set up his/her laptop](../setup/README.md).
-- Ask the new member to [sign up to Script](https://sisu.cx/script/).
+- Ask the new member to sign up to
+  - [The Batch](https://www.deeplearning.ai/the-batch/) and
+  - [Script](https://sisu.cx/script/).
 
-### Product maintenance
+## Product maintenance
 
-#### autodeploy product releases
+### autodeploy product releases
 
 - For initial installation:
   - In your Digital Ocean droplet `/root`,
@@ -41,7 +43,7 @@ flowchart LR
   C --> D[end]
 ~~~
 
-#### autodeploy feature commits
+### autodeploy feature commits
 
 - For initial installation:
   - In your Digital Ocean droplet `/root`,
@@ -62,7 +64,7 @@ flowchart LR
   C --> D[end]
 ~~~
 
-#### (re-)certify ssl
+### (re-)certify ssl
 
 ~~~mermaid
 ---
@@ -104,10 +106,9 @@ flowchart LR
     - `chmod -R 755 /etc/letsencrypt`
     - `chmod 644 /etc/letsencrypt/live/PROJECT_FOLDER/*.pem`
 
+## Product development
 
-### Product development
-
-#### Align and execute
+### Align and execute
 
 We do [asynchronous weekly check-ins](/README.md#weekly-check-ins).
 
@@ -116,7 +117,8 @@ We do [asynchronous weekly check-ins](/README.md#weekly-check-ins).
 title: Weekly check-ins
 ---
 flowchart LR
-  A[start of week Basecamp notification] --> B[member reflects on last week & sets new plan]
+  A[start of week notification] --> B[member reflects on progress, sets new plan]
   B --> C[others may comment]
   C --> D[end]
 ~~~
+
