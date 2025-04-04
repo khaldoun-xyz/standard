@@ -5,6 +5,9 @@ Khaldoun wants to **help people do more with less**.
 - **school.khaldoun is a trade school for AI technologists**.
   We teach our members practical skills, provide learning opportunities
   and place talented members at European organisations.
+- **os.khaldoun is an AI automation company**.
+  We develop low-cost solutions to help small companies
+  integrate AI into their processes.
 - **health.khaldoun is a healthcare cost reduction company**.
   We develop solutions to help reduce the escalating cost burden
   of European health insurance systems.
@@ -24,6 +27,11 @@ AI specialist, product manager, devops engineer, mlops engineer and many more.
     Lugha allows us to evaluate when a member is ready to work directly with a client.
 - If one of our members is interested and talented,
   we help him or her find a job at a company in Europe.
+
+## os.khaldoun 
+
+- one potential product is a simple way to integrate robotics
+- another potential product is a simple way to use llms
 
 ## health.khaldoun
 
