@@ -1,40 +1,35 @@
 # Our plan with Khaldoun
 
-Khaldoun wants to **help people do more with less**.
+Khaldoun is an open exploration.  
+We don't know where we'll end up.
+But we do know we want to help people **do more with less**.
 
-- **school.khaldoun is a trade school for AI technologists**.
-  We teach our members practical skills, provide learning opportunities
-  and place talented members at European organisations.
-- **os.khaldoun is an AI automation company**.
-  We develop low-cost solutions to help small companies
-  integrate AI into their processes.
-- **health.khaldoun is a healthcare cost reduction company**.
-  We develop solutions to help reduce the escalating cost burden
-  of European health insurance systems.
+- explore.khaldoun **provides money & time to explore**.
+  In the course of our explorations, we develop open source products.
+- ai.khaldoun develops **AI workers for small business owners**.
+  This is where we want to make money to keep going.
 
-## school.khaldoun
+## explore.khaldoun
 
-AI technologists are able to derive value from Machine Learning techniques.
-They could carry many titles, e.g. software developer, data scientist, data engineer,
-AI specialist, product manager, devops engineer, mlops engineer and many more.
+explore.khaldoun provides **money & time to explore**.  
+In the course of our explorations, we develop open source products:
 
-- We publish DIY guides, e.g. to set up an effective setup for AI work.
-- We develop open-source tools & do freelance AI work to provide learning opportunities.
-  - Our first open-source product is
-    [Lugha](https://lugha.xyz).
-    Some members of Khaldoun will work in international work contexts,
-    which typically requires speaking foreign languages.
-    Lugha allows us to evaluate when a member is ready to work directly with a client.
-- If one of our members is interested and talented,
-  we help him or her find a job at a company in Europe.
+- [**Lugha**](https://lugha.xyz) let's you evaluate your foreign language competence.
+- **Altadim** is an opinionated AI tool stack for your Linux computer.
+  Set it up with one command.
+- **Fireside** is a video interview series to generate ideas & inspiration.
 
-## os.khaldoun 
+## ai.khaldoun
 
-- one potential product is a simple way to integrate robotics
-- another potential product is a simple way to use llms
+ai.khaldoun develops **AI workers for small business owners**.  
+This is how we want to make money to keep going.
 
-## health.khaldoun
+- As a counter point to expensive high-end computers,
+  the makers of the Raspberry Pi have been trying
+  to make computers as affordable as possible.
+- At the budget of a small US school district, Sal Khan built Khan Academy,
+  one of the biggest non-profit learning platforms in the world.
 
-Healthcare costs have been escalating in Germany.
-This trend will accelerate over the next 10 years.
-We want to provide services to help decelerate it.
+While elite AI companies fight for GPUs and talent,
+we might be able to ask different questions to come up with different ideas.
+*What can we do with no GPUs and no talent?*

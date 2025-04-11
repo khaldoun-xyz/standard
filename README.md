@@ -5,42 +5,34 @@ Welcome to the team!
 Khaldoun wants to help people do more with less.
 And we hope you'll help make that a reality.
 Therefore, at first we want to help *you* do more with less.
-Like a surfer can use a wave to move forward effortlessly,
-you can integrate tools & systems to be more productive.
+We want you to be the surfer who uses a wave to move forward effortlessly.
 Please read this document carefully. Don't skip parts
 because you think you know all of this.
 
 ## Our plan with Khaldoun
 
-Khaldoun is a German-Tunisian trade school for AI technologists.
-
-Our plan is constantly in flux and might look very different in a few weeks. Still,
-[our plan](/docs/plan.md) 
-is still a good guide to better understand our thinking.
+Khaldoun is an open exploration.  
+[Our plan](/docs/plan.md) is usually outdated.
+Still, it's a good guide to better understand our thinking.
 
 ## Systems that help us
 
 Many people don't think about *how they work*.
-Instead, they focus only on what they do.
 We deliberately integrated certain behaviours
 because they give us speed and focus
 while maintaining independence and creativity.
 We would like to ask you to adapt to our way.
 Feel free to propose changes at any time.
 
-First off, we like to be *cheap*, *patient* and im*patient*.
-So please, help us get things done fast, make sure we have a plan and don't waste our money.
-
 Below is a list of the shared systems we currently use:
 
 - [extensive documentation](#extensive-documentation)
-- [asynchronous check-ins](#weekly-check-ins)
+- [asynchronous check-ins](#asynchronous-check-ins)
 - [quarterly planning](#quarterly-planning)
 - [a proper setup](#a-proper-setup)
 
 ### Extensive documentation
 
-We like to make things explicit & easy to understand.
 We write a lot. We deal with many things asynchronously.
 You might not be used to this yet. Still, we would like
 to ask you to structure your thoughts and write them down.
