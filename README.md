@@ -17,7 +17,6 @@ Still, it's a good guide to better understand our thinking.
 
 ## Systems that help us
 
-Many people don't think about *how they work*.
 We deliberately integrated certain behaviours
 because they give us speed and focus
 while maintaining independence and creativity.
