@@ -1,28 +1,18 @@
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt-get install snapd -y # snap store
-sudo apt install python3-pip -y
-sudo apt install postgresql -y
-sudo apt install sqlite3 -y
-sudo apt install tmux -y
-sudo apt install docker-compose -y
-sudo apt install docker.io -y
-sudo usermod -aG docker $USER # run this to not require sudo for docker commands
-# newgrp docker
-sudo apt install alacritty -y
-sudo snap install zellij --classic
-sudo apt install ripgrep -y    # for finding files based on words
-sudo apt install flameshot -y  # screenshots
-sudo apt-get install gthumb -y # easy image editing
-sudo apt install htop -y
-sudo apt install python3.10-venv -y # necessary for certain Lazyvim Mason installs
+sudo apt-get install snapd -y                                     # snap store
+sudo snap install zellij --classic sudo apt-get install gthumb -y # easy image editing
+sudo apt install python3-pip postgresql sqlite3 tmux docker-compose docker.io alacritty htop pre-commit -y
+sudo apt install ripgrep -y               # for finding files based on words
+sudo apt install flameshot -y             # screenshots
+sudo apt install python3.10-venv -y       # necessary for certain Lazyvim Mason installs
+sudo apt install chromium-chromedriver -y # for selenium testing
+sudo usermod -aG docker $USER             # run this to not require sudo for docker commands
 sudo pip3 install virtualenv
-sudo apt install pre-commit -y
-sudo apt reinstall --purge bluez gnome-bluetooth -y # to preempt headphone issues
-sudo apt install chromium-chromedriver -y           # for selenium testing
-pip install aider-install
+pip install aider-install # aider is an AI code assistant in the terminal
 aider-install
+sudo apt reinstall --purge bluez gnome-bluetooth -y # to preempt headphone issues
 
 mkdir ~/virtualenvs
 mkdir ~/programming/
