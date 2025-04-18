@@ -21,6 +21,8 @@ sudo pip3 install virtualenv
 sudo apt install pre-commit -y
 sudo apt reinstall --purge bluez gnome-bluetooth -y # to preempt headphone issues
 sudo apt install chromium-chromedriver -y           # for selenium testing
+pip install aider-install
+aider-install
 
 mkdir ~/virtualenvs
 mkdir ~/programming/
