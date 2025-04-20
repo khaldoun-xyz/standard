@@ -32,4 +32,4 @@ This is how we want to make money to keep going.
 
 While elite AI companies fight for GPUs and talent,
 we might be able to ask different questions to come up with different ideas.
-*What can we do with no GPUs and no talent?*
+*What can we do with no GPUs that does not require any talent?*
