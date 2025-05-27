@@ -2,16 +2,14 @@
 
 Welcome to the team!
 
-Khaldoun wants to help people do more with less.
+Khaldoun wants to help its clients do more with less.
 And we hope you'll help make that a reality.
 Therefore, at first we want to help *you* do more with less.
 We want you to be the surfer who uses a wave to move forward effortlessly.
-Please read this document carefully. Don't skip parts
-because you think you know all of this.
 
 ## Our plan with Khaldoun
 
-Khaldoun is an open exploration.  
+Khaldoun is an automation & data collection company for insurance companies.
 [Our plan](/docs/plan.md) is usually outdated.
 Still, it's a good guide to better understand our thinking.
 
@@ -28,7 +26,7 @@ Below is a list of the shared systems we currently use:
 - [extensive documentation](#extensive-documentation)
 - [asynchronous check-ins](#asynchronous-check-ins)
 - [quarterly planning](#quarterly-planning)
-- [a proper setup](#a-proper-setup)
+- [a proper dev setup](#a-proper-dev-setup)
 
 ### Extensive documentation
 
@@ -50,29 +48,25 @@ As we grow, the need for alignment increases. To make sure we're on the
 same page and generally understand our overall direction, we set quarterly
 Objectives and Key Results (OKRs). Please influence our OKRs.
 
-### A proper setup
+### A proper dev setup
 
 If you're highly experienced you might already have come up with your own
 tool stack that works just right for you. Congrats! Please stick to that.
 However, you're most likely not overly experienced yet. So, please consider
 using our proposed tool stack.
-On Linux and Windows you can install it with one command:
-[Khaldoun's installer script](/setup/README.md). This is optional.
+On Linux you can install it with one command:
+[Altadim](https://github.com/khaldoun-xyz/altadim)
 
 ## Technology skills
 
-Everyone is hyped up about AI. While AI might change many things,
-there are still going to be many things that won't change much.
-Many people seem to believe that because of AI, the skill to develop highly scalable
+Many people seem to believe that because of AI, the skill to develop scalable
 software will lose its value. We don't believe that.
 Twenty years ago, a technologist with deep knowledge of how to use the terminal
-or how to write elegant code was much more productive than the rest.
-The same is true today. Why would that be different in twenty years?
+was much more productive than the rest. The same is true today.
 AI will disproportionally benefit those with the proper foundations.
 
-Below you can see a list of foundational technologies that we apply on a daily basis.
-While you won't use all of these tools right away, it is generally useful if you
-familiarise yourself with our tech stack.
+Below you can see a list of technologies that we use on a daily basis.
+It is generally useful if you familiarise yourself with our tech stack.
 
 - [Terminal](#terminal)
 - [Git](#git)
