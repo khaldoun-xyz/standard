@@ -200,6 +200,8 @@ how to ask your colleagues for a PR review.
   (this collapses a branch with many commits into one feature commit in master).
 - Where helpful, use gitmojis in your commit messages (e.g. :bug:): <https://gitmoji.dev/>.
 - Don't open PRs without descriptions.
+  Make sure to minimise typos and formatting issues.
+- PRs that are too large cannot be merged (extreme case: 5000+ files are too large).
 - Once you dealt with a PR comment,
   click on "Resolve conversation" to indicate that you consider it resolved.
   Either resolve all comments or provide responses.
@@ -334,29 +336,3 @@ Here is a list of basic vim motions.
 - `u/ctrl + r`: undo/repeat the previous command
 - `w/b`: jump ahead/back one word
 - `gg/G`: jump to top/bottom of file
-
-#### LazyVim
-
-Here is a list of useful LazyVim commands.
-Note: you need to make sure to use LazyVim within Zellij.
-Follow [our install script](/setup/README.md) to make sure everything is set up.
-
-- `space e`: open/close the file tree
-  - `h in file tree`: show hidden files (.env files are never shown)
-  - `a in file tree`: create a file or folder (add `/` to create a folder)
-  - `d in file tree`: delete a file or folder
-  - `ctrl + w w`: jump from file to file tree and vice versa
-- `space b d`: close the current file
-- `space b o`: close all files except the current one
-- `shift h/l`: move to the next file on the left/right
-- `space space`: open the file finder
-- `space s g`: search all files
-- `space g g`: open LazyGit
-- `alt + n`: create a new window tile
-  - `alt + +/-`: increase/decrease the size of the current window tile
-  - `alt + alt + [`: change the window tile organisation
-  - `ctrl + p r`: split up the current window tile into 2
-  - `alt + arrow keys`: jump to the next window tile
-  - `alt + f`: open a floating window tile
-- `ctrl + t n`: create a new tab
-  - `alt + h/l`: jump to the next tab on the left/right
