@@ -2,7 +2,7 @@
 
 Khaldoun helps its clients do more with less.
 
-- **bey**: an external data feed,
+- **bey** is a data feed,
 - **tanfidh** is an ai agent for the backoffice.
 
 ----
