@@ -9,8 +9,6 @@ We want you to be the surfer who uses a wave to move forward effortlessly.
 
 ## Our plan with Khaldoun
 
-Khaldoun is an automation & data collection company for insurance.
-We help our clients do more with less.
 [Our plan](/docs/plan.md) is usually outdated.
 Still, it's a good guide to better understand our thinking.
 
