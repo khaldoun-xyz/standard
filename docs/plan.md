@@ -28,5 +28,4 @@ We believe that ...
 
 - independence is very valuable,
 - we can innovate at low cost structures by asking different questions,
-- an ecosystem doesn't come into existence all at once,
-- letting go is very valuable.
+- an ecosystem doesn't come into existence all at once.
