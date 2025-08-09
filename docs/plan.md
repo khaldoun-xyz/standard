@@ -1,31 +1,32 @@
 # Our plan with Khaldoun
 
 Khaldoun helps its clients do more with less.
-Our primary focus is supporting AI transformation activities.
 
-- **bey** is a data feed,
-- **tanfidh** is an ai agent for the backoffice.
+- Our primary focus is initiating & supporting AI transformation activities.
+  - **bey** is a data feed,
+  - **tanfidh** is an ai agent for the backoffice.
+- Our secondary focus is developing a membership programme.
+  Our membership is a fast track for doing more with less.
+  We develop internal products for our members:
+  - [**Altadaim**](https://github.com/khaldoun-xyz/altadim) is a
+      Linux developer setup for data scientists.
+  - [**Assaas**](https://github.com/khaldoun-xyz/assaas) is a
+      git repo template
+      to give structure to your work.
+  - [**Lugha**](https://lugha.xyz) let's you evaluate your
+      language skills through conversations.
+  - [**Sisu**](https://sisu.cx) is your pacing device.
 
 ----
 
-Working at Khaldoun means that you have full access to a Khaldoun membership.
-Our primary purpose is facilitating change. This is why our membership
-is geared towards continuous learning and excellence.
+Things we'll never do:
 
-We develop internal products for our members:
-
-- [**Altadaim**](https://github.com/khaldoun-xyz/altadim) is a Linux
-  developer setup for data scientists.
-- Qalib (wip) is a git repo template
-  to give structure to our work.
-- [**Lugha**](https://lugha.xyz) let's you evaluate your language
-  skills through conversations.
-- [**Sisu**](https://sisu.cx) is a cockpit for your daily life.
+- We will never develop products with your data behind your back.
+- We help you be great. We will never sell your accomplishments as ours.
 
 ----
 
 We believe that ...
 
-- independence is very valuable,
-- we can innovate at low cost structures by asking different questions,
+- independence and minimal costs are closely linked,
 - an ecosystem doesn't come into existence all at once.
