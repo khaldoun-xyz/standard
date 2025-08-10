@@ -93,8 +93,8 @@ even if you don't know what 'transmogrify' means.
   existing changes you haven't merged yet, type in `git stash` first.)
 - `git add <file>`: Mark a file as "part of the next commit".
   (`git add .` marks all files in the current directory & subdirectories)
-- `git stash`: Save uncommitted stages into temporary storage & remove them locally.
-  (Use `git stash pop` to load the stages from temporary storage.)
+- `git stash`: Save uncommitted changes into temporary storage & remove them locally.
+  (Use `git stash pop` to load the changes from the temporary storage.)
 - `git commit -m "<message>"`: Commits changes with a meaningful commit message.
   (For longer commit messages just write `git commit`.)
 - `git rebase master`: Load the most recent changes from master into your branch.
