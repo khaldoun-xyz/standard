@@ -19,7 +19,8 @@ We deliberately integrated certain behaviours
 because they give us speed and focus
 while maintaining independence and creativity.
 
-You can see the full list of our processes at <https://sisu.cx/processes>.
+You can see the full list of our processes at <https://sisu.cx/processes>. 
+(Ask for access.)
 
 ## Our tech stack
 
