@@ -67,6 +67,30 @@ The **ideal PR is short and concise**.
    - Close related issues after merging PRs
    - Reference the resolving PR in the issue closure comment
 
+## Deal with git merge conflicts
+
+Generally, we recommend to fix merge conflicts by creating an additional commit.
+The most typical case for merge conflicts stems from another PR that was merged
+into `main`. Since you don't have the newest changes from `main` in your `feature`
+branch yet, you need to bring them in.
+
+First, pull the most recent changes to `main` from your remote branch `origin`:
+
+- `git checkout main`
+- `git pull origin main`
+
+Next, merge your local `main` branch into your `feature` branch:
+
+- `git checkout feature`
+- `git merge main`
+
+If there are merge conflicts, the merge will stop and you'll be asked
+to resolve the merge conflicts in the files that are mentioned in the
+error message first. Open each of these files and resolve your conflicts.
+
+Then, add your updated file with `git add file1.py` and run `git commit`.
+Confirm the commit message et voilà.
+
 ## Tips for Efficient Git Usage
 
 - Keep branches focused on single features or fixes
