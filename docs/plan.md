@@ -3,7 +3,6 @@
 Khaldoun is a Tunisian-German AI boutique. We help our clients do more with less.
 
 - Our primary focus is initiating & supporting AI transformation activities.
-  We will charge b2b clients for this.
   - We develop the insurance agency of the future.
     For this, we directly collaborate with tied agents.
     - **bey** monitors activities of tied agents across the industry,
@@ -13,16 +12,16 @@ Khaldoun is a Tunisian-German AI boutique. We help our clients do more with less
     - **renard** is our education service to learn skills quickly.
 - Our secondary focus is developing our member' skills.
   This is inner work. For this, we develop internal products for our members:
-  - [**The Handbook**](https://github.com/khaldoun-xyz/handbook) is a guide for
+  - [**The Handbook**](https://github.com/khaldoun-xyz/handbook) is our guide for
     new members that spells out our way of working.
-  - [**Altadaim**](https://github.com/khaldoun-xyz/altadaim) is a
-      Linux developer setup for data scientists.
+  - [**Altadaim**](https://github.com/khaldoun-xyz/altadaim) is our
+    Linux developer setup.
   - [**Assaas**](https://github.com/khaldoun-xyz/assaas) is a
-      git repo template
-      to give structure to your work.
-  - [**Lugha**](https://lugha.xyz) lets you evaluate your
-      language skills through conversations.
-  - [**Sisu**](https://sisu.cx) is your pacing device.
+    git repo template
+    to give structure to our work.
+  - [**Lugha**](https://lugha.xyz) lets us evaluate our
+    language skills through conversations.
+  - [**Sisu**](https://sisu.cx) is our pacing device.
 
 ----
 
