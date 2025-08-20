@@ -2,10 +2,11 @@
 
 Welcome to the team!
 
-Khaldoun wants to help its clients do more with less.
-And we hope you'll help make that a reality.
-Therefore, at first we want to help *you* do more with less.
+Khaldoun wants to help its members do more with less.
+It sounds easy, but it isn't. It requires hard work!
+
 We want you to be the surfer who uses a wave to move forward effortlessly.
+Whether you get there is up to you.
 
 ## Our plan with Khaldoun
 
@@ -19,6 +20,7 @@ because they give us speed and focus
 while maintaining independence and creativity.
 
 You can see the full list of our processes at <https://sisu.cx/processes>.
+(Ask for access.)
 
 ## Our tech stack
 
