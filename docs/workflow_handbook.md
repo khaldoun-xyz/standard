@@ -14,7 +14,7 @@ Every Monday we share a reflection of our last week
 and a plan for the coming week with the full team.
 Everybody is invited to comment.
 
-We do this strengthen our relationships among each other
+We do this to strengthen our relationships among each other
 and to make fast progress.
 
 - Writing down your thoughts helps you think things through.
