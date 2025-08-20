@@ -24,7 +24,8 @@ We ask you to adapt to our best practices.
 If you think our way of working can be improved,
 please suggest improvements to our workflows.
 
-- We documented how we use version control in our [Git handbook](/docs/version_control.md).
+- We documented how we collaborate in ou [Workflow handbook](./docs/workflow_handbook.md).
+- We documented how we use version control in our [Git handbook](/docs/git_handbook.md).
 
 ## Systems that help us
 
