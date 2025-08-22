@@ -27,10 +27,9 @@ The **ideal PR is short and concise**.
 
 1. **Keep your branch updated**
    - Regularly rebase your branch with the master using `git rebase master`.
-     - Alternatively, you can create a new commit
-       in your git history with `git merge master`.
      - Ensure you have the latest master branch locally before rebasing or merging.
-   - Resolve any merge conflicts before requesting reviews.
+   - If you have opened your branch already and have run into merge conflicts,
+     refer to the ['Deal with merge conflicts'](#deal-with-git-merge-conflicts) section.
 
 2. **Code quality**
    - Run pre-commit hooks before committing.
