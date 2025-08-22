@@ -21,9 +21,7 @@ Repeat.**
 This means that very rarely would you ever create large PRs.
 The **ideal PR is short and concise**.
 
-## Best practices for Pull Requests (PRs)
-
-### Before creating a PR
+### Best practices for Pull Requests (PRs)
 
 1. **Keep your branch updated**
    - Regularly rebase your branch with the master using `git rebase master`.
@@ -31,42 +29,36 @@ The **ideal PR is short and concise**.
    - If you have opened your branch already and have run into merge conflicts,
      refer to the ['Deal with merge conflicts'](#deal-with-git-merge-conflicts) section.
 
-2. **Code quality**
-   - Run pre-commit hooks before committing.
-     Ensure all hooks pass before requesting reviews
+2. **Run pre-commit hooks**
+   - Ensure all hooks pass before requesting reviews
 
-### Creating and managing PRs
-
-1. **PR status**
+3. **Open a `draft PR` right away**
    - Don't wait until your code change is finished.
      Open a `draft PR` immediately after your first commit.
    - Mark as "Ready for Review" when the PR is complete
      and you want to formally ask for a peer review.
 
-2. **PR description**
+4. **Add a clear PR description**
    - Always include a clear, well-formatted description
    - Avoid typos and formatting issues
-   - Keep PRs manageable in size (avoid large changes like 50+ files)
 
-3. **Commit messages**
+5. **Provide clear commit messages**
    - Use descriptive commit messages
    - Consider using gitmojis for visual context (e.g., :bug:
      for bug fixes) - see [gitmoji.dev](https://gitmoji.dev/)
    - Squash minor commits into more meaningful ones
    - Set "Squash and merge" as the default merge option
 
-### Handling Reviews
-
-1. **Responding to Comments**
+6. **Resolve all PR comments**
    - Address all review comments
    - Click "Resolve conversation" after addressing a comment
    - Either resolve or provide clear responses to all comments
 
-2. **Issue Management**
+7. **Reference issues that you resolve in your PR**
    - Close related issues after merging PRs
    - Reference the resolving PR in the issue closure comment
 
-## Deal with git merge conflicts
+### Deal with git merge conflicts
 
 Generally, we recommend to fix merge conflicts by creating an additional commit.
 The most typical case for merge conflicts stems from another PR that was merged
@@ -90,13 +82,7 @@ error message first. Open each of these files and resolve your conflicts.
 Then, add your updated file with `git add file1.py` and run `git commit`.
 Confirm the commit message et voilà.
 
-## Tips for Efficient Git Usage
-
-- Keep branches focused on single features or fixes
-- Make atomic commits (one logical change per commit)
-- Handle merge conflicts promptly
-
-## Helpful git commands
+### Helpful git commands
 
 Shown below is a subset of git commands.
 Feel free to dive deeper.
@@ -129,3 +115,13 @@ even if you don't know what 'transmogrify' means.
 - `git reset --soft HEAD^`: revert the last commit
   and keep the changes in an uncommited stage.
   (Use `git reset --hard HEAD^` to revert the last commit and delete all changes.)
+
+## Git repository setup
+
+1. Use Khaldoun's git repo template: Whenever possible, create a new repo
+   with [Assaas](https://github.com/khaldoun-xyz/assaas) as your base template.
+2. Only allow squash merging: After creating the repo, go to General settings
+   on Github, scroll to the `Pull Requests` section and
+   only select `Allow squash merging`.
+3. Auto-delete a branch after merging: In the same settings section, activate
+   `Automatically delete head branches`.
