@@ -1,24 +1,21 @@
 # The Standard
 
-Khaldoun wants to help its clients do more with less.
-This starts with you.  
-We want you to feel like a surfer who moves forward effortlessly.  
-To help you get there, we created The Standard. It is our way of work codified.
+High standards are a key to progress.
+We want you to feel like a surfer who moves forward effortlessly.
+To help you get there, we created The Standard. It is Khaldoun's way of work codified.
 
-The Standard is our greatest asset and we teach it to you free of charge.  
+Khaldoun is a Tunisian-German AI boutique that helps its members do more with less.
+The Standard is our greatest asset and we teach it to you free of charge.
 In return, we expect you to apply it on a daily basis.
 
-Should you ever decide to leave Khaldoun and join another organisation, they'll be
-very lucky to have you - thanks in part to The Standard.
+## Standard #1: Weekly priorities check
 
-## Standard #1: Asynchronous weekly updates
-
-Every Monday you'll reflect on last week's progress
-and write up a plan for the coming week.
+Every Monday we write down around 3 focus areas for the week.
+And we reflect on last week's progress.
 Everybody is invited to comment.
 
-Writing down your thoughts helps you think things through.
-And if there is no relevant update in weeks, we'll notice.
+We do it in a company-internal public format, but that is less important.
+Just take some time and give your week an intention.
 
 ![Demo Weekly Plan](./docs/imgs/screenshot-weekly_plan.png)
 
