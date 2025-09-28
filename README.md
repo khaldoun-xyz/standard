@@ -96,3 +96,41 @@ We properly set up your git repositories on Github to reduce our mental load.
    `Automatically delete head branches`.
 
    ![Auto-delete branch](./docs/imgs/screenshot-auto_delete_branch.png)
+
+## Standard #8: Write easy-to-understand code
+
+Even in the age of AI coding assistants, you want to be in control of your code.
+Therefore, write (or ask the AI to write) code that your future self
+will understand right away.
+
+This is a poor example:
+
+```python
+def proc(o):
+  ok = valid(o)
+  if not ok:
+    return "Error"
+  p = pay(o)
+  if p:
+    save(o)
+    return "OK"
+  else:
+    return "Error"
+```
+
+The same function, but this time easy to understand:
+
+```python
+def process_order(order_details):
+  order_is_valid = validate_order(order_details)
+  if not order_is_valid:
+    return "Error: order is not valid"
+  payment_is_valid = process_payment(order_details)
+  if payment_is_valid:
+    save_order(order_details)
+    return "OK: order processed successfully"
+  else:
+    return "Error: payment is not valid"
+```
+
+This example is from the talk ["Escape from Tutorial Hell"](https://www.youtube.com/watch?v=dSoxINozBKU&t=625s).
