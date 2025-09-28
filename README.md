@@ -1,12 +1,12 @@
 # The Standard
 
-High standards are a key to progress.
 We want you to feel like a surfer who moves forward effortlessly.
-To help you get there, we created The Standard. It is Khaldoun's way of work codified.
+To help you get there, we wrote The Standard.
+It is [Khaldoun](https://khaldoun.xyz)'s way of work codified.
+During their first weeks, all our members integrate these standards.
+We give it to you free of charge. In return, we ask you to apply it on a daily basis.
 
-Khaldoun is a Tunisian-German AI boutique that helps its members do more with less.
-The Standard is our greatest asset and we teach it to you free of charge.
-In return, we expect you to apply it on a daily basis.
+This document is continuously updated.
 
 ## Standard #1: Weekly priorities check
 
@@ -19,7 +19,7 @@ Just take some time and give your week an intention.
 
 ![Demo Weekly Plan](./docs/imgs/screenshot-weekly_plan.png)
 
-## Standard #2: Track To Dos as Github Issues
+## Standard #2: Track To Dos as issues
 
 To keep track of relevant tasks we use Github Issues. The most important
 tasks are flagged as `prio1`. The next important tasks as `prio2`.
@@ -30,28 +30,33 @@ When you don't know what to do and struggle to come up with a clear answer,
 pick one of the open issues. If you don't know which one, just ask somebody
 who likely knows.
 
-## Standard #3: PRs follow Issues
+## Standard #3: PRs follow issues
 
 When you identify a problem that you want to resolve,
-create an issue first. Then you create a PR that addresses this issue.
-After the PR is merged, you close the issue.
-Repeat.
+create an issue first. Then you create a Pull Request (PR)
+that addresses this issue. In your PR description, link the issue that is
+resolved with this PR by writing `closes #[issue_number]`. Github will
+automatically close the issue once you merge the PR.
 
 This means that the ideal PR is short and concise.
-
 The only occasions where this does not apply is i) fixing acute bugs or
 ii) combining minor changes into one PR.
 
 ## Standard #4: PRs are fully tested, clean & easy to understand
 
-We do not open PRs to be notified about typos or that the app isn't working.
-At the minimum, every PR has successfully run a pre-commit check. The
+We do not ask for a review without making sure that basic checks have passed.
+At the minimum, every PR has successfully run a pre-commit hook. The
 description & commit messages are clear and with enough detail.
+
+Do not ask for a review on a PR in the `draft` stage.
+Before requesting a PR review from anybody,
+set the stage of the PR to `ready for review`.
 
 ## Standard #5: Respond to all git comments
 
 If reviewers invest the time to review your work, you'll find the time to
 respond to their feedback. This also applies to AI-generated feedback.
+Do not leave comments in your PR uncommented or unresolved.
 
 ## Standard #6: Resolve merge conflicts promptly
 
@@ -77,20 +82,17 @@ error message first. Open each of these files and resolve your conflicts.
 Then, add your updated file with `git add file.py` and run `git commit`.
 Confirm the commit message.
 
-## Standard #7: Only allow squash merging
+## Standard #7: Properly set up git repositories
 
-Without squash merging, your git history will quickly look like a spaghetti ball.
+We properly set up your git repositories on Github to reduce our mental load.
 
 1. Only allow squash merging: After creating the repo, go to General settings
    on Github, scroll to the `Pull Requests` section and
    only select `Allow squash merging`.
+
+   ![Only allow squash merging](./docs/imgs/screenshot-squash_merging.png)
+
 2. Auto-delete a branch after merging: In the same settings section, activate
    `Automatically delete head branches`.
-3. Bonus: Whenever possible, create a new repo
-   with [Assaas](https://github.com/khaldoun-xyz/assaas),
-   Khaldoun's git repo template.
 
-## Our tech stack
-
-Check out [Altadaim](https://github.com/khaldoun-xyz/altadaim)
-to get a better understanding of how we think about our tech stack.
+   ![Auto-delete branch](./docs/imgs/screenshot-auto_delete_branch.png)
