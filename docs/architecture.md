@@ -1,9 +1,16 @@
-# Khaldoun's architecture
+# Architectural paradigms
 
-Khaldoun as an organisation relies on a platform with various building blocks.
+## AI end-user product
 
-- A deployment environment (droplets & databases configured via Terraform),
-  and standardised IT components (webhooks, Github Actions, Sentry).
-- An analytics sandbox for exploration
-  around data extraction (LabelStudio, file storage).
-- A [process library](/docs/processes.md).
+- Deploy the application using docker-compose.yml, which deploys three
+  Docker containers: Frontend (React) + Backend (FastAPI) + NGINX
+- Use Pixi for dependency management locally & inside
+  the Docker containers, run basic pre-commit hooks
+- Certify SSL using `sudo certbot certonly --standalone -d URL`
+  on the server, mount the SSL certificates in nginx.conf
+- Add Python backend tests to a `/tests` folder outside the `/src` folder,
+  run a GitHub Action that runs these tests
+  when a commit is pushed to GitHub
+- Add a GitHub Action that automatically deploys
+  a master merge to production
+
