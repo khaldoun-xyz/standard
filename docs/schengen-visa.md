@@ -13,7 +13,7 @@ A German Schengen Visa allows for a short-term tourist visit to Germany and othe
 
 ---
 
-# Application Procedure
+## Application Procedure
 
 ### 1. **Registration and Appointment Booking**
 
