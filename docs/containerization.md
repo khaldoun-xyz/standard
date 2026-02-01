@@ -6,11 +6,12 @@ A beginner-friendly guide explaining containerization concepts from Docker basic
 
 ## Table of Contents
 1. [What is Docker?](#what-is-docker)
-2. [Docker Compose](#docker-compose)
-3. [Kubernetes](#kubernetes)
-4. [Visual Architecture Comparison](#visual-architecture-comparison)
-5. [When to Use What?](#when-to-use-what)
-6. [Quick Reference](#quick-reference)
+2. [Base Images](#base-images)
+3. [Docker Compose](#docker-compose)
+4. [Kubernetes](#kubernetes)
+5. [Visual Architecture Comparison](#visual-architecture-comparison)
+6. [When to Use What?](#when-to-use-what)
+7. [Quick Reference](#quick-reference)
 
 ---
 
@@ -41,6 +42,123 @@ Docker packages your application and all its dependencies into a **container** -
 - Like running a program from an executable
 - Isolated from your system and other containers
 - You can run multiple containers from the same image
+
+### Base Images
+
+**Base Image** = The starting point for building your Docker image
+- Specified with the `FROM` instruction in a Dockerfile
+- Contains the operating system and basic tools
+- Everything you build adds on top of this foundation
+
+#### What is a Base Image?
+
+Think of a base image like the foundation of a house:
+- **Base Image** = Foundation (OS, basic tools)
+- **Your Layers** = Everything you add (your app, dependencies)
+
+#### Common Base Images
+
+**Official Images:**
+- `node:20-alpine` - Node.js 20 on Alpine Linux (small, ~50MB)
+- `python:3.12` - Python 3.12 on Debian (larger, ~900MB)
+- `nginx:alpine` - Nginx web server on Alpine Linux (~25MB)
+- `ubuntu:22.04` - Full Ubuntu Linux (~80MB)
+
+**Enterprise Images:**
+- `micromamba:2025.08.26` - Enterprise package manager with pre-configured tools
+- Custom images from private registries (Artifactory, etc.)
+
+#### Why Base Images Are Useful
+
+**1. Pre-installed Software**
+- Base images come with software already installed
+- Example: `node:20-alpine` has Node.js 20 ready to use
+- No need to install from scratch
+
+**2. Consistency**
+- Same base image = same environment everywhere
+- Works the same on your laptop, CI/CD, and production
+- Eliminates "works on my machine" problems
+
+**3. Security & Updates**
+- Base images are maintained and updated regularly
+- Security patches applied by maintainers
+- You benefit from community/enterprise maintenance
+
+**4. Size Optimization**
+- Different base images have different sizes
+- `alpine` images are very small (~5-50MB)
+- `debian/ubuntu` images are larger (~80-900MB)
+- Choose based on your needs
+
+**5. Enterprise Features**
+- Enterprise base images include:
+  - Pre-configured authentication (Artifactory, etc.)
+  - Enterprise certificates
+  - Compliance settings
+  - Standardized tooling
+
+#### Example: Base Image Comparison
+
+**Building a Node.js App:**
+
+**Option 1: Start from Scratch**
+```dockerfile
+FROM scratch  # Empty image
+# Need to install Linux, Node.js, npm, everything...
+# Very complex, time-consuming
+```
+
+**Option 2: Use Base Image**
+```dockerfile
+FROM node:20-alpine
+# Node.js 20 already installed!
+# Just add your code
+COPY . .
+RUN npm install
+```
+
+**Option 3: Enterprise Base Image**
+```dockerfile
+FROM micromamba:2025.08.26
+# Enterprise tools pre-configured
+# Artifactory authentication ready
+# Compliance settings applied
+```
+
+#### Choosing a Base Image
+
+**Considerations:**
+- ✅ **Size**: Smaller = faster downloads, less storage
+- ✅ **Security**: Regularly updated, minimal attack surface
+- ✅ **Compatibility**: Works with your application
+- ✅ **Enterprise**: Meets compliance requirements
+- ✅ **Maintenance**: Actively maintained
+
+**Common Choices:**
+- **Development**: `node:20-alpine` (small, fast)
+- **Production**: Official images or enterprise-approved images
+- **Enterprise**: Custom images from your organization's registry
+
+#### Multi-Stage Builds and Base Images
+
+You can use different base images for different stages:
+
+```dockerfile
+# Stage 1: Build (large base image with build tools)
+FROM node:20-alpine as builder
+RUN npm install
+RUN npm run build
+
+# Stage 2: Production (small base image, just runtime)
+FROM nginx:alpine
+COPY --from=builder /app/dist /usr/share/nginx/html
+```
+
+**Benefits:**
+- Build stage: Large image with all tools (discarded)
+- Production stage: Small image with only what's needed (kept)
+- Final image is much smaller!
 
 ### Basic Commands
 ```bash
