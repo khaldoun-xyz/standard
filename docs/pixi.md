@@ -88,6 +88,34 @@ pixi install
 cd backend
 pixi install
 ```
+## Understanding Pixi Concepts
+
+**Features** are logical groupings of dependencies and optional functionality:
+- Think of them as "optional add-ons" that can be combined
+- Each feature can define its own dependencies (both conda and PyPI packages)
+- Features can also define tasks that are only available when that feature is active
+- Example: `[feature.prod.dependencies]` contains packages needed for production runtime
+- Example: `[feature.dev.dependencies]` contains packages only needed during development
+
+**Environments** are named combinations of features that create a complete, usable environment:
+- An environment specifies which features to activate together
+- When you install an environment, Pixi installs all dependencies from all its features
+- Different environments allow you to have different dependency sets for different purposes
+- Example: `default = { features = ["prod", "dev"] }` means "install both production AND development dependencies"
+- Example: `prod = { features = ["prod"] }` means "only install production dependencies"
+- You can install a specific environment: `pixi install --environment ci`
+
+**Tasks** are predefined commands you can run within a Pixi environment:
+- Similar to npm scripts or Makefile targets
+- Tasks run with the Pixi environment activated, so all dependencies are available
+- Tasks can be defined globally or scoped to specific features
+- Run tasks with: `pixi task <task-name>`
+- Example: `pixi task dev` runs the development server
+- Example: `pixi task test` runs the test suite
+
+- **PyPI Configuration**: 
+  - Placeholder for private PyPI indexes (commented out)
+  - Ready to configure `axallm` and other private packages
 
 ### 4. Features and Linting
 
