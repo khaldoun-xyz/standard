@@ -91,7 +91,7 @@ When we start a new project, we follow these steps.
 
 ### 3) We add further files
 
-- Run `mkdir src tests docs` and `touch .gitignore README.md`.
+- Run `mkdir src tests docs .github` and `touch .gitignore README.md`.
 
 ### Basic repo structure
 
@@ -101,7 +101,6 @@ After these steps, our resulting repo structure looks like this:
   ├── .git/
   ├── .github/
   ├── .gitignore
-  ├── .pre-commit-config.yaml
   ├── docs/
   ├── pixi.lock
   ├── pixi.toml
