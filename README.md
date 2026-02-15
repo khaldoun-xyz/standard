@@ -53,7 +53,7 @@ error message first. Open each of these files and resolve your conflicts.
 Then, add your updated file with `git add file.py` and run `git commit`.
 Confirm the commit message.
 
-## We have specific settings for our repositories on GitHub
+## We set specific settings on GitHub
 
 We properly set up our git repositories on GitHub to reduce our mental load.
 
@@ -67,3 +67,44 @@ We properly set up our git repositories on GitHub to reduce our mental load.
    `Automatically delete head branches`.
 
    ![Auto-delete branch](./docs/imgs/screenshot-auto_delete_branch.png)
+
+## Our code repositories follow a basic structure
+
+When we start a new project, we follow these steps.
+
+### 1) We set up a new git repo
+
+- Create a repo within the Khaldoun organisation at <https://github.com/khaldoun-xyz>.
+    Keep the newly created repo page open because you will
+    copy the instructions later.
+- On your laptop navigate to your Khaldoun repos, create a new directory
+    with `mkdir REPO_NAME` and navigate to it with `cd REPO_NAME`.
+- Copy-paste the instructions from your newly created repo page on GitHub.
+    That way, you initialise a git repository and set up a remote branch.
+    ![GitHub repo instructions](./docs/imgs/screenshot-github_instructions.png)
+- [Set specific settings](#we-set-specific-settings-on-github) in your
+    GitHub repo.
+
+### 2) We initialise a pixi project
+
+- Run `pixi init` in the root of the repository.
+
+### 3) We add further files
+
+- Run `mkdir src tests docs .github` and `touch .gitignore README.md`.
+
+### Basic repo structure
+
+After these steps, our resulting repo structure looks like this:
+
+  ```bash
+  ├── .git/
+  ├── .github/
+  ├── .gitignore
+  ├── docs/
+  ├── pixi.lock
+  ├── pixi.toml
+  ├── README.md
+  ├── src/
+  └── tests/
+  ```
