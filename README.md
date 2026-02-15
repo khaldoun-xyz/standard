@@ -93,7 +93,7 @@ When we start a new project, we follow these steps.
 
 - Run `mkdir src tests docs .github` and `touch .gitignore README.md`.
 
-### Basic repo structure
+### Resulting repo structure
 
 After these steps, our resulting repo structure looks like this:
 
