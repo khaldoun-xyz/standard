@@ -1,52 +1,37 @@
 # The Standard
 
 The Standard is [Khaldoun](https://khaldoun.xyz)'s way of work codified.
-During their first weeks, all our members integrate these standards.
+During your first weeks, we expect you to integrate these standards.
 
 This document is continuously updated.
 
-## Track To Dos as issues
-
-To keep track of relevant tasks we use Github Issues. The most important
-tasks are flagged as `prio1`. The next important tasks as `prio2`.
-
-![Demo Github Issues](./docs/imgs/screenshot-git-gh_issues.png)
-
-When you don't know what to do and struggle to come up with a clear answer,
-pick one of the open issues. If you don't know which one, just ask somebody
-who likely knows.
-
-## PRs follow issues
+## Our PRs follow issues
 
 When you identify a problem that you want to resolve,
-create an issue first. Then you create a Pull Request (PR)
+create an issue first. Then create a Pull Request (PR)
 that addresses this issue. In your PR description, link the issue that is
 resolved with this PR by writing `Closes #[issue_number]`. Github will
 automatically close the issue once you merge the PR.
 
-This means that the ideal PR is short and concise.
-The only occasions where this does not apply is i) fixing acute bugs or
-ii) combining minor changes into one PR.
+The ideal PR is short and concise because it only resolves a single issue.
 
-## PRs are fully tested, clean & easy to understand
+## Our PRs are simple, clean & easy to understand
 
-We do not ask for a review without making sure that basic checks have passed.
-At the minimum, every PR has successfully run a pre-commit hook. The
-description & commit messages are clear and with enough detail.
+Before we ask for a review, each of our PRs was reviewed by an AI assistant.
+The description & commit messages are clear and with enough detail.
+We do not review PRs that are not marked as `ready for review`.
 
-Do not ask for a review on a PR in the `draft` stage.
-Before requesting a PR review from anybody,
-set the stage of the PR to `ready for review`.
-
-## Respond to all git comments
+## We respond to all git comments
 
 If reviewers invest the time to review your work, you'll find the time to
-respond to their feedback. This also applies to AI-generated feedback.
+respond to all their feedback. This also applies to AI-generated feedback.
 Do not leave comments in your PR uncommented or unresolved.
+A simple "I see your point but prefer to leave it unchanged" may be sufficient.
 
-## Resolve merge conflicts promptly
+## We resolve merge conflicts promptly
 
-Generally, we recommend to fix merge conflicts by creating an additional commit.
+Generally, we fix merge conflicts as soon as possible by
+creating an additional commit.
 The most typical case for merge conflicts stems from another PR that was merged
 into `main`. Since you don't have the newest changes from `main` in your `feature`
 branch yet, you need to bring them in.
@@ -68,47 +53,9 @@ error message first. Open each of these files and resolve your conflicts.
 Then, add your updated file with `git add file.py` and run `git commit`.
 Confirm the commit message.
 
-## Write easy-to-understand code
+## We have specific settings for our repositories on GitHub
 
-Even in the age of AI coding assistants, you want to be in control of your code.
-Therefore, write (or ask the AI to write) code that your future self
-will understand right away.
-
-This is a poor example:
-
-```python
-def proc(o):
-  ok = valid(o)
-  if not ok:
-    return "Error"
-  p = pay(o)
-  if p:
-    save(o)
-    return "OK"
-  else:
-    return "Error"
-```
-
-The same function, but this time easy to understand:
-
-```python
-def process_order(order_details):
-  order_is_valid = validate_order(order_details)
-  if not order_is_valid:
-    return "Error: order is not valid"
-  payment_is_valid = process_payment(order_details)
-  if payment_is_valid:
-    save_order(order_details)
-    return "OK: order processed successfully"
-  else:
-    return "Error: payment is not valid"
-```
-
-This example is from the talk ["Escape from Tutorial Hell"](https://www.youtube.com/watch?v=dSoxINozBKU&t=625s).
-
-## Properly set up git repositories
-
-We properly set up your git repositories on Github to reduce our mental load.
+We properly set up our git repositories on GitHub to reduce our mental load.
 
 1. Only allow squash merging: After creating the repo, go to General settings
    on Github, scroll to the `Pull Requests` section and
@@ -120,13 +67,3 @@ We properly set up your git repositories on Github to reduce our mental load.
    `Automatically delete head branches`.
 
    ![Auto-delete branch](./docs/imgs/screenshot-auto_delete_branch.png)
-
-## Weekly priorities check
-
-Every Monday we write down around 3 focus areas for the week.
-And we reflect on last week's progress.
-Everybody is invited to comment.
-
-Plan aggressively for your week.
-
-![Demo Weekly Plan](./docs/imgs/screenshot-weekly_plan.png)
