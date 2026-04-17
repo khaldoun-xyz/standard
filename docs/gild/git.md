@@ -1,19 +1,27 @@
+how to work with git in the industry (staging/prod/..., CI/CD)
+
 # Git: proper version control
 
-- how to work with git in the industry (staging/prod/..., CI/CD)
-
-
+Git's history is worth reading. Linus Torvalds, the creator of Linux,
+created it in 2005:
+[Linux Journal](https://www.linuxjournal.com/content/git-origin-story)
 
 ## Why?
 
-- don't lose data on local laptops
-- keep track of full project history
-- work on software in a group (e.g. share work safely via
-  feature branches; improve changes via peer-reviewed
-  pull requests)
-- safe backup via rollback
+- track your project's history & past releases
+- safely develop new features
+- easily collaborate with others
 
-## The 3 metal rules
+## Basic premise
+
+- maintain a working version of your code on a `main`/`master` branch
+- implement features on a `feature/FEATURENAME` branch,
+  fix issues on a `fix/FIXNAME` branch
+- if the `main` branch is ahead, merge those changes into your branch
+  before opening a Pull Request (PR)
+- keep your git history clean, esp. by only squash merging PRs
+
+#### The 3 metal rules
 
 - **number 1 golden rule**: always maintain a working version
   in the `main` brach as the **single source of truth**
