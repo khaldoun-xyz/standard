@@ -12,7 +12,7 @@ The newest layers develop on top of earlier ones.
 If you want to do great work, you need to be in the details.
 And that requires understanding the basics.
 
-[![In the details](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/-JnqbfeaXXA?si=QPGZGooSF8NOWQrL&t=200)
+[YouTube video: In the details](https://youtu.be/-JnqbfeaXXA?si=QPGZGooSF8NOWQrL&t=200)
 
 ### Why? AI will take care of the details for me
 
