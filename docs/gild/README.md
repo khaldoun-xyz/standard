@@ -1,40 +1,24 @@
 # GILD
 
-## Purpose
+Gild is a learning community to help data scientists do great work.
 
-- Build shared understanding how to be great at what we do
-  - Teach software & AI skills,
-    project management skills, basic tech stack
-    - write code, consider data privacy, consider security aspects,
-      consider IT architecture, build deployment pipelines,
-      how do we document our systems & processes?,
-      do stakeholder management, drive milestones
+## Why?
 
-## Methodology
+Technology develops like an onion.
+The newest layers develop on top of earlier ones.
 
-- shared sessions
-- people demonstrate stuff
-- hands on
-- build a tech stack
+<img src="../imgs/sketch-concentric_circles.png" width="200">
 
-## Content
+If you want to do great work, you need to be in the details.
+And that requires understanding the basics.
 
-- conceptual framework
-  - find the most **simple** way
-  - build **subsystems**
+[![In the details](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/-JnqbfeaXXA?si=QPGZGooSF8NOWQrL&t=200)
 
-- Software & AI skills
-  - Bash
-  - Pixi
-  - Docker
-  - git
-  - API design (esp. FastAPI)
-  - CI/CD (esp. Github ACtions)
-  - Pipeline design (HOW?)
-  - useful AI skills (how to use Cursor?
-    How to use terminal-based AI?)
+### Why? AI will take care of the details for me
 
-- Build an AI application?
-  - e.g. [ml_api](https://github.com/khaldoun-xyz/ml_api)
+In early 2026, the highest paid software employees are those that
+know how to develop AI. They know the basics and are in the details.
 
-- to be continued ...
+## basics
+
+- the terminal & bash
