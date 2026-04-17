@@ -1,5 +1,9 @@
 # Git: proper version control
 
+- how to work with git in the industry (staging/prod/..., CI/CD)
+
+
+
 ## Why?
 
 - don't lose data on local laptops

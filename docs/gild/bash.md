@@ -1,59 +1,39 @@
 # why use the terminal?
 
-- be faster
-- to not overengineer things
-- to be focused
-- certain things don't have GUIs
+- the terminal is the gateway to everything
+- this is why the terminal is the primary tool of top developers & AI coding assistants
 
 ## helpful commands
 
-- ls - show contents of current directory
-- pwd - show current directory path
-- cd - change directory
-- mv - move file
-- `cat` - print file contents
-- head/tail -n: show first/last n rows
-- `less` - open file in terminal window & exit with `q`
-  - you can search files using `/`
-- search your bash history: `CTRL + r`, confirm with ENTER
-- `sudo apt upgrade && sudo apt update` (only on Ubuntu)
+- `pwd`: show current directory path
+- `ls`: show contents of current directory
+- `cd PATH`: switch to PATH (use tab for suggestions)
+- `wc FILEPATH`: print line, word & byte count of file at FILEPATH
+- `cat FILEPATH`: print file contents
+- `head/tail -NUMBER`: show first/last NUMBER rows
+- `grep PATTERN FILEPATH`: print the lines that match the PATTERN
+- `nano/vim FILEPATH`: edit file with nano/vim in FILEPATH
+- `vim FILEPATH`: edit file with vim in FILEPATH
+- `mv FILEPATH TARGETFOLDER`: move file from FILEPATH to TARGETFOLDER
+- `CTRL + r`: search through your bash history
+- `tree`: shows your worktree (requires installation)
+- `ncdu`: show your data storage from the current folder (requires installation)
+- `btop`: show hardware performance metrics (requires installation)
+- `lscpu`: see the hardware specifications of your CPU
+- `sqlite3 CONNECTIONSTRING`: connect to a SQLite database from the terminal
+- `psql CONNECTIONSTRING`: connect to a postgreSQL database from the terminal
+- `screen`: start a new virtual screen window
+  ([cheatsheet](https://gist.github.com/jctosta/af918e1618682638aa82))
+- `tmux`: start a new virtual tmux window
+  ([cheatsheet](https://gist.github.com/MohamedAlaa/2961058))
+- `lazygit`: show your current git changes in lazygit
 
-### piping (string commands together)
+## generally helpful
 
-- get all rows that contain "docker": cat README.md | grep docker
-- count number of files/folders in directory: ls | wc -l
-- cat README.md | head -5 (alternative: head -5 README.md)
-
-### whatever commands (more complicated)
-
-- `scp`: copy files to a server
-- `history`: show your bash history
-- `man BASHCOMMAND`: show manual of bash command
-
-## virtual terminal windows (esp. tmux, screen)
-
-### why?
-
-- enables remote jobs (e.g. on a server)
-  - direct terminal commands only run as long
-    as the terminal connection to the server persists
-
-### screen
-
-- start a new screen with `screen` or `screen -S NAME`
-- detach from the screen with `CTRL + a + d`
-- list all existing screens with `screen -ls`
-- reattach to a screen with `screen -r NAME` or `screen -r ID`
-
-## aliases
-
-- add `alias YOURALIAS='COMMAND'` to your `.bashrc` file
-
-## database operations
-
-- set up an alias for `psql`
-- set up a `.psqlrc` file to beautify your output
-
-## editors
-
-- nano, vim
+- use `|` to combine commands, e.g. `cat FILEPATH | head 5` to show
+  the first 5 rows in a file
+- use `man COMMAND` to read the manual for the command, e.g. `man wc`.
+  - alternatively, run `COMMAND --help`
+- set global configurations in your `~/.bashrc` file.
+  - e.g. aliases (`alias YOURALIAS='COMMAND'`) or `psql` connections
+- beautify your output of your `psql` queries with a `~/.psqlrc` file
