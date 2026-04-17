@@ -26,6 +26,7 @@
   ([cheatsheet](https://gist.github.com/jctosta/af918e1618682638aa82))
 - `tmux`: start a new virtual tmux window
   ([cheatsheet](https://gist.github.com/MohamedAlaa/2961058))
+- `lazygit`: show your current git changes in lazygit
 
 ## generally helpful
 
