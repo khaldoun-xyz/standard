@@ -16,7 +16,7 @@ And that requires understanding the basic concepts.
 
 ### But AI will take care of the basics for me
 
-In early 2026, the highest paid software employees are those that
+In early 2026, the highest-paid software employees are those that
 know how to develop AI. They know the basics and are in the details.
 
 ## basics

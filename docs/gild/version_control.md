@@ -1,4 +1,4 @@
-# Git: proper version control
+# Version control: git
 
 Git's history is worth reading. Linus Torvalds, the creator of Linux,
 created it in 2005:
@@ -64,7 +64,7 @@ We properly set up our git repositories on GitHub to reduce our mental load.
 Generally, we fix merge conflicts as soon as possible by
 creating an additional commit.
 The most typical case for merge conflicts stems from another PR that was merged
-into `main`. Since you don't have the newest changes from `main` in your `feature`
+into `main`. Since you don't have the newest changes from `main` in your `feature/NAME`
 branch yet, you need to bring them in.
 
 First, pull the most recent changes to `main` from your remote branch `origin`:
@@ -72,9 +72,9 @@ First, pull the most recent changes to `main` from your remote branch `origin`:
 - `git checkout main`
 - `git pull origin main`
 
-Next, merge your local `main` branch into your `feature` branch:
+Next, merge your local `main` branch into your `feature/NAME` branch:
 
-- `git checkout feature`
+- `git checkout feature/NAME`
 - `git merge main`
 
 If there are merge conflicts, the merge will stop and you'll be asked
