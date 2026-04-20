@@ -1,8 +1,8 @@
 # Omarchy at Khaldoun
 
-We use Omarchy because we love it so much.
-Certain things are helpful to know - in addition to the
-[Manual](https://talk.brave.com/FleA3gRZaiX5m5s-AjIzNbKLVenTVQLCjuByoTFlQ5U)
+We use Omarchy because it's simple, extensible & well designed.
+Certain things are helpful to know (in addition to the
+[Manual](https://talk.brave.com/FleA3gRZaiX5m5s-AjIzNbKLVenTVQLCjuByoTFlQ5U)).
 
 ## Typical Omarchy commands
 
@@ -25,7 +25,3 @@ Certain things are helpful to know - in addition to the
 - Close tabs & windows: CONTROL + w (terminals are closed with CONTROL + d,
   TUI interfaces with q)
 - Copy/paste: SUPER c/v (alternative for pasting in the terminal: CTRL SHIFT + v)
-
-## Issues for now
-
-- super high battery consumption ?

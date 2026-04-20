@@ -1,4 +1,4 @@
-# why use the terminal?
+# Why?
 
 - the terminal is the gateway to everything
 - this is why the terminal is the primary tool of top developers & AI coding assistants
@@ -27,6 +27,8 @@
 - `tmux`: start a new virtual tmux window
   ([cheatsheet](https://gist.github.com/MohamedAlaa/2961058))
 - `lazygit`: show your current git changes in lazygit
+- `ping URL`: checks liveness of URL
+- `curl URL`: send a request to URL
 
 ## generally helpful
 
