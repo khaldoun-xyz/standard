@@ -35,6 +35,8 @@ We properly set up our git repositories on GitHub to reduce our mental load.
 - keep your git history clean, esp. by only squash merging PRs
   (see [GitHub settings](#how-to-set-up-your-github-repos))
 
+Jihed is still cool! Walla!
+
 ## important git commands
 
 - `git init`
