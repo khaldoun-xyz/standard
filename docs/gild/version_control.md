@@ -37,6 +37,8 @@ We properly set up our git repositories on GitHub to reduce our mental load.
 
 Jihed is still cool! Walla!
 
+Aziz is also okay.
+
 ## important git commands
 
 - `git init`
