@@ -10,21 +10,6 @@ created it in 2005:
 - easily collaborate with others
 - track your project's history & past releases
 
-## How to set up your GitHub repos
-
-We properly set up our git repositories on GitHub to reduce our mental load.
-
-1. Only allow squash merging: After creating the repo, go to General settings
-   on Github, scroll to the `Pull Requests` section and
-   only select `Allow squash merging`.
-
-   ![Only allow squash merging](../../docs/imgs/screenshot-squash_merging.png)
-
-2. Auto-delete a branch after merging: In the same settings section, activate
-   `Automatically delete head branches`.
-
-   ![Auto-delete branch](../../docs/imgs/screenshot-auto_delete_branch.png)
-
 ## Basic premise
 
 - always maintain a working version of your code on a `main`/`master` branch
@@ -58,6 +43,21 @@ We properly set up our git repositories on GitHub to reduce our mental load.
   to unstaged changes locally
 - `git rebase -i HEAD~NUMBER_OF_COMMITS_YOU_WANT_TO_GO_BACK`:
   interactively rebase your history (e.g. for squashing commits)
+
+## How to set up your GitHub repos
+
+We properly set up our git repositories on GitHub to reduce our mental load.
+
+1. Only allow squash merging: After creating the repo, go to General settings
+   on Github, scroll to the `Pull Requests` section and
+   only select `Allow squash merging`.
+
+   ![Only allow squash merging](../../docs/imgs/screenshot-squash_merging.png)
+
+2. Auto-delete a branch after merging: In the same settings section, activate
+   `Automatically delete head branches`.
+
+   ![Auto-delete branch](../../docs/imgs/screenshot-auto_delete_branch.png)
 
 ## How to resolve merge conflicts
 
